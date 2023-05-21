@@ -1,7 +1,15 @@
 {
   "name": "nuxt-twemoji",
-  "version": "0.0.0",
-  "description": "My new Nuxt module",
+  "version": "3.0.0",
+  "description": "Twemoji module for Nuxt",
+  "keywords": [
+    "nuxt",
+    "twemoji",
+    "emoji",
+    "emojis",
+    "nuxt3",
+    "twitter-emoji"
+  ],
   "repository": "Yizack/nuxt-twemoji",
   "homepage": "https://github.com/Yizack/nuxt-twemoji",
   "license": "MIT",
