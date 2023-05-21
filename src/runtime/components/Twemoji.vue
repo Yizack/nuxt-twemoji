@@ -37,6 +37,7 @@ const fetchSVG = () => $fetch(emojiLinkSVG.value).then(async (res) => await res.
 const component = computed(() => defineComponent(components.value[parsed.value]))
 
 const loadSVG = async () => {
+  if (components.value[parsed.value]) return
   isFetching.value = true
   let svg = await fetchSVG()
   isFetching.value = false
