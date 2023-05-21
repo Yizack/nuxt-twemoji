@@ -28,7 +28,6 @@ const isFetching = ref(false)
 
 const parsed =  computed(() => isHex.value ? props.emoji.toLowerCase().replace(/u\+/ig, '') : twemoji.convert.toCodePoint(props.emoji))
 codePoint.value[parsed.value] = parsed.value
-console.log(props.emoji.toLowerCase());
 const cdn = 'https://cdn.jsdelivr.net/gh/twitter/twemoji'
 const emojiLinkPNG = computed(() => `${cdn}@${version}/assets/72x72/${codePoint.value[parsed.value]}.png`)
 
