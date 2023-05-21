@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v3.0.1
+
+[compare changes](https://undefined/undefined/compare/v3.0.0...v3.0.1)
+
+
+### 🏡 Chore
+
+  - Include lock file in release (c221470)
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.0.0
 
 
