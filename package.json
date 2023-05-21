@@ -10,7 +10,7 @@
     "nuxt3",
     "twitter-emoji"
   ],
-  "repository": "https://github.com/Yizack/nuxt-twemoji",
+  "repository": "Yizack/nuxt-twemoji",
   "homepage": "https://github.com/Yizack/nuxt-twemoji",
   "license": "MIT",
   "type": "module",
@@ -35,7 +35,7 @@
     "release": "npm run pack && changelogen --release && npm run release:publish",
     "release:minor": "npm run pack && changelogen --release --minor && npm run release:publish",
     "release:major": "npm run pack && changelogen --release --major && npm run release:publish",
-    "release:publish": "npm install && npm publish && git push --follow-tags",
+    "release:publish": "npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch"
