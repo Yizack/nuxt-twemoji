@@ -3,11 +3,11 @@
 
 ## v3.0.2
 
-[compare changes](https://undefined/undefined/compare/v3.0.1...v3.0.2)
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.0.1...v3.0.2)
 
 ## v3.0.1
 
-[compare changes](https://undefined/undefined/compare/v3.0.0...v3.0.1)
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.0.0...v3.0.1)
 
 
 ### 🏡 Chore
@@ -38,4 +38,3 @@
 ### ❤️  Contributors
 
 - Yizack Rangel ([@Yizack](http://github.com/Yizack))
-
