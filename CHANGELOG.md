@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v3.0.5
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.0.3...v3.0.5)
+
+
+### 🏡 Chore
+
+  - Repository package ([f5e287e](https://github.com/Yizack/nuxt-twemoji/commit/f5e287e))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.0.3
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.0.2...v3.0.3)
