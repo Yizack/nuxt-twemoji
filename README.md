@@ -49,10 +49,11 @@ That's it! You can now use `nuxt-twemoji` in your Nuxt app ✨
 
 1. Find emojis from the recommended unicode emoji list: https://unicode.org/emoji/charts/full-emoji-list.html
 
-2. In the project, use the component `<Twemoji emoji="">`, where `emoji` is the emoji character or codepoint.
+2. In the project, use the component `<Twemoji emoji="" />`, where `emoji` is the emoji character or codepoint.
+3. If you employ SSR (Server Side Rendering) in your Nuxt application, this module will inject the emoji `<svg>` or `<img>` element into the output code during your project's build/generate process. Alternatively, if SSR is not used, the emojis will dynamically render during client runtime.
 
 ### Component properties
-| Property | Required | default | type     |
+| Property | Required | Default | Type     |
 |----------|----------|---------|----------|
 | `emoji`  | Yes      |         | `String` |
 | `size`   | No       | `1em`   | `String` |
@@ -62,13 +63,13 @@ That's it! You can now use `nuxt-twemoji` in your Nuxt app ✨
 Use the emoji property to render an emoji by character.
 
 ```html
-<!-- Render SVG -->
+<!-- Render SVG element -->
 <Twemoji emoji="😊" />
 
 <!-- Resize -->
 <Twemoji emoji="😊" size="2em" />
 
-<!-- Render PNG -->
+<!-- Render PNG <img> element -->
 <Twemoji emoji="😊" png />
 ```
 
@@ -82,6 +83,17 @@ or
 
 ```html
 <Twemoji emoji="U+1F60A" />
+```
+
+### Default CSS
+
+Both the `<img>` and `<svg>` tags will have the `.twemoji` class assigned to them. These are the default styles, but you can add your own styles by using the class name.
+
+```css
+.twemoji {
+  display: inline-block;
+  vertical-align: middle;
+}
 ```
 
 ## Development
