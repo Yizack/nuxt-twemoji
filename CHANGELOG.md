@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v3.0.6
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.0.5...v3.0.6)
+
+
+### 🩹 Fixes
+
+  - Don't fetch emoji on client if server rendered ([1355ebc](https://github.com/Yizack/nuxt-twemoji/commit/1355ebc))
+
+### 🏡 Chore
+
+  - Update info ([4e066d1](https://github.com/Yizack/nuxt-twemoji/commit/4e066d1))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.0.5
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.0.3...v3.0.5)
