@@ -1,8 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
 import { ref, computed, defineComponent, h, watchEffect } from 'vue'
-import twemoji from 'twemoji'
-import { version } from 'twemoji/package.json'
 import { useState } from '#imports'
 
 const props = defineProps({
@@ -20,15 +18,37 @@ const props = defineProps({
   }
 })
 
+const toCodePoint = (unicodeSurrogates) => {
+  const points = []
+  let char = 0
+  let previous = 0
+  let i = 0
+  while (i < unicodeSurrogates.length) {
+    char = unicodeSurrogates.charCodeAt(i++)
+    if (previous) {
+      points.push((0x10000 + (previous - 0xd800 << 10) + (char - 0xdc00)).toString(16))
+      previous = 0
+    }
+    else if (char > 0xd800 && char <= 0xdbff) {
+      previous = char
+    }
+    else {
+      points.push(char.toString(16))
+    }
+  }
+  return points.join('-')
+}
+
 const isHex = computed(() => (/^[0-9A-Fa-f]{1,6}(-[0-9A-Fa-f]{1,6})?$/i).test(props.emoji.replace(/u\+/ig, '')))
 
 const components = useState('components', () => ({}))
 const codePoint = useState('codepPoint', () => ({}))
 const isFetching = ref(false)
 
-const parsed =  computed(() => isHex.value ? props.emoji.toLowerCase().replace(/u\+/ig, '') : twemoji.convert.toCodePoint(props.emoji))
+const parsed =  computed(() => isHex.value ? props.emoji.toLowerCase().replace(/u\+/ig, '') : toCodePoint(props.emoji))
 codePoint.value[parsed.value] = parsed.value
 const cdn = 'https://cdn.jsdelivr.net/gh/twitter/twemoji'
+const version = '14.0.2'
 const emojiLinkPNG = computed(() => `${cdn}@${version}/assets/72x72/${codePoint.value[parsed.value]}.png`)
 
 const emojiLinkSVG = computed(() => `${cdn}@${version}/assets/svg/${codePoint.value[parsed.value]}.svg`)

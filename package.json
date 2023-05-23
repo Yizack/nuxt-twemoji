@@ -41,8 +41,7 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.5.1",
-    "twemoji": "^14.0.2"
+    "@nuxt/kit": "^3.5.1"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
