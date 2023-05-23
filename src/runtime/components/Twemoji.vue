@@ -39,7 +39,7 @@ const toCodePoint = (unicodeSurrogates) => {
   return points.join('-')
 }
 
-const isHex = computed(() => (/^[0-9A-Fa-f]{1,6}(-[0-9A-Fa-f]{1,6})?$/i).test(props.emoji.replace(/u\+/ig, '')))
+const isHex = computed(() => (/^[0-9A-Fa-f]{1,6}(-[0-9A-Fa-f]{1,6})*?$/i).test(props.emoji.replace(/u\+/ig, '')))
 
 const components = useState('components', () => ({}))
 const codePoint = useState('codepPoint', () => ({}))
