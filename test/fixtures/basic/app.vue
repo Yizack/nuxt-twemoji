@@ -1,6 +1,4 @@
 <template>
-  <div>basic</div>
+  <Twemoji emoji="2764" />
+  <Twemoji emoji="2764" png />
 </template>
-
-<script setup>
-</script>
