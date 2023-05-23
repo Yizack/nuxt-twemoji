@@ -8,7 +8,7 @@
 
 Introducing a Nuxt module for implementing Twemoji in a Nuxt application
 
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
+- [✨ Release Notes](/CHANGELOG.md)
 - [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp.vue)
 
 ## Features
@@ -84,6 +84,9 @@ or
 ```html
 <Twemoji emoji="U+1F60A" />
 ```
+
+### More examples
+Check out the [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp.vue) for more examples.
 
 ### Default CSS
 
