@@ -1,36 +1,18 @@
 <template>
-  <!-- Using Emojis -->
-  <table>
+  <!-- Demo tables -->
+  <table v-for="(demo, key) in demos" :key="key">
     <thead>
       <tr>
-        <th style="width: 200px">Emoji</th>
+        <th style="width: 200px">{{ demo.name }}</th>
         <th>Twemoji (SVG)</th>
         <th>Twemoji (PNG)</th>
       </tr>
     </thead>
     <tbody>
-      <tr v-for="(emoji, i) in emojis" :key="i">
+      <tr v-for="(emoji, i) in demo.emojis" :key="i">
         <td>{{ emoji }}</td>
         <td><Twemoji :emoji="emoji" /></td>
         <td><Twemoji :emoji="emoji" png /></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <!-- Using Code Points-->
-  <table>
-    <thead>
-      <tr>
-        <th style="width: 200px">Code Point</th>
-        <th>Twemoji (SVG)</th>
-        <th>Twemoji (PNG)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="(codePoint, i) in codePoints" :key="i">
-        <td>{{ codePoint }}</td>
-        <td><Twemoji :emoji="codePoint" /></td>
-        <td><Twemoji :emoji="codePoint" png /></td>
       </tr>
     </tbody>
   </table>
@@ -40,8 +22,16 @@
 export default {
   data() {
     return {
-      emojis: ['💙', '😍', '👍', '😂', '💀', '🚀', '😵‍💫', '🌟', '👨‍✈️'],
-      codePoints: ['2764', '1f618', 'U+231B', 'u+1f60e', '1F44D-1F3FF', '1F9D1-200D-1F4BB', '1F9D1-1F3FB-200D-1F393', '1F408-200D-2B1B']
+      demos: [
+        {
+          name: "Emoji",
+          emojis: ['💙', '😍', '👍', '😂', '💀', '🚀', '😵‍💫', '🌟', '👨‍✈️'],
+        },
+        {
+          name: "Code Point",
+          emojis: ['2764', '1f618', 'U+231B', 'u+1f60e', '1F44D-1F3FF', '1F9D1-200D-1F4BB', '1F9D1-1F3FB-200D-1F393', '1F408-200D-2B1B']
+        }
+      ]
     }
   }
 };
