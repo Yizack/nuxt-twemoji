@@ -1,6 +1,33 @@
 # Changelog
 
 
+## v3.1.0
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.0.6...v3.1.0)
+
+
+### 🚀 Enhancements
+
+  - Don't depend on twemoji package ([3e30476](https://github.com/Yizack/nuxt-twemoji/commit/3e30476))
+
+### 🩹 Fixes
+
+  - Match all codepoints separated by score ([86f4550](https://github.com/Yizack/nuxt-twemoji/commit/86f4550))
+
+### 🏡 Chore
+
+  - NuxtTwemoji app prop ([4445747](https://github.com/Yizack/nuxt-twemoji/commit/4445747))
+  - Add more examples to playground ([95d2d57](https://github.com/Yizack/nuxt-twemoji/commit/95d2d57))
+  - Demo tables ([e3511ee](https://github.com/Yizack/nuxt-twemoji/commit/e3511ee))
+
+### ✅ Tests
+
+  - Twemoji svg and png render ([0c3b802](https://github.com/Yizack/nuxt-twemoji/commit/0c3b802))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.0.6
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.0.5...v3.0.6)
