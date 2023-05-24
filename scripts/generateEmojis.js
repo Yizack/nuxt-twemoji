@@ -22,9 +22,11 @@ text.split('\n').forEach(line => {
   emojis[property] = { code, emoji, name }
 })
 
-const path = './src/runtime/assets/emojis.js'
-writeFileSync(path,  Object.keys(emojis).map((key) => {
-  return `export const ${key} = ${JSON.stringify(emojis[key], null, 2).replace(/"([^"]+)":/g, '$1:').replace(/"/g, '\'')}`
-}).join('\n'))
+const path = './src/runtime/assets/emojis.ts'
+const exports = Object.keys(emojis).map((key) => {
+  return `export const ${key}: EmojiDefinition = ${JSON.stringify(emojis[key], null, 2).replace(/"([^"]+)":/g, '$1:').replace(/"/g, '\'')}`
+}).join('\n')
+
+writeFileSync(path,  `type EmojiDefinition = { code: string, emoji: string, name: string }\n${exports}`)
 const length = Object.keys(emojis).length
 console.info(`[${length} emojis] generated file: ${path}`)

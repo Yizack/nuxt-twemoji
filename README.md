@@ -11,11 +11,22 @@ Introducing a Nuxt module for implementing Twemoji in a Nuxt application
 - [✨ Release Notes](/CHANGELOG.md)
 - [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp.vue)
 
+## Index
+- [Features](#features)
+- [Quick Setup](#quick-setup)
+- [Usage](#usage)
+  - [Component properties](#component-properties)
+  - [Render](#render)
+  - [More examples](#more-examples)
+  - [Default CSS](#default-css)
+- [Development](#development)
+
 ## Features
 - Nuxt 3 ready
 - Emoji 14.0 support
-- Get emoji by character
-- Get emoji by codepoint
+- Render emoji by character
+- Render emoji by codepoint
+- Render emoji by definition
 - SVG rendering by default
 - Insert as PNG image fetched from the [jsdelivr](https://www.jsdelivr.com/) CDN
 
@@ -60,6 +71,7 @@ That's it! You can now use `nuxt-twemoji` in your Nuxt app ✨
 | `size`   | No       | `1em`   | `String`             |
 | `png`    | No       | `false` | `Boolean`            |
 
+### Render
 
 Use the emoji property to render an emoji by character.
 
@@ -86,16 +98,18 @@ or
 <Twemoji emoji="U+1F60A" />
 ```
 
-Use the emoji property to render an emoji by definition.
+Use the emoji property to render an emoji by [definition](src/runtime/assets/emojis.ts).
 ```html
 <script setup>
-import { twSmilingFaceWithSmilingEyes } from '@/node_modules/nuxt-twemoji/dist/runtime/assets/emojis'
+import { twSmilingFaceWithSmilingEyes } from 'nuxt-twemoji/emojis'
 </script>
 
 <template>
   <Twemoji :emoji="twSmilingFaceWithSmilingEyes" />
 </template>
 ```
+
+The emoji definitions file has been generated using [`generateEmojis.js`](scripts/generateEmojis.js) script, which fetches data from the [Unicode](https://home.unicode.org/) public Emoji 14.0 file available at https://unicode.org/Public/emoji/14.0/emoji-test.txt
 
 ### More examples
 Check out the [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp.vue) for more examples.

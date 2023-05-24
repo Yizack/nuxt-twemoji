@@ -19,6 +19,10 @@
       "types": "./dist/types.d.ts",
       "import": "./dist/module.mjs",
       "require": "./dist/module.cjs"
+    },
+    "./emojis": {
+      "types": "./dist/runtime/assets/emojis.d.ts",
+      "import": "./dist/runtime/assets/emojis.mjs"
     }
   },
   "main": "./dist/module.cjs",

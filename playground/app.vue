@@ -1,3 +1,16 @@
+<script setup>
+import {
+  twOrangeHeart,
+  twFuelPump,
+  twFaceWithRollingEyes,
+  twBoy,
+  twGirl,
+  twStar,
+  twPoliceCarLight
+} from './../src/runtime/assets/emojis'
+</script>
+
+
 <template>
   <!-- Demo tables -->
   <table v-for="(demo, key) in demos" :key="key">
@@ -19,16 +32,6 @@
 </template>
 
 <script>
-import {
-  twOrangeHeart,
-  twFuelPump,
-  twFaceWithRollingEyes,
-  twBoy,
-  twGirl,
-  twStar,
-  twPoliceCarLight
-} from "./../src/runtime/assets/emojis";
-
 export default {
   data() {
     return {
@@ -69,7 +72,7 @@ export default {
       ]
     }
   }
-};
+}
 </script>
 
 <style scoped>
