@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v3.2.0
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.1.0...v3.2.0)
+
+
+### 🚀 Enhancements
+
+  - Accept emoji definition objects ([c3d5db7](https://github.com/Yizack/nuxt-twemoji/commit/c3d5db7))
+
+### 🏡 Chore
+
+  - Generate list of emoji exports ([14995af](https://github.com/Yizack/nuxt-twemoji/commit/14995af))
+  - Add definition info ([f32f1e2](https://github.com/Yizack/nuxt-twemoji/commit/f32f1e2))
+
+### ✅ Tests
+
+  - Add fail render test ([52a3340](https://github.com/Yizack/nuxt-twemoji/commit/52a3340))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.1.0
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.0.6...v3.1.0)
