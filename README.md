@@ -54,11 +54,11 @@ That's it! You can now use `nuxt-twemoji` in your Nuxt app ✨
 3. If you employ SSR (Server Side Rendering) in your Nuxt application, this module will inject the emoji `<svg>` or `<img>` element into the output code during your project's build/generate process. Alternatively, if SSR is not used, the emojis will dynamically render during client runtime.
 
 ### Component properties
-| Property | Required | Default | Type     |
-|----------|----------|---------|----------|
-| `emoji`  | Yes      |         | `String` |
-| `size`   | No       | `1em`   | `String` |
-| `png`    | No       | `false` | `Boolean`|
+| Property | Required | Default | Type              |
+|----------|----------|---------|-------------------|
+| `emoji`  | Yes      |         | `String | Object` |
+| `size`   | No       | `1em`   | `String`          |
+| `png`    | No       | `false` | `Boolean`         |
 
 
 Use the emoji property to render an emoji by character.
@@ -89,7 +89,7 @@ or
 Use the emoji property to render an emoji by definition.
 ```html
 <script setup>
-import { twSmilingFaceWithSmilingEyes } from './node_modules/nuxt-twemoji/dist/runtime/assets/emojis'
+import { twSmilingFaceWithSmilingEyes } from '@/node_modules/nuxt-twemoji/dist/runtime/assets/emojis'
 </script>
 
 <template>
