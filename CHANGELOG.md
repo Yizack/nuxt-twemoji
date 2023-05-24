@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v3.2.1
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.0...v3.2.1)
+
+
+### 🏡 Chore
+
+  - Fix info ([525496f](https://github.com/Yizack/nuxt-twemoji/commit/525496f))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.2.0
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.1.0...v3.2.0)
