@@ -3,12 +3,12 @@
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
+[![Tests][tests-src]][tests-href]
 [![Nuxt][nuxt-src]][nuxt-href]
-
 
 Introducing a Nuxt module for implementing Twemoji in a Nuxt application
 
-- [✨ Release Notes](/CHANGELOG.md)
+- [✨ Release Notes](CHANGELOG.md)
 - [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp.vue)
 
 ## Index
@@ -159,7 +159,10 @@ npm run release
 [npm-downloads-href]: https://npmjs.com/package/nuxt-twemoji
 
 [license-src]: https://img.shields.io/npm/l/nuxt-twemoji.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/nuxt-twemoji
+[license-href]: LICENSE
+
+[tests-src]: https://img.shields.io/github/actions/workflow/status/Yizack/nuxt-twemoji/tests.yml?style=flat&colorA=18181B&colorB=28CF8D&label=tests
+[tests-href]: https://github.com/Yizack/nuxt-twemoji/actions/workflows/tests.yml
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
