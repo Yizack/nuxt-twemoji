@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v3.2.2
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.1...v3.2.2)
+
+
+### 🏡 Chore
+
+  - Fix readme table issue ([e246187](https://github.com/Yizack/nuxt-twemoji/commit/e246187))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.2.1
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.0...v3.2.1)
