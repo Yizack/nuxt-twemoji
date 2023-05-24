@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v3.2.3
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.2...v3.2.3)
+
+
+### 🩹 Fixes
+
+  - Show emoji value used in img alt property ([18e74ef](https://github.com/Yizack/nuxt-twemoji/commit/18e74ef))
+
+### 🏡 Chore
+
+  - Add EmojiDefinition type and exports ([92905e0](https://github.com/Yizack/nuxt-twemoji/commit/92905e0))
+  - Prepare playground for testing ([c940d47](https://github.com/Yizack/nuxt-twemoji/commit/c940d47))
+
+### ✅ Tests
+
+  - Add tests ([523dfc5](https://github.com/Yizack/nuxt-twemoji/commit/523dfc5))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.2.2
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.1...v3.2.2)
