@@ -97,7 +97,7 @@ watchEffect(() => codePoint.value, loadSVG)
 
 <template>
   <span v-if="isFetching" />
-  <img v-else-if="png" class="twemoji" :src="emojiLinkPNG" :alt="emoji.name ? emoji.name : twemoji" :style="{ width: size, height: size }">
+  <img v-else-if="png" class="twemoji" :src="emojiLinkPNG" :alt="emoji?.name || emoji" :style="{ width: size, height: size }">
   <Component :is="component" v-else-if="component" :width="size" :height="size" />
   <span v-else>{{ twemoji }}</span>
 </template>
