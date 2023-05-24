@@ -19,6 +19,16 @@
 </template>
 
 <script>
+import {
+  twOrangeHeart,
+  twFuelPump,
+  twFaceWithRollingEyes,
+  twBoy,
+  twGirl,
+  twStar,
+  twPoliceCarLight
+} from "./../src/runtime/assets/emojis";
+
 export default {
   data() {
     return {
@@ -29,7 +39,32 @@ export default {
         },
         {
           name: "Code Point",
-          emojis: ['2764', '1f618', 'U+231B', 'u+1f60e', '1F44D-1F3FF', '1F9D1-200D-1F4BB', '1F9D1-1F3FB-200D-1F393', '1F408-200D-2B1B']
+          emojis: [
+            '2764',
+            '1f618',
+            'U+231B', 
+            'u+1f60e',
+            '1F44D-1F3FF',
+            '1F9D1-200D-1F4BB',
+            '1F9D1-1F3FB-200D-1F393',
+            '1F408-200D-2B1B'
+          ]
+        },
+        {
+          name: "Object",
+          emojis: [
+            twOrangeHeart,
+            twFuelPump,
+            twFaceWithRollingEyes,
+            twBoy,
+            twGirl,
+            twStar,
+            twPoliceCarLight
+          ]
+        },
+        {
+          name: "Error",
+          emojis: ['1234']
         }
       ]
     }
@@ -38,11 +73,8 @@ export default {
 </script>
 
 <style scoped>
-* {
-  font-family: Arial;
-}
-
 table {
+  font-family: Arial;
   border-collapse: collapse;
   border-spacing: 0;
   border: 1px solid #ccc;

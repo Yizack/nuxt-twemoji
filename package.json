@@ -30,6 +30,7 @@
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
+    "dev:generate": "nuxi generate playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
     "pack": "npm run lint && npm run test && npm run prepack",
     "release": "npm run pack && changelogen --release && npm run release:publish",
@@ -38,7 +39,8 @@
     "release:publish": "npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
-    "test:watch": "vitest watch"
+    "test:watch": "vitest watch",
+    "emojis": "node ./scripts/generateEmojis.js"
   },
   "dependencies": {
     "@nuxt/kit": "^3.5.1"

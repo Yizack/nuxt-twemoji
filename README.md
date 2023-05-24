@@ -13,6 +13,7 @@ Introducing a Nuxt module for implementing Twemoji in a Nuxt application
 
 ## Features
 - Nuxt 3 ready
+- Emoji 14.0 support
 - Get emoji by character
 - Get emoji by codepoint
 - SVG rendering by default
@@ -47,7 +48,7 @@ That's it! You can now use `nuxt-twemoji` in your Nuxt app ✨
 
 ## Usage
 
-1. Find emojis from the recommended unicode emoji list: https://unicode.org/emoji/charts/full-emoji-list.html
+1. Find emojis from the recommended unicode emoji list: https://unicode.org/emoji/charts-14.0/full-emoji-list.html
 
 2. In the project, use the component `<Twemoji emoji="" />`, where `emoji` is the emoji character or codepoint.
 3. If you employ SSR (Server Side Rendering) in your Nuxt application, this module will inject the emoji `<svg>` or `<img>` element into the output code during your project's build/generate process. Alternatively, if SSR is not used, the emojis will dynamically render during client runtime.
@@ -83,6 +84,17 @@ or
 
 ```html
 <Twemoji emoji="U+1F60A" />
+```
+
+Use the emoji property to render an emoji by definition.
+```html
+<script setup>
+import { twSmilingFaceWithSmilingEyes } from './node_modules/nuxt-twemoji/dist/runtime/assets/emojis'
+</script>
+
+<template>
+  <Twemoji :emoji="twSmilingFaceWithSmilingEyes" />
+</template>
 ```
 
 ### More examples
