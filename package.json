@@ -42,7 +42,7 @@
     "release:major": "npm run pack && changelogen --release --major && npm run release:publish",
     "release:publish": "npm publish && git push --follow-tags",
     "lint": "eslint .",
-    "test": "vitest run",
+    "test": "vitest run --reporter=verbose",
     "test:watch": "vitest watch",
     "emojis": "node ./scripts/generateEmojis.js"
   },

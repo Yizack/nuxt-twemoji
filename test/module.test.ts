@@ -30,7 +30,7 @@ describe('by codepoint', () => {
   })
 })
 
-describe('render by emoji', () => {
+describe('by emoji', () => {
   it('renders emoji as <svg>', async () => {
     const html = await $fetch('/byEmoji/svg')
     expect(html).toContain(expected.svg)
@@ -42,7 +42,7 @@ describe('render by emoji', () => {
   })
 })
 
-describe('render by definition', () => {
+describe('by definition', () => {
   it('by definition: renders emoji as <svg>', async () => {
     const html = await $fetch('/byDefinition/svg')
     expect(html).toContain(expected.svg)
