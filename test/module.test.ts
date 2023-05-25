@@ -57,6 +57,6 @@ describe('by definition', () => {
 describe('error' , () => {
   it('fails to render, shows original string'), async () => {
     const html = await $fetch('/error')
-    expect(html).toContain('<span>1234</span>')
+    expect(html).toContain(expected.error)
   }
 })
