@@ -62,11 +62,11 @@ const parsed = computed(() => {
 })
 
 codePoint.value[parsed.value] = parsed.value
-const cdn = 'https://cdn.jsdelivr.net/gh/twitter/twemoji'
-const version = '14.0.2'
-const emojiLinkPNG = computed(() => `${cdn}@${version}/assets/72x72/${codePoint.value[parsed.value]}.png`)
 
-const emojiLinkSVG = computed(() => `${cdn}@${version}/assets/svg/${codePoint.value[parsed.value]}.svg`)
+const cdn = 'https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets'
+const emojiLinkPNG = computed(() => `${cdn}/72x72/${codePoint.value[parsed.value]}.png`)
+const emojiLinkSVG = computed(() => `${cdn}/svg/${codePoint.value[parsed.value]}.svg`)
+
 const fetchSVG = () => $fetch(emojiLinkSVG.value).then(async (res) => await res.text()).catch(() => undefined)
 
 const component = computed(() => defineComponent(components.value[parsed.value]))
