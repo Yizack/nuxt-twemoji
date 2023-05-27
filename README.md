@@ -6,7 +6,7 @@
 [![Tests][tests-src]][tests-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-Introducing a Nuxt module for implementing Twemoji in a Nuxt application
+Twemoji module for Nuxt. Render emojis as SVG elements or PNG images
 
 - [✨ Release Notes](CHANGELOG.md)
 - [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp.vue)
@@ -19,6 +19,7 @@ Introducing a Nuxt module for implementing Twemoji in a Nuxt application
   - [Render](#render)
   - [More examples](#more-examples)
   - [Default CSS](#default-css)
+- [Credits](#credits)
 - [Development](#development)
 
 ## Features
@@ -26,9 +27,11 @@ Introducing a Nuxt module for implementing Twemoji in a Nuxt application
 - Emoji 14.0 support
 - Render emoji by character
 - Render emoji by codepoint
-- Render emoji by definition
+- Render emoji by definition object
 - SVG rendering by default
-- Insert as PNG image fetched from the [jsdelivr](https://www.jsdelivr.com/) CDN
+- PNG image render option
+- Emoji assets maintained from the original ex-Twitter authors ([jdecked/twemoji](https://github.com/jdecked/twemoji))
+- Assets from the [jsDelivr](https://www.jsdelivr.com/) CDN
 
 ## Quick Setup
 
@@ -65,11 +68,11 @@ That's it! You can now use `nuxt-twemoji` in your Nuxt app ✨
 3. If you employ SSR (Server Side Rendering) in your Nuxt application, this module will inject the emoji `<svg>` or `<img>` element into the output code during your project's build/generate process. Alternatively, if SSR is not used, the emojis will dynamically render during client runtime.
 
 ### Component properties
-| Property | Required | Default | Type                 |
-|----------|----------|---------|----------------------|
-| `emoji`  | Yes      |         | `String` or `Object` |
-| `size`   | No       | `1em`   | `String`             |
-| `png`    | No       | `false` | `Boolean`            |
+| Property | Required | Default | Type                          |
+|----------|----------|---------|-------------------------------|
+| `emoji`  | Yes      |         | `string` or `EmojiDefinition` |
+| `size`   | No       | `1em`   | `string`                      |
+| `png`    | No       | `false` | `boolean`                     |
 
 ### Render
 
@@ -109,14 +112,29 @@ import { twSmilingFaceWithSmilingEyes } from 'nuxt-twemoji/emojis'
 </template>
 ```
 
-The emoji definitions file has been generated using [`generateEmojis.js`](scripts/generateEmojis.js) script, which fetches data from the [Unicode](https://home.unicode.org/) public Emoji 14.0 file available at https://unicode.org/Public/emoji/14.0/emoji-test.txt
+The emojis file has been generated using the self made [`generateEmojis.js`](scripts/generateEmojis.js) script, which fetches emojis data from the [Unicode](https://home.unicode.org/) public Emoji 14.0 file available at https://unicode.org/Public/emoji/14.0/emoji-test.txt
+
+### Definition
+The `EmojiDefinition` type represents objects that have these specific three string properties:
+
+- `code` represents the code associated with the emoji.
+- `emoji` represents the actual emoji.
+- `name` represents the name of the emoji.
+
+```ts
+type EmojiDefinition = {
+  code: string,
+  emoji: string,
+  name: string
+}
+```
 
 ### More examples
 Check out the [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp.vue) for more examples.
 
 ### Default CSS
 
-Both the `<img>` and `<svg>` tags will have the `.twemoji` class assigned to them. These are the default styles, but you can add your own styles by using the class name.
+Both the `<svg>` and `<img>` tags will have the `.twemoji` class assigned to them. These are the default styles, but you can add your own styles by using the class name.
 
 ```css
 .twemoji {
@@ -124,6 +142,13 @@ Both the `<img>` and `<svg>` tags will have the `.twemoji` class assigned to the
   vertical-align: middle;
 }
 ```
+
+## Credits
+
+- Twitter Emoji assets from [jdecked/twemoji](https://github.com/jdecked/twemoji)
+- Default CDN [jsDelivr](https://www.jsdelivr.com/)
+- [Unicode](https://home.unicode.org/) public [Emoji 14.0](https://unicode.org/Public/emoji/14.0/) file
+- [Nuxt](https://github.com/nuxt/nuxt), the JavaScript framework for creating SSR Vue applications and its [Module Author Guide](https://nuxt.com/docs/guide/going-further/modules)
 
 ## Development
 
