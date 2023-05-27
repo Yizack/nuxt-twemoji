@@ -54,7 +54,7 @@ export default {
           ]
         },
         {
-          name: "Object",
+          name: "EmojiDefinition",
           emojis: [
             twOrangeHeart,
             twFuelPump,

@@ -27,6 +27,6 @@ const exports = Object.keys(emojis).map((key) => {
   return `export const ${key}: EmojiDefinition = ${JSON.stringify(emojis[key], null, 2).replace(/"([^"]+)":/g, '$1:').replace(/"/g, '\'')}`
 }).join('\n')
 
-writeFileSync(path,  `type EmojiDefinition = { code: string, emoji: string, name: string }\n${exports}`)
+writeFileSync(path,  `export type EmojiDefinition = { code: string, emoji: string, name: string }\n${exports}`)
 const length = Object.keys(emojis).length
 console.info(`[${length} emojis] generated file: ${path}`)

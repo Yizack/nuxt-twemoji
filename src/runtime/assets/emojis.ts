@@ -1,4 +1,4 @@
-type EmojiDefinition = { code: string, emoji: string, name: string }
+export type EmojiDefinition = { code: string, emoji: string, name: string }
 export const twGrinningFace: EmojiDefinition = {
   code: '1F600',
   emoji: '😀',
