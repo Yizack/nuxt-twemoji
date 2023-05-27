@@ -1,11 +1,12 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<script setup>
+<script setup lang="ts">
 import { ref, computed, defineComponent, h, watchEffect } from 'vue'
 import { useState } from '#imports'
+import { EmojiDefinition } from '../assets/emojis'
 
 const props = defineProps({
   emoji: {
-    type: [String, Object],
+    type: [String, Object as () => EmojiDefinition],
     required: true
   },
   size: {
@@ -18,8 +19,8 @@ const props = defineProps({
   }
 })
 
-const toCodePoint = (unicodeSurrogates) => {
-  const points = []
+const toCodePoint = (unicodeSurrogates: string) => {
+  const points: string[] = []
   let char = 0
   let previous = 0
   let i = 0
@@ -39,18 +40,21 @@ const toCodePoint = (unicodeSurrogates) => {
   return points.join('-')
 }
 
-const definition = typeof props.emoji === 'object' && props.emoji.code;
+const def = ref((prop: any): prop is EmojiDefinition => {
+  return prop.code !== undefined && prop.emoji !== undefined && prop.name !== undefined
+})
 
 const twemoji = computed(() => {
-  if (definition) {
+  if (def.value(props.emoji)) {
     return props.emoji.code.toLowerCase()
   }
   return props.emoji.replace(/u\+/ig, '').toLowerCase()
 })
+
 const isHex = computed(() => (/^[0-9A-Fa-f]{1,6}(-[0-9A-Fa-f]{1,6})*?$/i).test(twemoji.value))
 
-const components = useState('components', () => ({}))
-const codePoint = useState('codepPoint', () => ({}))
+const components = useState('components', () => ({} as { [key: string]: ReturnType<typeof defineComponent> }))
+const codePoint = ref<{ [key: string]: string }>({})
 const isFetching = ref(false)
 
 const parsed = computed(() => {
@@ -67,7 +71,7 @@ const cdn = 'https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets'
 const emojiLinkPNG = computed(() => `${cdn}/72x72/${codePoint.value[parsed.value]}.png`)
 const emojiLinkSVG = computed(() => `${cdn}/svg/${codePoint.value[parsed.value]}.svg`)
 
-const fetchSVG = () => $fetch(emojiLinkSVG.value).then(async (res) => await res.text()).catch(() => undefined)
+const fetchSVG = () => $fetch(emojiLinkSVG.value).then(async (res: any) => await res.text()).catch(() => undefined)
 
 const component = computed(() => defineComponent(components.value[parsed.value]))
 
@@ -88,17 +92,20 @@ const loadSVG = async () => {
     class: 'twemoji',
     xmlns: 'http://www.w3.org/2000/svg',
     viewBox: '0 0 36 36',
+    width: props.size,
+    height: props.size,
     innerHTML: svg.replace(/<(\/)*svg[^>]*>/, '')
   })
 }
-watchEffect(() => codePoint.value, loadSVG)
+watchEffect(() => codePoint.value)
+
 !props.png && await loadSVG()
 </script>
 
 <template>
   <span v-if="isFetching" />
-  <img v-else-if="png" class="twemoji" :src="emojiLinkPNG" :alt="emoji?.name || emoji" :style="{ width: size, height: size }">
-  <Component :is="component" v-else-if="component" :width="size" :height="size" />
+  <img v-else-if="png" class="twemoji" :src="emojiLinkPNG" :alt="def(emoji) ? emoji.name : emoji" :style="{ width: size, height: size }">
+  <Component :is="component" v-else-if="component" />
   <span v-else>{{ twemoji }}</span>
 </template>
 
