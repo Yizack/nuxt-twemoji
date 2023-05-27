@@ -27,6 +27,13 @@
   },
   "main": "./dist/module.cjs",
   "types": "./dist/types.d.ts",
+  "typesVersions": {
+    "*": {
+      "emojis": [
+        "./dist/runtime/assets/emojis.d.ts"
+      ]
+    }
+  },
   "files": [
     "dist"
   ],
