@@ -1,6 +1,38 @@
 # Changelog
 
 
+## v3.2.4
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.3...v3.2.4)
+
+
+### 🩹 Fixes
+
+  - Use the new `twemoji` api and latest assets ([92395ce](https://github.com/Yizack/nuxt-twemoji/commit/92395ce))
+
+### 🏡 Chore
+
+  - Lock ([dbfcd93](https://github.com/Yizack/nuxt-twemoji/commit/dbfcd93))
+  - Add esbuild package for playground ([5e7a562](https://github.com/Yizack/nuxt-twemoji/commit/5e7a562))
+  - Test reporter verbose, use npm ci workflow ([c71fc9e](https://github.com/Yizack/nuxt-twemoji/commit/c71fc9e))
+  - Add tests badge ([c349243](https://github.com/Yizack/nuxt-twemoji/commit/c349243))
+  - Use expected error ([91bd3f3](https://github.com/Yizack/nuxt-twemoji/commit/91bd3f3))
+  - Migrate to pnpm ([82635db](https://github.com/Yizack/nuxt-twemoji/commit/82635db))
+  - Emojis ([40262c2](https://github.com/Yizack/nuxt-twemoji/commit/40262c2))
+  - Export `EmojiDefinition` type ([54cb3a6](https://github.com/Yizack/nuxt-twemoji/commit/54cb3a6))
+  - Use Typescript ([e91de1b](https://github.com/Yizack/nuxt-twemoji/commit/e91de1b))
+  - Update info, add credits ([11717b4](https://github.com/Yizack/nuxt-twemoji/commit/11717b4))
+  - Twitter emoji ref ([a57407c](https://github.com/Yizack/nuxt-twemoji/commit/a57407c))
+
+### ✅ Tests
+
+  - Use assets from new twitter api ([09e207b](https://github.com/Yizack/nuxt-twemoji/commit/09e207b))
+  - Fix url ([0b5120a](https://github.com/Yizack/nuxt-twemoji/commit/0b5120a))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.2.3
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.2...v3.2.3)
