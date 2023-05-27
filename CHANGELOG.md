@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v3.2.5
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.4...v3.2.5)
+
+
+### 🩹 Fixes
+
+  - Types for emojis export ([5893fd0](https://github.com/Yizack/nuxt-twemoji/commit/5893fd0))
+  - Don't render if prop is not accepted type ([04f1b5d](https://github.com/Yizack/nuxt-twemoji/commit/04f1b5d))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.2.4
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.3...v3.2.4)
