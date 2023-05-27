@@ -30,7 +30,7 @@ Twemoji module for Nuxt. Render emojis as SVG elements or PNG images
 - Render emoji by definition object
 - SVG rendering by default
 - PNG image render option
-- Emoji assets maintained from the original ex-Twitter authors ([jdecked/twemoji](https://github.com/jdecked/twemoji))
+- Twitter Emoji assets maintained from the original ex-Twitter authors ([jdecked/twemoji](https://github.com/jdecked/twemoji))
 - Assets from the [jsDelivr](https://www.jsdelivr.com/) CDN
 
 ## Quick Setup
