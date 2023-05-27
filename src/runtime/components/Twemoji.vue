@@ -40,15 +40,33 @@ const toCodePoint = (unicodeSurrogates: string) => {
   return points.join('-')
 }
 
-const def = ref((prop: any): prop is EmojiDefinition => {
-  return prop.code !== undefined && prop.emoji !== undefined && prop.name !== undefined
-})
+const isString = typeof props.emoji === 'string' 
+const isDefinition = typeof props.emoji === 'object' && props.emoji.code !== undefined && props.emoji.emoji !== undefined && props.emoji.name !== undefined
+
+const isValid = computed(() => isString || isDefinition)
+
+if (!isValid.value) {
+  console.warn(`Invalid emoji property:`, props.emoji)
+}
 
 const twemoji = computed(() => {
-  if (def.value(props.emoji)) {
+  if (isDefinition) {
     return props.emoji.code.toLowerCase()
   }
-  return props.emoji.replace(/u\+/ig, '').toLowerCase()
+  else if (isString) {
+    return props.emoji.replace(/u\+/ig, '').toLowerCase()
+  }
+  return ''
+})
+
+const alt = computed(() => {
+  if (isDefinition) {
+    return props.emoji.name
+  }
+  else if (isString) {
+    return props.emoji
+  }
+  return JSON.stringify(props.emoji)
 })
 
 const isHex = computed(() => (/^[0-9A-Fa-f]{1,6}(-[0-9A-Fa-f]{1,6})*?$/i).test(twemoji.value))
@@ -76,13 +94,13 @@ const fetchSVG = () => $fetch(emojiLinkSVG.value).then(async (res: any) => await
 const component = computed(() => defineComponent(components.value[parsed.value]))
 
 const loadSVG = async () => {
-  if (components.value[parsed.value]) return
+  if (components.value[parsed.value] || !isValid.value) return
   isFetching.value = true
   let svg = await fetchSVG()
   isFetching.value = false
   const split = parsed.value.split('-')
   while (!svg && split.length > 1) {
-    // While svg fetch fails, retry with previous codepoint segment
+    // While svg fetch fails, retry with previous codepoint segments
     split.pop()
     codePoint.value[parsed.value] = split.join('-')
     svg = await fetchSVG()
@@ -104,7 +122,7 @@ watchEffect(() => codePoint.value)
 
 <template>
   <span v-if="isFetching" />
-  <img v-else-if="png" class="twemoji" :src="emojiLinkPNG" :alt="def(emoji) ? emoji.name : emoji" :style="{ width: size, height: size }">
+  <img v-else-if="png" class="twemoji" :src="emojiLinkPNG" :alt="alt" :style="{ width: size, height: size }">
   <Component :is="component" v-else-if="component" />
   <span v-else>{{ twemoji }}</span>
 </template>

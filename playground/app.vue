@@ -66,8 +66,11 @@ export default {
           ]
         },
         {
-          name: "Error",
-          emojis: ['1234']
+          name: "Not Rendered",
+          emojis: [
+            '1234',
+            { code: '1F46E', emoji: '👮' }
+          ]
         }
       ]
     }
