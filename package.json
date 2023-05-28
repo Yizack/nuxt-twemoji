@@ -12,6 +12,11 @@
   ],
   "repository": "Yizack/nuxt-twemoji",
   "homepage": "https://github.com/Yizack/nuxt-twemoji",
+  "author": {
+    "name" : "Yizack Rangel",
+    "email" : "yizackr@gmail.com",
+    "url" : "https://yizack.com/"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
