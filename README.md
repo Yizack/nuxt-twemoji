@@ -1,3 +1,5 @@
+![nuxt-twemoji](https://repository-images.githubusercontent.com/643607230/de54220b-3c2a-4a32-933f-1c4d93c00f0a)
+
 # nuxt-twemoji
 
 [![npm version][npm-version-src]][npm-version-href]
