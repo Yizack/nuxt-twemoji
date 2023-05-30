@@ -71,7 +71,6 @@ const alt = computed(() => {
 
 const isHex = computed(() => (/^[0-9A-Fa-f]{1,6}(-[0-9A-Fa-f]{1,6})*?$/i).test(twemoji.value))
 
-const components = useState('components', () => ({} as { [key: string]: ReturnType<typeof defineComponent> }))
 const codePoint = ref<{ [key: string]: string }>({})
 const isFetching = ref(false)
 
@@ -90,30 +89,39 @@ const emojiLinkPNG = computed(() => `${cdn}/72x72/${codePoint.value[parsed.value
 const emojiLinkSVG = computed(() => `${cdn}/svg/${codePoint.value[parsed.value]}.svg`)
 
 const fetchSVG = () => $fetch(emojiLinkSVG.value).then(async (res: any) => await res.text()).catch(() => undefined)
+const svgTwemojis = useState('twemojis', () => ({}) as { [key: string]: { body: string } })
 
-const component = computed(() => defineComponent(components.value[parsed.value]))
+const component = computed (() => {
+  if (!svgTwemojis.value[parsed.value]) return
+  return defineComponent({
+    render() {
+      return h('svg', {
+        class: 'twemoji',
+        width: props.size,
+        height: props.size,
+        viewBox: '0 0 36 36',
+        innerHTML: svgTwemojis.value[parsed.value]?.body
+      })
+    }
+  })
+})
 
 const loadSVG = async () => {
-  if (components.value[parsed.value] || !isValid.value) return
+  if (svgTwemojis.value[parsed.value] || !isValid.value) return
   isFetching.value = true
-  let svg = await fetchSVG()
+  let svgFetch = await fetchSVG()
   isFetching.value = false
   const split = parsed.value.split('-')
-  while (!svg && split.length > 1) {
-    // While svg fetch fails, retry with previous codepoint segments
+  while (!svgFetch && split.length > 1) {
+    // While svgFetch fetch fails, retry with previous codepoint segments
     split.pop()
     codePoint.value[parsed.value] = split.join('-')
-    svg = await fetchSVG()
+    svgFetch = await fetchSVG()
   }
-  if (!svg) return
-  components.value[parsed.value] = h('svg', {
-    class: 'twemoji',
-    xmlns: 'http://www.w3.org/2000/svg',
-    viewBox: '0 0 36 36',
-    width: props.size,
-    height: props.size,
-    innerHTML: svg.replace(/<(\/)*svg[^>]*>/, '')
-  })
+  if (!svgFetch) return
+  svgTwemojis.value[parsed.value] = {
+    body: svgFetch.replace(/<(\/)*svg[^>]*>/, '')
+  }
 }
 watchEffect(() => codePoint.value)
 
