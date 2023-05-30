@@ -120,7 +120,7 @@ const loadSVG = async () => {
   }
   if (!svgFetch) return
   svgTwemojis.value[parsed.value] = {
-    body: svgFetch.replace(/<(\/)*svg[^>]*>/, '')
+    body: svgFetch.replace(/<\/*svg[^>]*>/g, '')
   }
 }
 watchEffect(() => codePoint.value)
