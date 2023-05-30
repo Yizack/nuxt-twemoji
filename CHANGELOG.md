@@ -1,6 +1,29 @@
 # Changelog
 
 
+## v3.2.6
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.5...v3.2.6)
+
+
+### 🩹 Fixes
+
+  - Global regex match, no group needed ([59de3ab](https://github.com/Yizack/nuxt-twemoji/commit/59de3ab))
+
+### 🏡 Chore
+
+  - Adjust scripts ([505dc25](https://github.com/Yizack/nuxt-twemoji/commit/505dc25))
+  - Add repository banner ([f28bc1c](https://github.com/Yizack/nuxt-twemoji/commit/f28bc1c))
+  - Add author info ([7f5dd3d](https://github.com/Yizack/nuxt-twemoji/commit/7f5dd3d))
+  - Update nuxt ([e3f606a](https://github.com/Yizack/nuxt-twemoji/commit/e3f606a))
+  - State svg body instead of whole component ([0293a98](https://github.com/Yizack/nuxt-twemoji/commit/0293a98))
+  - Update dependencies ([1c57727](https://github.com/Yizack/nuxt-twemoji/commit/1c57727))
+  - Add again xmlns ([0480b36](https://github.com/Yizack/nuxt-twemoji/commit/0480b36))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.2.5
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.4...v3.2.5)
