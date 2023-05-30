@@ -13,9 +13,9 @@
   "repository": "Yizack/nuxt-twemoji",
   "homepage": "https://github.com/Yizack/nuxt-twemoji",
   "author": {
-    "name" : "Yizack Rangel",
-    "email" : "yizackr@gmail.com",
-    "url" : "https://yizack.com/"
+    "name": "Yizack Rangel",
+    "email": "yizackr@gmail.com",
+    "url": "https://yizack.com/"
   },
   "license": "MIT",
   "type": "module",
@@ -69,7 +69,7 @@
     "@types/node": "^18.16.13",
     "changelogen": "^0.5.3",
     "eslint": "^8.41.0",
-    "nuxt": "^3.5.1",
+    "nuxt": "^3.5.2",
     "vitest": "^0.31.1"
   },
   "changelog": {
