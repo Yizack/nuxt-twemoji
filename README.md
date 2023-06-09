@@ -104,7 +104,7 @@ or
 <Twemoji emoji="U+1F60A" />
 ```
 
-Use the emoji property to render an emoji by [definition](https://github.com/Yizack/nuxt-twemoji/tree/main/src/runtime/assets/emojis.ts).
+Use the emoji property to render an emoji by [definition](https://github.com/Yizack/nuxt-twemoji/blob/main/src/runtime/assets/emojis.ts).
 ```html
 <script setup>
 import { twSmilingFaceWithSmilingEyes } from 'nuxt-twemoji/emojis'
@@ -115,7 +115,7 @@ import { twSmilingFaceWithSmilingEyes } from 'nuxt-twemoji/emojis'
 </template>
 ```
 
-The emojis file has been generated using the self made [`generateEmojis.js`](https://github.com/Yizack/nuxt-twemoji/tree/main/scripts/generateEmojis.js) script, which fetches emojis data from the [Unicode](https://home.unicode.org/) public Emoji 14.0 file available at https://unicode.org/Public/emoji/14.0/emoji-test.txt
+The emojis file has been generated using the self made [`generateEmojis.js`](https://github.com/Yizack/nuxt-twemoji/blob/main/scripts/generateEmojis.js) script, which fetches emojis data from the [Unicode](https://home.unicode.org/) public Emoji 14.0 file available at https://unicode.org/Public/emoji/14.0/emoji-test.txt
 
 ### Definition
 The `EmojiDefinition` type represents objects that have these specific three string properties:
