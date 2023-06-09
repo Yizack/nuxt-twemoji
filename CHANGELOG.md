@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v3.2.7
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.6...v3.2.7)
+
+
+### 🩹 Fixes
+
+  - Keycap number sign and asterisk emoji ([80b0b79](https://github.com/Yizack/nuxt-twemoji/commit/80b0b79))
+
+### 🏡 Chore
+
+  - Update dependencies ([764a38c](https://github.com/Yizack/nuxt-twemoji/commit/764a38c))
+  - Pnpm 8 ([a631a2a](https://github.com/Yizack/nuxt-twemoji/commit/a631a2a))
+  - Adjust readme ([3111016](https://github.com/Yizack/nuxt-twemoji/commit/3111016))
+  - Src links ([3b29b99](https://github.com/Yizack/nuxt-twemoji/commit/3b29b99))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.2.6
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.5...v3.2.6)
