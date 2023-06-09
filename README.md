@@ -7,10 +7,11 @@
 [![License][license-src]][license-href]
 [![Tests][tests-src]][tests-href]
 [![Nuxt][nuxt-src]][nuxt-href]
+[![Modules][modules-src]][modules-href]
 
 Twemoji module for Nuxt. Render emojis as SVG elements or PNG images
 
-- [✨ Release Notes](CHANGELOG.md)
+- [✨ Release Notes](/CHANGELOG.md)
 - [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp.vue)
 
 ## Index
@@ -103,7 +104,7 @@ or
 <Twemoji emoji="U+1F60A" />
 ```
 
-Use the emoji property to render an emoji by [definition](src/runtime/assets/emojis.ts).
+Use the emoji property to render an emoji by [definition](https://github.com/Yizack/nuxt-twemoji/tree/main/src/runtime/assets/emojis.ts).
 ```html
 <script setup>
 import { twSmilingFaceWithSmilingEyes } from 'nuxt-twemoji/emojis'
@@ -114,7 +115,7 @@ import { twSmilingFaceWithSmilingEyes } from 'nuxt-twemoji/emojis'
 </template>
 ```
 
-The emojis file has been generated using the self made [`generateEmojis.js`](scripts/generateEmojis.js) script, which fetches emojis data from the [Unicode](https://home.unicode.org/) public Emoji 14.0 file available at https://unicode.org/Public/emoji/14.0/emoji-test.txt
+The emojis file has been generated using the self made [`generateEmojis.js`](https://github.com/Yizack/nuxt-twemoji/tree/main/scripts/generateEmojis.js) script, which fetches emojis data from the [Unicode](https://home.unicode.org/) public Emoji 14.0 file available at https://unicode.org/Public/emoji/14.0/emoji-test.txt
 
 ### Definition
 The `EmojiDefinition` type represents objects that have these specific three string properties:
@@ -193,3 +194,6 @@ npm run release
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
+
+[modules-src]: https://img.shields.io/badge/Modules-18181B?logo=nuxt.js
+[modules-href]: https://nuxt.com/modules/twemoji
