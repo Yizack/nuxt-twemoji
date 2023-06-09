@@ -16389,15 +16389,15 @@ export const twTradeMark: EmojiDefinition = {
   emoji: '™',
   name: 'trade-mark'
 }
-export const tw: EmojiDefinition = {
+export const twKeycapNumber: EmojiDefinition = {
   code: '0023-20E3',
-  emoji: '',
-  name: ''
+  emoji: '#⃣',
+  name: 'keycap-number'
 }
-export const twKeycap: EmojiDefinition = {
+export const twKeycapAsterisk: EmojiDefinition = {
   code: '002A-20E3',
   emoji: '*⃣',
-  name: 'keycap-'
+  name: 'keycap-asterisk'
 }
 export const twKeycap0: EmojiDefinition = {
   code: '0030-20E3',
