@@ -10,7 +10,6 @@ import {
 } from './../src/runtime/assets/emojis'
 </script>
 
-
 <template>
   <div>
     <h1>Twemoji Examples</h1>
