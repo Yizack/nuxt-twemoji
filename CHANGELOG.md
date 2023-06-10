@@ -1,6 +1,33 @@
 # Changelog
 
 
+## v3.3.0
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.7...v3.3.0)
+
+
+### 🚀 Enhancements
+
+  - Added `Twemojify` component ([24bfe6d](https://github.com/Yizack/nuxt-twemoji/commit/24bfe6d))
+  - Added `TwemojiParse` component ([274613b](https://github.com/Yizack/nuxt-twemoji/commit/274613b))
+
+### 🩹 Fixes
+
+  - Twemojify different state depending on ext ([0178492](https://github.com/Yizack/nuxt-twemoji/commit/0178492))
+
+### 🏡 Chore
+
+  - Import src ([aa16495](https://github.com/Yizack/nuxt-twemoji/commit/aa16495))
+  - Twemoji depndencies ([9ab62f7](https://github.com/Yizack/nuxt-twemoji/commit/9ab62f7))
+  - Add new components in module ([6604166](https://github.com/Yizack/nuxt-twemoji/commit/6604166))
+  - Update new components info ([80dcb86](https://github.com/Yizack/nuxt-twemoji/commit/80dcb86))
+  - Switch to codesandbox for playground ([0e50606](https://github.com/Yizack/nuxt-twemoji/commit/0e50606))
+  - Twemoji svg and png examples ([95e849d](https://github.com/Yizack/nuxt-twemoji/commit/95e849d))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.2.7
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.6...v3.2.7)
