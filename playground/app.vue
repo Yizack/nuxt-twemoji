@@ -35,9 +35,22 @@ import {
   <div>
     <h1>Twemojify Examples</h1>
     <p>The <b>Twemojify</b> component parses a string text and replaces all emoji characters or unicode codepoints with Twemoji svg elements or png images.</p>
-    <p v-for="(text, i) of twemojifyDemos" :key="i">
-      <Twemojify :text="text" />
-    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Text</th>
+          <th>Twemojify (SVG)</th>
+          <th>Twemojify (PNG)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(text, i) of twemojifyDemos" :key="i">
+          <td>{{ text }}</td>
+          <td><Twemojify :text="text" /></td>
+          <td><Twemojify :text="text" png /></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <hr>
   <div>
@@ -104,7 +117,10 @@ export default {
         "Excited to start my Nuxt 🌟 project today! 💫",
         "Debugging 🔧 my Nuxt 🔍 app like a pro! 💻",
         "🌟 Cherishing every moment and making 📸 memories that last a lifetime! ❤️",
-        "🌺 Finding joy in the simple things and appreciating the present 🌼 moment! 😊"
+        "🌺 Finding joy in the simple things and appreciating the present 🌼 moment! 😊",
+        "Exploring new places and embracing different cultures enriches my 🌱 life. ✈️",
+        "Making a positive impact in the world 🌍 and leaving a legacy of 🌟 goodness. 🌟🤝",
+        "Exploring the Nuxt community 👥 has been a source of inspiration and knowledge! 🌟"
       ]
     }
   }
