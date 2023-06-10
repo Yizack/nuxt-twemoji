@@ -15,7 +15,7 @@ const props = defineProps({
   }
 })
 
-const twemojify = useState('twemojify', () => ({}) as { [key: string]: string })
+const twemojify = useState(`twemojify:${props.png ? 'png' : 'svg'}`, () => ({}) as { [key: string]: string })
 const parsedText = ref(props.text)
 
 const emojis = parse(props.text, { assetType: props.png ? 'png' : 'svg' })
