@@ -17,5 +17,15 @@ export default defineNuxtModule<ModuleOptions>({
       global: true,
       filePath: resolve('./runtime/components/Twemoji.vue')
     })
+    addComponent({
+      name: 'Twemojify',
+      global: true,
+      filePath: resolve('./runtime/components/Twemojify.vue')
+    })
+    addComponent({
+      name: 'TwemojiParse',
+      global: true,
+      filePath: resolve('./runtime/components/TwemojiParse.vue')
+    })
   }
 })
