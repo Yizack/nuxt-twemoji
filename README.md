@@ -11,7 +11,7 @@
 
 Twemoji module for Nuxt. Render emojis as SVG elements or PNG images
 
-- [✨ Release Notes](/CHANGELOG.md)
+- [✨ Release Notes](https://github.com/Yizack/nuxt-twemoji/blob/main/CHANGELOG.md)
 - [🏀 Online playground](https://codesandbox.io/p/github/Yizack/nuxt-twemoji/main?file=playground%2Fapp.vue)
 
 ## Index
