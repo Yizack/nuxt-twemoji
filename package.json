@@ -59,7 +59,9 @@
     "emojis": "node ./scripts/generateEmojis.js"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.5.3"
+    "@nuxt/kit": "^3.5.3",
+    "@twemoji/api": "^14.1.2",
+    "@twemoji/parser": "^14.1.0"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
