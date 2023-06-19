@@ -45,7 +45,7 @@ import {
       </thead>
       <tbody>
         <tr v-for="(text, i) of twemojifyDemos" :key="i">
-          <td>{{ text }}</td>
+          <td><code>{{ text }}</code></td>
           <td><Twemojify :text="text" /></td>
           <td><Twemojify :text="text" png /></td>
         </tr>
