@@ -124,7 +124,10 @@ const loadSVG = async () => {
     body: svgFetch.replace(/<\/*svg[^>]*>/g, '')
   }
 }
-watchEffect(() => codePoint.value)
+watchEffect(async () => {
+  codePoint.value[parsed.value] = parsed.value
+  !props.png && await loadSVG()
+});
 
 !props.png && await loadSVG()
 </script>
