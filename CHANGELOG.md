@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v3.3.1
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.3.0...v3.3.1)
+
+
+### 🩹 Fixes
+
+  - Fix watchEffect ([a39b984](https://github.com/Yizack/nuxt-twemoji/commit/a39b984))
+
+### 🏡 Chore
+
+  - Changelog github link ([1ff0a8b](https://github.com/Yizack/nuxt-twemoji/commit/1ff0a8b))
+  - Pnpm update ([f8e2da0](https://github.com/Yizack/nuxt-twemoji/commit/f8e2da0))
+  - Revert playground to stackblitz ([5e397a6](https://github.com/Yizack/nuxt-twemoji/commit/5e397a6))
+  - Code wrap for twemojify examples ([ea0c655](https://github.com/Yizack/nuxt-twemoji/commit/ea0c655))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.3.0
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.2.7...v3.3.0)
