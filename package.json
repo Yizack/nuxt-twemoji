@@ -56,20 +56,20 @@
     "emojis": "node ./scripts/generateEmojis.js"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.6.0",
+    "@nuxt/kit": "^3.6.2",
     "@twemoji/api": "^14.1.2",
     "@twemoji/parser": "^14.1.0"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/module-builder": "^0.4.0",
-    "@nuxt/schema": "^3.6.0",
-    "@nuxt/test-utils": "^3.6.0",
-    "@types/node": "^18.16.16",
-    "changelogen": "^0.5.3",
-    "eslint": "^8.43.0",
-    "nuxt": "^3.6.0",
-    "vitest": "^0.32.2"
+    "@nuxt/schema": "^3.6.2",
+    "@nuxt/test-utils": "^3.6.2",
+    "@types/node": "^18.16.19",
+    "changelogen": "^0.5.4",
+    "eslint": "^8.44.0",
+    "nuxt": "^3.6.2",
+    "vitest": "^0.33.0"
   },
   "changelog": {
     "repo": {
