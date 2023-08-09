@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v3.3.3
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.3.2...v3.3.3)
+
+### 🩹 Fixes
+
+- Twemoji lib ([ab73e7a](https://github.com/Yizack/nuxt-twemoji/commit/ab73e7a))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.3.2
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.3.1...v3.3.2)
