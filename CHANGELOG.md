@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v3.3.2
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.3.1...v3.3.2)
+
+### 🏡 Chore
+
+- Update nuxt ([669acb1](https://github.com/Yizack/nuxt-twemoji/commit/669acb1))
+- Update deps ([e1b48c8](https://github.com/Yizack/nuxt-twemoji/commit/e1b48c8))
+- Update deps ([4675dd1](https://github.com/Yizack/nuxt-twemoji/commit/4675dd1))
+- Update nuxt ([6da1754](https://github.com/Yizack/nuxt-twemoji/commit/6da1754))
+- Updates ([2b473e1](https://github.com/Yizack/nuxt-twemoji/commit/2b473e1))
+
+### ❤️  Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.3.1
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.3.0...v3.3.1)
