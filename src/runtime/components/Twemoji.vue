@@ -50,22 +50,14 @@ if (!isValid.value) {
 }
 
 const twemoji = computed(() => {
-  if (isDefinition) {
-    return props.emoji.code.toLowerCase()
-  }
-  else if (isString) {
-    return props.emoji.replace(/u\+/ig, '').toLowerCase()
-  }
+  if (isDefinition) return props.emoji.code.toLowerCase()
+  else if (isString) return props.emoji.replace(/u\+/ig, '').toLowerCase()
   return ''
 })
 
 const alt = computed(() => {
-  if (isDefinition) {
-    return props.emoji.name
-  }
-  else if (isString) {
-    return props.emoji
-  }
+  if (isDefinition) return props.emoji.name
+  else if (isString) return props.emoji
   return JSON.stringify(props.emoji)
 })
 
@@ -75,10 +67,7 @@ const codePoint = ref<{ [key: string]: string }>({})
 const isFetching = ref(false)
 
 const parsed = computed(() => {
-  if (isHex.value) {
-    return twemoji.value
-  }
-
+  if (isHex.value) return twemoji.value
   return toCodePoint(twemoji.value)
 })
 
