@@ -1,6 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue'
+// @ts-ignore
 import { parse } from '@twemoji/parser'
 import { useState } from '#imports'
 
