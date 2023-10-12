@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v3.3.4
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.3.3...v3.3.4)
+
+### 🩹 Fixes
+
+- @twemoji/parser does not provide an export named 'parse' ([2b08b09](https://github.com/Yizack/nuxt-twemoji/commit/2b08b09))
+
+### 🏡 Chore
+
+- Updates ([f8839cc](https://github.com/Yizack/nuxt-twemoji/commit/f8839cc))
+- Updates ([7417a8f](https://github.com/Yizack/nuxt-twemoji/commit/7417a8f))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.3.3
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.3.2...v3.3.3)
