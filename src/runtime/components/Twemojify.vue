@@ -2,7 +2,7 @@
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue'
 // @ts-ignore
-import { parse } from '@twemoji/parser'
+import twemoji from '@twemoji/parser'
 import { useState } from '#imports'
 
 const props = defineProps({
@@ -21,7 +21,7 @@ const parsedText = ref(props.text)
 
 
 const loadTwemojify = async () => {
-  const emojis = parse(props.text, { assetType: props.png ? 'png' : 'svg' })
+  const emojis = twemoji.parse(props.text, { assetType: props.png ? 'png' : 'svg' })
   for (const { url, indices, text } of emojis) {
     if (twemojify.value[text]) {
       parsedText.value = parsedText.value.replace(props.text.slice(...indices), twemojify.value[text])
