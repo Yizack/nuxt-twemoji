@@ -2,7 +2,7 @@
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue'
 // @ts-ignore
-import twemoji from '@twemoji/parser'
+import * as twemoji from '@twemoji/parser'
 import { useState } from '#imports'
 
 const props = defineProps({
