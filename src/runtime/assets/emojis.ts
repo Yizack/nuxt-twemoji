@@ -244,6 +244,11 @@ export const twLyingFace: EmojiDefinition = {
   emoji: '🤥',
   name: 'lying-face'
 }
+export const twShakingFace: EmojiDefinition = {
+  code: '1FAE8',
+  emoji: '🫨',
+  name: 'shaking-face'
+}
 export const twRelievedFace: EmojiDefinition = {
   code: '1F60C',
   emoji: '😌',
@@ -494,10 +499,10 @@ export const twFaceWithSteamFromNose: EmojiDefinition = {
   emoji: '😤',
   name: 'face-with-steam-from-nose'
 }
-export const twPoutingFace: EmojiDefinition = {
+export const twEnragedFace: EmojiDefinition = {
   code: '1F621',
   emoji: '😡',
-  name: 'pouting-face'
+  name: 'enraged-face'
 }
 export const twAngryFace: EmojiDefinition = {
   code: '1F620',
@@ -629,11 +634,6 @@ export const twSpeakNoEvilMonkey: EmojiDefinition = {
   emoji: '🙊',
   name: 'speak-no-evil-monkey'
 }
-export const twKissMark: EmojiDefinition = {
-  code: '1F48B',
-  emoji: '💋',
-  name: 'kiss-mark'
-}
 export const twLoveLetter: EmojiDefinition = {
   code: '1F48C',
   emoji: '💌',
@@ -704,6 +704,11 @@ export const twRedHeart: EmojiDefinition = {
   emoji: '❤',
   name: 'red-heart'
 }
+export const twPinkHeart: EmojiDefinition = {
+  code: '1FA77',
+  emoji: '🩷',
+  name: 'pink-heart'
+}
 export const twOrangeHeart: EmojiDefinition = {
   code: '1F9E1',
   emoji: '🧡',
@@ -724,6 +729,11 @@ export const twBlueHeart: EmojiDefinition = {
   emoji: '💙',
   name: 'blue-heart'
 }
+export const twLightBlueHeart: EmojiDefinition = {
+  code: '1FA75',
+  emoji: '🩵',
+  name: 'light-blue-heart'
+}
 export const twPurpleHeart: EmojiDefinition = {
   code: '1F49C',
   emoji: '💜',
@@ -739,10 +749,20 @@ export const twBlackHeart: EmojiDefinition = {
   emoji: '🖤',
   name: 'black-heart'
 }
+export const twGreyHeart: EmojiDefinition = {
+  code: '1FA76',
+  emoji: '🩶',
+  name: 'grey-heart'
+}
 export const twWhiteHeart: EmojiDefinition = {
   code: '1F90D',
   emoji: '🤍',
   name: 'white-heart'
+}
+export const twKissMark: EmojiDefinition = {
+  code: '1F48B',
+  emoji: '💋',
+  name: 'kiss-mark'
 }
 export const twHundredPoints: EmojiDefinition = {
   code: '1F4AF',
@@ -778,11 +798,6 @@ export const twHole: EmojiDefinition = {
   code: '1F573',
   emoji: '🕳',
   name: 'hole'
-}
-export const twBomb: EmojiDefinition = {
-  code: '1F4A3',
-  emoji: '💣',
-  name: 'bomb'
 }
 export const twSpeechBalloon: EmojiDefinition = {
   code: '1F4AC',
@@ -1083,6 +1098,66 @@ export const twPalmUpHandDarkSkinTone: EmojiDefinition = {
   code: '1FAF4-1F3FF',
   emoji: '🫴🏿',
   name: 'palm-up-hand-dark-skin-tone'
+}
+export const twLeftwardsPushingHand: EmojiDefinition = {
+  code: '1FAF7',
+  emoji: '🫷',
+  name: 'leftwards-pushing-hand'
+}
+export const twLeftwardsPushingHandLightSkinTone: EmojiDefinition = {
+  code: '1FAF7-1F3FB',
+  emoji: '🫷🏻',
+  name: 'leftwards-pushing-hand-light-skin-tone'
+}
+export const twLeftwardsPushingHandMediumLightSkinTone: EmojiDefinition = {
+  code: '1FAF7-1F3FC',
+  emoji: '🫷🏼',
+  name: 'leftwards-pushing-hand-medium-light-skin-tone'
+}
+export const twLeftwardsPushingHandMediumSkinTone: EmojiDefinition = {
+  code: '1FAF7-1F3FD',
+  emoji: '🫷🏽',
+  name: 'leftwards-pushing-hand-medium-skin-tone'
+}
+export const twLeftwardsPushingHandMediumDarkSkinTone: EmojiDefinition = {
+  code: '1FAF7-1F3FE',
+  emoji: '🫷🏾',
+  name: 'leftwards-pushing-hand-medium-dark-skin-tone'
+}
+export const twLeftwardsPushingHandDarkSkinTone: EmojiDefinition = {
+  code: '1FAF7-1F3FF',
+  emoji: '🫷🏿',
+  name: 'leftwards-pushing-hand-dark-skin-tone'
+}
+export const twRightwardsPushingHand: EmojiDefinition = {
+  code: '1FAF8',
+  emoji: '🫸',
+  name: 'rightwards-pushing-hand'
+}
+export const twRightwardsPushingHandLightSkinTone: EmojiDefinition = {
+  code: '1FAF8-1F3FB',
+  emoji: '🫸🏻',
+  name: 'rightwards-pushing-hand-light-skin-tone'
+}
+export const twRightwardsPushingHandMediumLightSkinTone: EmojiDefinition = {
+  code: '1FAF8-1F3FC',
+  emoji: '🫸🏼',
+  name: 'rightwards-pushing-hand-medium-light-skin-tone'
+}
+export const twRightwardsPushingHandMediumSkinTone: EmojiDefinition = {
+  code: '1FAF8-1F3FD',
+  emoji: '🫸🏽',
+  name: 'rightwards-pushing-hand-medium-skin-tone'
+}
+export const twRightwardsPushingHandMediumDarkSkinTone: EmojiDefinition = {
+  code: '1FAF8-1F3FE',
+  emoji: '🫸🏾',
+  name: 'rightwards-pushing-hand-medium-dark-skin-tone'
+}
+export const twRightwardsPushingHandDarkSkinTone: EmojiDefinition = {
+  code: '1FAF8-1F3FF',
+  emoji: '🫸🏿',
+  name: 'rightwards-pushing-hand-dark-skin-tone'
 }
 export const twOkHand: EmojiDefinition = {
   code: '1F44C',
@@ -11639,6 +11714,16 @@ export const twHorseFace: EmojiDefinition = {
   emoji: '🐴',
   name: 'horse-face'
 }
+export const twMoose: EmojiDefinition = {
+  code: '1FACE',
+  emoji: '🫎',
+  name: 'moose'
+}
+export const twDonkey: EmojiDefinition = {
+  code: '1FACF',
+  emoji: '🫏',
+  name: 'donkey'
+}
 export const twHorse: EmojiDefinition = {
   code: '1F40E',
   emoji: '🐎',
@@ -11949,6 +12034,21 @@ export const twParrot: EmojiDefinition = {
   emoji: '🦜',
   name: 'parrot'
 }
+export const twWing: EmojiDefinition = {
+  code: '1FABD',
+  emoji: '🪽',
+  name: 'wing'
+}
+export const twBlackBird: EmojiDefinition = {
+  code: '1F426-200D-2B1B',
+  emoji: '🐦‍⬛',
+  name: 'black-bird'
+}
+export const twGoose: EmojiDefinition = {
+  code: '1FABF',
+  emoji: '🪿',
+  name: 'goose'
+}
 export const twFrog: EmojiDefinition = {
   code: '1F438',
   emoji: '🐸',
@@ -12048,6 +12148,11 @@ export const twCoral: EmojiDefinition = {
   code: '1FAB8',
   emoji: '🪸',
   name: 'coral'
+}
+export const twJellyfish: EmojiDefinition = {
+  code: '1FABC',
+  emoji: '🪼',
+  name: 'jellyfish'
 }
 export const twSnail: EmojiDefinition = {
   code: '1F40C',
@@ -12184,6 +12289,11 @@ export const twTulip: EmojiDefinition = {
   emoji: '🌷',
   name: 'tulip'
 }
+export const twHyacinth: EmojiDefinition = {
+  code: '1FABB',
+  emoji: '🪻',
+  name: 'hyacinth'
+}
 export const twSeedling: EmojiDefinition = {
   code: '1F331',
   emoji: '🌱',
@@ -12258,6 +12368,11 @@ export const twNestWithEggs: EmojiDefinition = {
   code: '1FABA',
   emoji: '🪺',
   name: 'nest-with-eggs'
+}
+export const twMushroom: EmojiDefinition = {
+  code: '1F344',
+  emoji: '🍄',
+  name: 'mushroom'
 }
 export const twGrapes: EmojiDefinition = {
   code: '1F347',
@@ -12414,11 +12529,6 @@ export const twOnion: EmojiDefinition = {
   emoji: '🧅',
   name: 'onion'
 }
-export const twMushroom: EmojiDefinition = {
-  code: '1F344',
-  emoji: '🍄',
-  name: 'mushroom'
-}
 export const twPeanuts: EmojiDefinition = {
   code: '1F95C',
   emoji: '🥜',
@@ -12433,6 +12543,16 @@ export const twChestnut: EmojiDefinition = {
   code: '1F330',
   emoji: '🌰',
   name: 'chestnut'
+}
+export const twGingerRoot: EmojiDefinition = {
+  code: '1FADA',
+  emoji: '🫚',
+  name: 'ginger-root'
+}
+export const twPeaPod: EmojiDefinition = {
+  code: '1FADB',
+  emoji: '🫛',
+  name: 'pea-pod'
 }
 export const twBread: EmojiDefinition = {
   code: '1F35E',
@@ -14294,6 +14414,11 @@ export const twKite: EmojiDefinition = {
   emoji: '🪁',
   name: 'kite'
 }
+export const twWaterPistol: EmojiDefinition = {
+  code: '1F52B',
+  emoji: '🔫',
+  name: 'water-pistol'
+}
 export const twPool8Ball: EmojiDefinition = {
   code: '1F3B1',
   emoji: '🎱',
@@ -14308,16 +14433,6 @@ export const twMagicWand: EmojiDefinition = {
   code: '1FA84',
   emoji: '🪄',
   name: 'magic-wand'
-}
-export const twNazarAmulet: EmojiDefinition = {
-  code: '1F9FF',
-  emoji: '🧿',
-  name: 'nazar-amulet'
-}
-export const twHamsa: EmojiDefinition = {
-  code: '1FAAC',
-  emoji: '🪬',
-  name: 'hamsa'
 }
 export const twVideoGame: EmojiDefinition = {
   code: '1F3AE',
@@ -14539,6 +14654,11 @@ export const twWomansClothes: EmojiDefinition = {
   emoji: '👚',
   name: 'womans-clothes'
 }
+export const twFoldingHandFan: EmojiDefinition = {
+  code: '1FAAD',
+  emoji: '🪭',
+  name: 'folding-hand-fan'
+}
 export const twPurse: EmojiDefinition = {
   code: '1F45B',
   emoji: '👛',
@@ -14608,6 +14728,11 @@ export const twWomansBoot: EmojiDefinition = {
   code: '1F462',
   emoji: '👢',
   name: 'womans-boot'
+}
+export const twHairPick: EmojiDefinition = {
+  code: '1FAAE',
+  emoji: '🪮',
+  name: 'hair-pick'
 }
 export const twCrown: EmojiDefinition = {
   code: '1F451',
@@ -14798,6 +14923,16 @@ export const twLongDrum: EmojiDefinition = {
   code: '1FA98',
   emoji: '🪘',
   name: 'long-drum'
+}
+export const twMaracas: EmojiDefinition = {
+  code: '1FA87',
+  emoji: '🪇',
+  name: 'maracas'
+}
+export const twFlute: EmojiDefinition = {
+  code: '1FA88',
+  emoji: '🪈',
+  name: 'flute'
 }
 export const twMobilePhone: EmojiDefinition = {
   code: '1F4F1',
@@ -15394,10 +15529,10 @@ export const twCrossedSwords: EmojiDefinition = {
   emoji: '⚔',
   name: 'crossed-swords'
 }
-export const twWaterPistol: EmojiDefinition = {
-  code: '1F52B',
-  emoji: '🔫',
-  name: 'water-pistol'
+export const twBomb: EmojiDefinition = {
+  code: '1F4A3',
+  emoji: '💣',
+  name: 'bomb'
 }
 export const twBoomerang: EmojiDefinition = {
   code: '1FA83',
@@ -15698,6 +15833,16 @@ export const twFuneralUrn: EmojiDefinition = {
   code: '26B1',
   emoji: '⚱',
   name: 'funeral-urn'
+}
+export const twNazarAmulet: EmojiDefinition = {
+  code: '1F9FF',
+  emoji: '🧿',
+  name: 'nazar-amulet'
+}
+export const twHamsa: EmojiDefinition = {
+  code: '1FAAC',
+  emoji: '🪬',
+  name: 'hamsa'
 }
 export const twMoai: EmojiDefinition = {
   code: '1F5FF',
@@ -16009,6 +16154,11 @@ export const twDottedSixPointedStar: EmojiDefinition = {
   emoji: '🔯',
   name: 'dotted-six-pointed-star'
 }
+export const twKhanda: EmojiDefinition = {
+  code: '1FAAF',
+  emoji: '🪯',
+  name: 'khanda'
+}
 export const twAries: EmojiDefinition = {
   code: '2648',
   emoji: '♈',
@@ -16183,6 +16333,11 @@ export const twAntennaBars: EmojiDefinition = {
   code: '1F4F6',
   emoji: '📶',
   name: 'antenna-bars'
+}
+export const twWireless: EmojiDefinition = {
+  code: '1F6DC',
+  emoji: '🛜',
+  name: 'wireless'
 }
 export const twVibrationMode: EmojiDefinition = {
   code: '1F4F3',
