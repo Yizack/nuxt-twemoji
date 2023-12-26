@@ -2,7 +2,7 @@
 <script setup lang="ts">
 import { ref, computed, defineComponent, h, watchEffect } from 'vue'
 import { useState } from '#imports'
-import { EmojiDefinition } from './../assets/emojis'
+import type { EmojiDefinition } from './../assets/emojis'
 
 const props = defineProps({
   emoji: {
