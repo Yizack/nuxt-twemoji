@@ -9,11 +9,11 @@ dependencies:
     specifier: ^3.9.0
     version: 3.9.0(rollup@3.29.2)
   '@twemoji/api':
-    specifier: ^14.1.2
-    version: 14.1.2
+    specifier: ^15.0.3
+    version: 15.0.3
   '@twemoji/parser':
-    specifier: ^14.1.0
-    version: 14.1.0
+    specifier: ^15.0.0
+    version: 15.0.0
 
 devDependencies:
   '@nuxt/eslint-config':
@@ -2357,17 +2357,17 @@ packages:
       minimatch: 9.0.3
     dev: true
 
-  /@twemoji/api@14.1.2:
-    resolution: {integrity: sha512-JLuszRq7t+NWJTaNwBD+Hbhf67gzn6jAqhNIDTPndEGT55kHiZTJAYRGCHZB/eA58OGVSp7mIvsJs+F/ZDJanA==}
+  /@twemoji/api@15.0.3:
+    resolution: {integrity: sha512-BI+4nY1o3NAtsMpSTXW2nNjlpanYZ3ndVhslxmGplahO7fgxqWrtAezBs5Yze7vbT98BVx8krJSpr6qJMgYCWw==}
     dependencies:
+      '@twemoji/parser': 15.0.0
       fs-extra: 8.1.0
       jsonfile: 5.0.0
-      twemoji-parser: 14.0.0
       universalify: 0.1.2
     dev: false
 
-  /@twemoji/parser@14.1.0:
-    resolution: {integrity: sha512-psQR5WEZjqSFy1gxJKpiMR9ygy59jykqIAAON8Xir78t9+E4z6S/BwYsksbylzJB1nCHKLzvkROrUHk2DKnEbg==}
+  /@twemoji/parser@15.0.0:
+    resolution: {integrity: sha512-lh9515BNsvKSNvyUqbj5yFu83iIDQ77SwVcsN/SnEGawczhsKU6qWuogewN1GweTi5Imo5ToQ9s+nNTf97IXvg==}
     dev: false
 
   /@types/estree@1.0.1:
@@ -4259,15 +4259,6 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /fs-extra@11.1.1:
-    resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==}
-    engines: {node: '>=14.14'}
-    dependencies:
-      graceful-fs: 4.2.11
-      jsonfile: 6.1.0
-      universalify: 2.0.0
-    dev: true
-
   /fs-extra@11.2.0:
     resolution: {integrity: sha512-PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==}
     engines: {node: '>=14.14'}
@@ -5297,7 +5288,7 @@ packages:
       citty: 0.1.4
       defu: 6.1.2
       esbuild: 0.18.20
-      fs-extra: 11.1.1
+      fs-extra: 11.2.0
       globby: 13.2.2
       jiti: 1.20.0
       mlly: 1.4.2
@@ -7108,10 +7099,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /twemoji-parser@14.0.0:
-    resolution: {integrity: sha512-9DUOTGLOWs0pFWnh1p6NF+C3CkQ96PWmEFwhOVmT3WbecRC+68AIqpsnJXygfkFcp4aXbOp8Dwbhh/HQgvoRxA==}
-    dev: false
 
   /type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
