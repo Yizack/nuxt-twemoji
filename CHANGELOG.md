@@ -1,6 +1,29 @@
 # Changelog
 
 
+## v3.4.0
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.3.5...v3.4.0)
+
+### 🚀 Enhancements
+
+- Update to unicode 15 emojis ([afd9b13](https://github.com/Yizack/nuxt-twemoji/commit/afd9b13))
+
+### 🩹 Fixes
+
+- EmojiDefinition type import ([#2](https://github.com/Yizack/nuxt-twemoji/pull/2))
+
+### 🏡 Chore
+
+- Update nuxt 3.9 ([770d827](https://github.com/Yizack/nuxt-twemoji/commit/770d827))
+- Updates ([75293b2](https://github.com/Yizack/nuxt-twemoji/commit/75293b2))
+- Lock ([2aa1886](https://github.com/Yizack/nuxt-twemoji/commit/2aa1886))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+- William Kurnia Mulyadi Putra
+
 ## v3.3.5
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.3.4...v3.3.5)
