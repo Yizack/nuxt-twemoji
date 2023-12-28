@@ -116,7 +116,7 @@ const loadSVG = async () => {
 watchEffect(async () => {
   codePoint.value[parsed.value] = parsed.value
   !props.png && await loadSVG()
-});
+})
 
 !props.png && await loadSVG()
 </script>

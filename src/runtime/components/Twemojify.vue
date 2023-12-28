@@ -39,12 +39,12 @@ const loadTwemojify = async () => {
     }
     parsedText.value = parsedText.value.replace(props.text.slice(...indices), twemojify.value[text])
   }
-};
+}
 
 watchEffect(async () => {
   parsedText.value = props.text
   await loadTwemojify()
-});
+})
 
 await loadTwemojify()
 </script>
