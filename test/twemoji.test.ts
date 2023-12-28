@@ -18,45 +18,39 @@ await setup({
   rootDir: fileURLToPath(new URL('./fixtures/basic', import.meta.url)),
 })
 
-describe('by codepoint', () => {
-  it('renders emoji as <svg>', async () => {
-    const html = await $fetch('/byCodePoint/svg')
+describe('Twemoji component tests', () => {
+  it('by codepoint: renders emoji as <svg>', async () => {
+    const html = await $fetch('/Twemoji/byCodePoint/svg')
     expect(html).toContain(expected.svg)
   })
 
-  it('renders emoji as <img>', async () => {
-    const html = await $fetch('/byCodePoint/png')
+  it('by codepoint: renders emoji as <img>', async () => {
+    const html = await $fetch('/Twemoji/byCodePoint/png')
     expect(html).toContain(expected.img(alts.codepoint))
   })
-})
 
-describe('by emoji', () => {
-  it('renders emoji as <svg>', async () => {
-    const html = await $fetch('/byEmoji/svg')
+  it('by emoji: renders emoji as <svg>', async () => {
+    const html = await $fetch('/Twemoji/byEmoji/svg')
     expect(html).toContain(expected.svg)
   })
 
-  it('renders emoji as <img>', async () => {
-    const html = await $fetch('/byEmoji/png')
+  it('by emoji: renders emoji as <img>', async () => {
+    const html = await $fetch('/Twemoji/byEmoji/png')
     expect(html).toContain(expected.img(alts.emoji))
   })
-})
 
-describe('by definition', () => {
   it('by definition: renders emoji as <svg>', async () => {
-    const html = await $fetch('/byDefinition/svg')
+    const html = await $fetch('/Twemoji/byDefinition/svg')
     expect(html).toContain(expected.svg)
   })
 
   it('by definition: renders emoji as <img>', async () => {
-    const html = await $fetch('/byDefinition/png')
+    const html = await $fetch('/Twemoji/byDefinition/png')
     expect(html).toContain(expected.img(alts.name))
   })
-})
 
-describe('error' , () => {
   it('fails to render, shows original string'), async () => {
-    const html = await $fetch('/error')
+    const html = await $fetch('/Twemoji/error')
     expect(html).toContain(expected.error)
   }
 })
