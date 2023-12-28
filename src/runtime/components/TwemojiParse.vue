@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import twemoji, { Twemoji } from '@twemoji/api'
+import twemoji, { type Twemoji } from '@twemoji/api'
 import { onMounted, ref } from 'vue'
 
 const props = defineProps({
