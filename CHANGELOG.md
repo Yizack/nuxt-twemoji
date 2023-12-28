@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v3.4.2
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.4.1...v3.4.2)
+
+### 🏡 Chore
+
+- No twemoji/parser dependency ([18d12f5](https://github.com/Yizack/nuxt-twemoji/commit/18d12f5))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.4.1
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.4.0...v3.4.1)
