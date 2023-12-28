@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import twemoji, { type Twemoji } from '@twemoji/api'
+import twemojiapi, { type Twemoji } from '@twemoji/api'
 import { onMounted, ref } from 'vue'
+const twemoji = twemojiapi as Twemoji
 
 const props = defineProps({
   png: {
@@ -11,7 +12,7 @@ const props = defineProps({
 
 const twemojiParse = ref({} as HTMLElement)
 onMounted(() => {
-  (twemoji as Twemoji).parse(twemojiParse.value, {
+  twemoji.parse(twemojiParse.value, {
     ext: props.png ? '.png' : '.svg',
     folder: props.png ? undefined : 'svg',
     className: 'twemojiParse'
