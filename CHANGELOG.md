@@ -1,6 +1,29 @@
 # Changelog
 
 
+## v3.4.1
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.4.0...v3.4.1)
+
+### 🩹 Fixes
+
+- Replaced `@twemoji/parser` due to an error ([8e2f3f7](https://github.com/Yizack/nuxt-twemoji/commit/8e2f3f7))
+
+### 🏡 Chore
+
+- **release:** V3.4.0 ([5f693ba](https://github.com/Yizack/nuxt-twemoji/commit/5f693ba))
+- Update ci file ([f8b9dd4](https://github.com/Yizack/nuxt-twemoji/commit/f8b9dd4))
+- Update module-builder ([1b955e1](https://github.com/Yizack/nuxt-twemoji/commit/1b955e1))
+- Explicit type import ([e42f8eb](https://github.com/Yizack/nuxt-twemoji/commit/e42f8eb))
+- Constant typed ([0467a13](https://github.com/Yizack/nuxt-twemoji/commit/0467a13))
+- Lint trainling semicolon ([5806820](https://github.com/Yizack/nuxt-twemoji/commit/5806820))
+- Add twemojify more tests ([ba07ebc](https://github.com/Yizack/nuxt-twemoji/commit/ba07ebc))
+- Restructure tests ([5de2c0f](https://github.com/Yizack/nuxt-twemoji/commit/5de2c0f))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.4.0
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.3.5...v3.4.0)
