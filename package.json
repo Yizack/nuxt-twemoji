@@ -57,8 +57,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.9.0",
-    "@twemoji/api": "^15.0.3",
-    "@twemoji/parser": "^15.0.0"
+    "@twemoji/api": "^15.0.3"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",
