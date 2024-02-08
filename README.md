@@ -1,4 +1,4 @@
-![nuxt-twemoji](https://repository-images.githubusercontent.com/643607230/de54220b-3c2a-4a32-933f-1c4d93c00f0a)
+![nuxt-twemoji](https://github.com/Yizack/nuxt-twemoji/assets/16264115/95093177-19df-4a7b-8f50-acf4f0f3621f)
 
 # nuxt-twemoji
 
