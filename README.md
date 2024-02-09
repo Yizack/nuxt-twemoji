@@ -86,7 +86,7 @@ You can make use of any of these available components according to your Nuxt app
 
 ## Usage (`Twemoji`)
 
-1. Find emojis from the recommended unicode emoji list: https://unicode.org/emoji/charts-14.0/full-emoji-list.html
+1. Find emojis from the recommended unicode emoji list: https://unicode.org/emoji/charts-15.0/full-emoji-list.html
 
 2. In the project, use the component `<Twemoji emoji="" />`, where `emoji` is the emoji character or codepoint.
 3. If you employ SSR (Server Side Rendering) in your Nuxt application, this module will inject the emoji `<svg>` or `<img>` element into the output code during your project's build/generate process. Alternatively, if SSR is not used, the emojis will dynamically render during client runtime.
