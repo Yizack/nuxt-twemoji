@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest'
 import { fileURLToPath } from 'node:url'
 import { setup, $fetch } from '@nuxt/test-utils'
+import type { EmojiDefinition } from '~/src/runtime/assets/emojis'
 
-const alts: { [key: string]: string } = {
-  codepoint: '1f680',
+const alts: EmojiDefinition = {
+  code: '1f680',
   name: 'rocket',
   emoji: '🚀'
 }
@@ -26,7 +27,7 @@ describe('Twemoji component tests', () => {
 
   it('by codepoint: renders emoji as <img>', async () => {
     const html = await $fetch('/Twemoji/byCodePoint/png')
-    expect(html).toContain(expected.img(alts.codepoint))
+    expect(html).toContain(expected.img(alts.code))
   })
 
   it('by emoji: renders emoji as <svg>', async () => {
