@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
   modules: ['../src/module'],
-  nuxtTwemoji: {}
+  nuxtTwemoji: {},
+  devtools: { enabled: true }
 })
