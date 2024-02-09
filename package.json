@@ -43,14 +43,12 @@
     "dist"
   ],
   "scripts": {
+    "prepack": "nuxt-module-build build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
-    "dev:generate": "nuxi generate playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "postinstall": "pnpm dev:prepare",
-    "module:prepack": "nuxt-module-build build",
-    "module:pack": "pnpm lint && pnpm test && pnpm module:prepack",
-    "release": "pnpm module:pack && changelogen --release && npm publish && git push --follow-tags",
+    "postinstall": "npm run dev:prepare",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run --reporter=verbose",
     "test:watch": "vitest watch",
