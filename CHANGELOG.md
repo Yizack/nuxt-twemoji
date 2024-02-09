@@ -1,6 +1,32 @@
 # Changelog
 
 
+## v3.4.4
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.4.3...v3.4.4)
+
+### 🩹 Fixes
+
+- Use explicit build command ([682fbf8](https://github.com/Yizack/nuxt-twemoji/commit/682fbf8))
+- Unicode emoji list link ([2ca1792](https://github.com/Yizack/nuxt-twemoji/commit/2ca1792))
+
+### 🏡 Chore
+
+- Update repo banner ([00940ab](https://github.com/Yizack/nuxt-twemoji/commit/00940ab))
+- Update repository banner ([c3b82ff](https://github.com/Yizack/nuxt-twemoji/commit/c3b82ff))
+- Rearrange module scripts ([f90d868](https://github.com/Yizack/nuxt-twemoji/commit/f90d868))
+- Add nuxt devtools ([d23f168](https://github.com/Yizack/nuxt-twemoji/commit/d23f168))
+- Update `@types/node` ([9dd1547](https://github.com/Yizack/nuxt-twemoji/commit/9dd1547))
+- Enable devtools ([7fee088](https://github.com/Yizack/nuxt-twemoji/commit/7fee088))
+- Add extra tsconfig and package.json file ([efa3ca9](https://github.com/Yizack/nuxt-twemoji/commit/efa3ca9))
+- Use EmojiDefinition type ([0e52c01](https://github.com/Yizack/nuxt-twemoji/commit/0e52c01))
+- Gitignore .data ([48b8e4f](https://github.com/Yizack/nuxt-twemoji/commit/48b8e4f))
+- Delete .nuxtrc ([5d1a195](https://github.com/Yizack/nuxt-twemoji/commit/5d1a195))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.4.3
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.4.2...v3.4.3)
