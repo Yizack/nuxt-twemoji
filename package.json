@@ -59,6 +59,7 @@
     "@twemoji/api": "^15.0.3"
   },
   "devDependencies": {
+    "@nuxt/devtools": "^1.0.8",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/module-builder": "^0.5.5",
     "@nuxt/schema": "^3.10.1",

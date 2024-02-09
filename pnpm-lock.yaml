@@ -13,6 +13,9 @@ dependencies:
     version: 15.0.3
 
 devDependencies:
+  '@nuxt/devtools':
+    specifier: ^1.0.8
+    version: 1.0.8(nuxt@3.10.1)(rollup@3.29.4)(vite@5.0.12)
   '@nuxt/eslint-config':
     specifier: ^0.2.0
     version: 0.2.0(eslint@8.56.0)
