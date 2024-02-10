@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v3.4.5
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.4.4...v3.4.5)
+
+### 🩹 Fixes
+
+- No postinstall ([5c3667b](https://github.com/Yizack/nuxt-twemoji/commit/5c3667b))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.4.4
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.4.3...v3.4.4)
