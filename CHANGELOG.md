@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v3.5.0
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.4.5...v3.5.0)
+
+### 🚀 Enhancements
+
+- Add support for the new emoji included in Emoji 15.1 ([69e51cf](https://github.com/Yizack/nuxt-twemoji/commit/69e51cf))
+
+### 🩹 Fixes
+
+- Vitest ([581a0ff](https://github.com/Yizack/nuxt-twemoji/commit/581a0ff))
+
+### 🏡 Chore
+
+- Updarte deps ([d9cde54](https://github.com/Yizack/nuxt-twemoji/commit/d9cde54))
+- Test emoji exports ([c3450ad](https://github.com/Yizack/nuxt-twemoji/commit/c3450ad))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.4.5
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.4.4...v3.4.5)
