@@ -249,6 +249,16 @@ export const twShakingFace: EmojiDefinition = {
   emoji: '🫨',
   name: 'shaking-face'
 }
+export const twHeadShakingHorizontally: EmojiDefinition = {
+  code: '1F642-200D-2194',
+  emoji: '🙂‍↔',
+  name: 'head-shaking-horizontally'
+}
+export const twHeadShakingVertically: EmojiDefinition = {
+  code: '1F642-200D-2195',
+  emoji: '🙂‍↕',
+  name: 'head-shaking-vertically'
+}
 export const twRelievedFace: EmojiDefinition = {
   code: '1F60C',
   emoji: '😌',
@@ -7714,6 +7724,96 @@ export const twWomanWalkingDarkSkinTone: EmojiDefinition = {
   emoji: '🚶🏿‍♀',
   name: 'woman-walking-dark-skin-tone'
 }
+export const twPersonWalkingFacingRight: EmojiDefinition = {
+  code: '1F6B6-200D-27A1',
+  emoji: '🚶‍➡',
+  name: 'person-walking-facing-right'
+}
+export const twPersonWalkingFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FB-200D-27A1',
+  emoji: '🚶🏻‍➡',
+  name: 'person-walking-facing-right-light-skin-tone'
+}
+export const twPersonWalkingFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FC-200D-27A1',
+  emoji: '🚶🏼‍➡',
+  name: 'person-walking-facing-right-medium-light-skin-tone'
+}
+export const twPersonWalkingFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FD-200D-27A1',
+  emoji: '🚶🏽‍➡',
+  name: 'person-walking-facing-right-medium-skin-tone'
+}
+export const twPersonWalkingFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FE-200D-27A1',
+  emoji: '🚶🏾‍➡',
+  name: 'person-walking-facing-right-medium-dark-skin-tone'
+}
+export const twPersonWalkingFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FF-200D-27A1',
+  emoji: '🚶🏿‍➡',
+  name: 'person-walking-facing-right-dark-skin-tone'
+}
+export const twWomanWalkingFacingRight: EmojiDefinition = {
+  code: '1F6B6-200D-2640-200D-27A1',
+  emoji: '🚶‍♀‍➡',
+  name: 'woman-walking-facing-right'
+}
+export const twWomanWalkingFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FB-200D-2640-200D-27A1',
+  emoji: '🚶🏻‍♀‍➡',
+  name: 'woman-walking-facing-right-light-skin-tone'
+}
+export const twWomanWalkingFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FC-200D-2640-200D-27A1',
+  emoji: '🚶🏼‍♀‍➡',
+  name: 'woman-walking-facing-right-medium-light-skin-tone'
+}
+export const twWomanWalkingFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FD-200D-2640-200D-27A1',
+  emoji: '🚶🏽‍♀‍➡',
+  name: 'woman-walking-facing-right-medium-skin-tone'
+}
+export const twWomanWalkingFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FE-200D-2640-200D-27A1',
+  emoji: '🚶🏾‍♀‍➡',
+  name: 'woman-walking-facing-right-medium-dark-skin-tone'
+}
+export const twWomanWalkingFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FF-200D-2640-200D-27A1',
+  emoji: '🚶🏿‍♀‍➡',
+  name: 'woman-walking-facing-right-dark-skin-tone'
+}
+export const twManWalkingFacingRight: EmojiDefinition = {
+  code: '1F6B6-200D-2642-200D-27A1',
+  emoji: '🚶‍♂‍➡',
+  name: 'man-walking-facing-right'
+}
+export const twManWalkingFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FB-200D-2642-200D-27A1',
+  emoji: '🚶🏻‍♂‍➡',
+  name: 'man-walking-facing-right-light-skin-tone'
+}
+export const twManWalkingFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FC-200D-2642-200D-27A1',
+  emoji: '🚶🏼‍♂‍➡',
+  name: 'man-walking-facing-right-medium-light-skin-tone'
+}
+export const twManWalkingFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FD-200D-2642-200D-27A1',
+  emoji: '🚶🏽‍♂‍➡',
+  name: 'man-walking-facing-right-medium-skin-tone'
+}
+export const twManWalkingFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FE-200D-2642-200D-27A1',
+  emoji: '🚶🏾‍♂‍➡',
+  name: 'man-walking-facing-right-medium-dark-skin-tone'
+}
+export const twManWalkingFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F6B6-1F3FF-200D-2642-200D-27A1',
+  emoji: '🚶🏿‍♂‍➡',
+  name: 'man-walking-facing-right-dark-skin-tone'
+}
 export const twPersonStanding: EmojiDefinition = {
   code: '1F9CD',
   emoji: '🧍',
@@ -7894,6 +7994,96 @@ export const twWomanKneelingDarkSkinTone: EmojiDefinition = {
   emoji: '🧎🏿‍♀',
   name: 'woman-kneeling-dark-skin-tone'
 }
+export const twPersonKneelingFacingRight: EmojiDefinition = {
+  code: '1F9CE-200D-27A1',
+  emoji: '🧎‍➡',
+  name: 'person-kneeling-facing-right'
+}
+export const twPersonKneelingFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FB-200D-27A1',
+  emoji: '🧎🏻‍➡',
+  name: 'person-kneeling-facing-right-light-skin-tone'
+}
+export const twPersonKneelingFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FC-200D-27A1',
+  emoji: '🧎🏼‍➡',
+  name: 'person-kneeling-facing-right-medium-light-skin-tone'
+}
+export const twPersonKneelingFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FD-200D-27A1',
+  emoji: '🧎🏽‍➡',
+  name: 'person-kneeling-facing-right-medium-skin-tone'
+}
+export const twPersonKneelingFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FE-200D-27A1',
+  emoji: '🧎🏾‍➡',
+  name: 'person-kneeling-facing-right-medium-dark-skin-tone'
+}
+export const twPersonKneelingFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FF-200D-27A1',
+  emoji: '🧎🏿‍➡',
+  name: 'person-kneeling-facing-right-dark-skin-tone'
+}
+export const twWomanKneelingFacingRight: EmojiDefinition = {
+  code: '1F9CE-200D-2640-200D-27A1',
+  emoji: '🧎‍♀‍➡',
+  name: 'woman-kneeling-facing-right'
+}
+export const twWomanKneelingFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FB-200D-2640-200D-27A1',
+  emoji: '🧎🏻‍♀‍➡',
+  name: 'woman-kneeling-facing-right-light-skin-tone'
+}
+export const twWomanKneelingFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FC-200D-2640-200D-27A1',
+  emoji: '🧎🏼‍♀‍➡',
+  name: 'woman-kneeling-facing-right-medium-light-skin-tone'
+}
+export const twWomanKneelingFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FD-200D-2640-200D-27A1',
+  emoji: '🧎🏽‍♀‍➡',
+  name: 'woman-kneeling-facing-right-medium-skin-tone'
+}
+export const twWomanKneelingFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FE-200D-2640-200D-27A1',
+  emoji: '🧎🏾‍♀‍➡',
+  name: 'woman-kneeling-facing-right-medium-dark-skin-tone'
+}
+export const twWomanKneelingFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FF-200D-2640-200D-27A1',
+  emoji: '🧎🏿‍♀‍➡',
+  name: 'woman-kneeling-facing-right-dark-skin-tone'
+}
+export const twManKneelingFacingRight: EmojiDefinition = {
+  code: '1F9CE-200D-2642-200D-27A1',
+  emoji: '🧎‍♂‍➡',
+  name: 'man-kneeling-facing-right'
+}
+export const twManKneelingFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FB-200D-2642-200D-27A1',
+  emoji: '🧎🏻‍♂‍➡',
+  name: 'man-kneeling-facing-right-light-skin-tone'
+}
+export const twManKneelingFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FC-200D-2642-200D-27A1',
+  emoji: '🧎🏼‍♂‍➡',
+  name: 'man-kneeling-facing-right-medium-light-skin-tone'
+}
+export const twManKneelingFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FD-200D-2642-200D-27A1',
+  emoji: '🧎🏽‍♂‍➡',
+  name: 'man-kneeling-facing-right-medium-skin-tone'
+}
+export const twManKneelingFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FE-200D-2642-200D-27A1',
+  emoji: '🧎🏾‍♂‍➡',
+  name: 'man-kneeling-facing-right-medium-dark-skin-tone'
+}
+export const twManKneelingFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F9CE-1F3FF-200D-2642-200D-27A1',
+  emoji: '🧎🏿‍♂‍➡',
+  name: 'man-kneeling-facing-right-dark-skin-tone'
+}
 export const twPersonWithWhiteCane: EmojiDefinition = {
   code: '1F9D1-200D-1F9AF',
   emoji: '🧑‍🦯',
@@ -7923,6 +8113,36 @@ export const twPersonWithWhiteCaneDarkSkinTone: EmojiDefinition = {
   code: '1F9D1-1F3FF-200D-1F9AF',
   emoji: '🧑🏿‍🦯',
   name: 'person-with-white-cane-dark-skin-tone'
+}
+export const twPersonWithWhiteCaneFacingRight: EmojiDefinition = {
+  code: '1F9D1-200D-1F9AF-200D-27A1',
+  emoji: '🧑‍🦯‍➡',
+  name: 'person-with-white-cane-facing-right'
+}
+export const twPersonWithWhiteCaneFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FB-200D-1F9AF-200D-27A1',
+  emoji: '🧑🏻‍🦯‍➡',
+  name: 'person-with-white-cane-facing-right-light-skin-tone'
+}
+export const twPersonWithWhiteCaneFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FC-200D-1F9AF-200D-27A1',
+  emoji: '🧑🏼‍🦯‍➡',
+  name: 'person-with-white-cane-facing-right-medium-light-skin-tone'
+}
+export const twPersonWithWhiteCaneFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FD-200D-1F9AF-200D-27A1',
+  emoji: '🧑🏽‍🦯‍➡',
+  name: 'person-with-white-cane-facing-right-medium-skin-tone'
+}
+export const twPersonWithWhiteCaneFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FE-200D-1F9AF-200D-27A1',
+  emoji: '🧑🏾‍🦯‍➡',
+  name: 'person-with-white-cane-facing-right-medium-dark-skin-tone'
+}
+export const twPersonWithWhiteCaneFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FF-200D-1F9AF-200D-27A1',
+  emoji: '🧑🏿‍🦯‍➡',
+  name: 'person-with-white-cane-facing-right-dark-skin-tone'
 }
 export const twManWithWhiteCane: EmojiDefinition = {
   code: '1F468-200D-1F9AF',
@@ -7954,6 +8174,36 @@ export const twManWithWhiteCaneDarkSkinTone: EmojiDefinition = {
   emoji: '👨🏿‍🦯',
   name: 'man-with-white-cane-dark-skin-tone'
 }
+export const twManWithWhiteCaneFacingRight: EmojiDefinition = {
+  code: '1F468-200D-1F9AF-200D-27A1',
+  emoji: '👨‍🦯‍➡',
+  name: 'man-with-white-cane-facing-right'
+}
+export const twManWithWhiteCaneFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FB-200D-1F9AF-200D-27A1',
+  emoji: '👨🏻‍🦯‍➡',
+  name: 'man-with-white-cane-facing-right-light-skin-tone'
+}
+export const twManWithWhiteCaneFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FC-200D-1F9AF-200D-27A1',
+  emoji: '👨🏼‍🦯‍➡',
+  name: 'man-with-white-cane-facing-right-medium-light-skin-tone'
+}
+export const twManWithWhiteCaneFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FD-200D-1F9AF-200D-27A1',
+  emoji: '👨🏽‍🦯‍➡',
+  name: 'man-with-white-cane-facing-right-medium-skin-tone'
+}
+export const twManWithWhiteCaneFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FE-200D-1F9AF-200D-27A1',
+  emoji: '👨🏾‍🦯‍➡',
+  name: 'man-with-white-cane-facing-right-medium-dark-skin-tone'
+}
+export const twManWithWhiteCaneFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FF-200D-1F9AF-200D-27A1',
+  emoji: '👨🏿‍🦯‍➡',
+  name: 'man-with-white-cane-facing-right-dark-skin-tone'
+}
 export const twWomanWithWhiteCane: EmojiDefinition = {
   code: '1F469-200D-1F9AF',
   emoji: '👩‍🦯',
@@ -7983,6 +8233,36 @@ export const twWomanWithWhiteCaneDarkSkinTone: EmojiDefinition = {
   code: '1F469-1F3FF-200D-1F9AF',
   emoji: '👩🏿‍🦯',
   name: 'woman-with-white-cane-dark-skin-tone'
+}
+export const twWomanWithWhiteCaneFacingRight: EmojiDefinition = {
+  code: '1F469-200D-1F9AF-200D-27A1',
+  emoji: '👩‍🦯‍➡',
+  name: 'woman-with-white-cane-facing-right'
+}
+export const twWomanWithWhiteCaneFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FB-200D-1F9AF-200D-27A1',
+  emoji: '👩🏻‍🦯‍➡',
+  name: 'woman-with-white-cane-facing-right-light-skin-tone'
+}
+export const twWomanWithWhiteCaneFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FC-200D-1F9AF-200D-27A1',
+  emoji: '👩🏼‍🦯‍➡',
+  name: 'woman-with-white-cane-facing-right-medium-light-skin-tone'
+}
+export const twWomanWithWhiteCaneFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FD-200D-1F9AF-200D-27A1',
+  emoji: '👩🏽‍🦯‍➡',
+  name: 'woman-with-white-cane-facing-right-medium-skin-tone'
+}
+export const twWomanWithWhiteCaneFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FE-200D-1F9AF-200D-27A1',
+  emoji: '👩🏾‍🦯‍➡',
+  name: 'woman-with-white-cane-facing-right-medium-dark-skin-tone'
+}
+export const twWomanWithWhiteCaneFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FF-200D-1F9AF-200D-27A1',
+  emoji: '👩🏿‍🦯‍➡',
+  name: 'woman-with-white-cane-facing-right-dark-skin-tone'
 }
 export const twPersonInMotorizedWheelchair: EmojiDefinition = {
   code: '1F9D1-200D-1F9BC',
@@ -8014,6 +8294,36 @@ export const twPersonInMotorizedWheelchairDarkSkinTone: EmojiDefinition = {
   emoji: '🧑🏿‍🦼',
   name: 'person-in-motorized-wheelchair-dark-skin-tone'
 }
+export const twPersonInMotorizedWheelchairFacingRight: EmojiDefinition = {
+  code: '1F9D1-200D-1F9BC-200D-27A1',
+  emoji: '🧑‍🦼‍➡',
+  name: 'person-in-motorized-wheelchair-facing-right'
+}
+export const twPersonInMotorizedWheelchairFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FB-200D-1F9BC-200D-27A1',
+  emoji: '🧑🏻‍🦼‍➡',
+  name: 'person-in-motorized-wheelchair-facing-right-light-skin-tone'
+}
+export const twPersonInMotorizedWheelchairFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FC-200D-1F9BC-200D-27A1',
+  emoji: '🧑🏼‍🦼‍➡',
+  name: 'person-in-motorized-wheelchair-facing-right-medium-light-skin-tone'
+}
+export const twPersonInMotorizedWheelchairFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FD-200D-1F9BC-200D-27A1',
+  emoji: '🧑🏽‍🦼‍➡',
+  name: 'person-in-motorized-wheelchair-facing-right-medium-skin-tone'
+}
+export const twPersonInMotorizedWheelchairFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FE-200D-1F9BC-200D-27A1',
+  emoji: '🧑🏾‍🦼‍➡',
+  name: 'person-in-motorized-wheelchair-facing-right-medium-dark-skin-tone'
+}
+export const twPersonInMotorizedWheelchairFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FF-200D-1F9BC-200D-27A1',
+  emoji: '🧑🏿‍🦼‍➡',
+  name: 'person-in-motorized-wheelchair-facing-right-dark-skin-tone'
+}
 export const twManInMotorizedWheelchair: EmojiDefinition = {
   code: '1F468-200D-1F9BC',
   emoji: '👨‍🦼',
@@ -8043,6 +8353,36 @@ export const twManInMotorizedWheelchairDarkSkinTone: EmojiDefinition = {
   code: '1F468-1F3FF-200D-1F9BC',
   emoji: '👨🏿‍🦼',
   name: 'man-in-motorized-wheelchair-dark-skin-tone'
+}
+export const twManInMotorizedWheelchairFacingRight: EmojiDefinition = {
+  code: '1F468-200D-1F9BC-200D-27A1',
+  emoji: '👨‍🦼‍➡',
+  name: 'man-in-motorized-wheelchair-facing-right'
+}
+export const twManInMotorizedWheelchairFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FB-200D-1F9BC-200D-27A1',
+  emoji: '👨🏻‍🦼‍➡',
+  name: 'man-in-motorized-wheelchair-facing-right-light-skin-tone'
+}
+export const twManInMotorizedWheelchairFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FC-200D-1F9BC-200D-27A1',
+  emoji: '👨🏼‍🦼‍➡',
+  name: 'man-in-motorized-wheelchair-facing-right-medium-light-skin-tone'
+}
+export const twManInMotorizedWheelchairFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FD-200D-1F9BC-200D-27A1',
+  emoji: '👨🏽‍🦼‍➡',
+  name: 'man-in-motorized-wheelchair-facing-right-medium-skin-tone'
+}
+export const twManInMotorizedWheelchairFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FE-200D-1F9BC-200D-27A1',
+  emoji: '👨🏾‍🦼‍➡',
+  name: 'man-in-motorized-wheelchair-facing-right-medium-dark-skin-tone'
+}
+export const twManInMotorizedWheelchairFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FF-200D-1F9BC-200D-27A1',
+  emoji: '👨🏿‍🦼‍➡',
+  name: 'man-in-motorized-wheelchair-facing-right-dark-skin-tone'
 }
 export const twWomanInMotorizedWheelchair: EmojiDefinition = {
   code: '1F469-200D-1F9BC',
@@ -8074,6 +8414,36 @@ export const twWomanInMotorizedWheelchairDarkSkinTone: EmojiDefinition = {
   emoji: '👩🏿‍🦼',
   name: 'woman-in-motorized-wheelchair-dark-skin-tone'
 }
+export const twWomanInMotorizedWheelchairFacingRight: EmojiDefinition = {
+  code: '1F469-200D-1F9BC-200D-27A1',
+  emoji: '👩‍🦼‍➡',
+  name: 'woman-in-motorized-wheelchair-facing-right'
+}
+export const twWomanInMotorizedWheelchairFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FB-200D-1F9BC-200D-27A1',
+  emoji: '👩🏻‍🦼‍➡',
+  name: 'woman-in-motorized-wheelchair-facing-right-light-skin-tone'
+}
+export const twWomanInMotorizedWheelchairFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FC-200D-1F9BC-200D-27A1',
+  emoji: '👩🏼‍🦼‍➡',
+  name: 'woman-in-motorized-wheelchair-facing-right-medium-light-skin-tone'
+}
+export const twWomanInMotorizedWheelchairFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FD-200D-1F9BC-200D-27A1',
+  emoji: '👩🏽‍🦼‍➡',
+  name: 'woman-in-motorized-wheelchair-facing-right-medium-skin-tone'
+}
+export const twWomanInMotorizedWheelchairFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FE-200D-1F9BC-200D-27A1',
+  emoji: '👩🏾‍🦼‍➡',
+  name: 'woman-in-motorized-wheelchair-facing-right-medium-dark-skin-tone'
+}
+export const twWomanInMotorizedWheelchairFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FF-200D-1F9BC-200D-27A1',
+  emoji: '👩🏿‍🦼‍➡',
+  name: 'woman-in-motorized-wheelchair-facing-right-dark-skin-tone'
+}
 export const twPersonInManualWheelchair: EmojiDefinition = {
   code: '1F9D1-200D-1F9BD',
   emoji: '🧑‍🦽',
@@ -8103,6 +8473,36 @@ export const twPersonInManualWheelchairDarkSkinTone: EmojiDefinition = {
   code: '1F9D1-1F3FF-200D-1F9BD',
   emoji: '🧑🏿‍🦽',
   name: 'person-in-manual-wheelchair-dark-skin-tone'
+}
+export const twPersonInManualWheelchairFacingRight: EmojiDefinition = {
+  code: '1F9D1-200D-1F9BD-200D-27A1',
+  emoji: '🧑‍🦽‍➡',
+  name: 'person-in-manual-wheelchair-facing-right'
+}
+export const twPersonInManualWheelchairFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FB-200D-1F9BD-200D-27A1',
+  emoji: '🧑🏻‍🦽‍➡',
+  name: 'person-in-manual-wheelchair-facing-right-light-skin-tone'
+}
+export const twPersonInManualWheelchairFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FC-200D-1F9BD-200D-27A1',
+  emoji: '🧑🏼‍🦽‍➡',
+  name: 'person-in-manual-wheelchair-facing-right-medium-light-skin-tone'
+}
+export const twPersonInManualWheelchairFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FD-200D-1F9BD-200D-27A1',
+  emoji: '🧑🏽‍🦽‍➡',
+  name: 'person-in-manual-wheelchair-facing-right-medium-skin-tone'
+}
+export const twPersonInManualWheelchairFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FE-200D-1F9BD-200D-27A1',
+  emoji: '🧑🏾‍🦽‍➡',
+  name: 'person-in-manual-wheelchair-facing-right-medium-dark-skin-tone'
+}
+export const twPersonInManualWheelchairFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FF-200D-1F9BD-200D-27A1',
+  emoji: '🧑🏿‍🦽‍➡',
+  name: 'person-in-manual-wheelchair-facing-right-dark-skin-tone'
 }
 export const twManInManualWheelchair: EmojiDefinition = {
   code: '1F468-200D-1F9BD',
@@ -8134,6 +8534,36 @@ export const twManInManualWheelchairDarkSkinTone: EmojiDefinition = {
   emoji: '👨🏿‍🦽',
   name: 'man-in-manual-wheelchair-dark-skin-tone'
 }
+export const twManInManualWheelchairFacingRight: EmojiDefinition = {
+  code: '1F468-200D-1F9BD-200D-27A1',
+  emoji: '👨‍🦽‍➡',
+  name: 'man-in-manual-wheelchair-facing-right'
+}
+export const twManInManualWheelchairFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FB-200D-1F9BD-200D-27A1',
+  emoji: '👨🏻‍🦽‍➡',
+  name: 'man-in-manual-wheelchair-facing-right-light-skin-tone'
+}
+export const twManInManualWheelchairFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FC-200D-1F9BD-200D-27A1',
+  emoji: '👨🏼‍🦽‍➡',
+  name: 'man-in-manual-wheelchair-facing-right-medium-light-skin-tone'
+}
+export const twManInManualWheelchairFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FD-200D-1F9BD-200D-27A1',
+  emoji: '👨🏽‍🦽‍➡',
+  name: 'man-in-manual-wheelchair-facing-right-medium-skin-tone'
+}
+export const twManInManualWheelchairFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FE-200D-1F9BD-200D-27A1',
+  emoji: '👨🏾‍🦽‍➡',
+  name: 'man-in-manual-wheelchair-facing-right-medium-dark-skin-tone'
+}
+export const twManInManualWheelchairFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FF-200D-1F9BD-200D-27A1',
+  emoji: '👨🏿‍🦽‍➡',
+  name: 'man-in-manual-wheelchair-facing-right-dark-skin-tone'
+}
 export const twWomanInManualWheelchair: EmojiDefinition = {
   code: '1F469-200D-1F9BD',
   emoji: '👩‍🦽',
@@ -8163,6 +8593,36 @@ export const twWomanInManualWheelchairDarkSkinTone: EmojiDefinition = {
   code: '1F469-1F3FF-200D-1F9BD',
   emoji: '👩🏿‍🦽',
   name: 'woman-in-manual-wheelchair-dark-skin-tone'
+}
+export const twWomanInManualWheelchairFacingRight: EmojiDefinition = {
+  code: '1F469-200D-1F9BD-200D-27A1',
+  emoji: '👩‍🦽‍➡',
+  name: 'woman-in-manual-wheelchair-facing-right'
+}
+export const twWomanInManualWheelchairFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FB-200D-1F9BD-200D-27A1',
+  emoji: '👩🏻‍🦽‍➡',
+  name: 'woman-in-manual-wheelchair-facing-right-light-skin-tone'
+}
+export const twWomanInManualWheelchairFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FC-200D-1F9BD-200D-27A1',
+  emoji: '👩🏼‍🦽‍➡',
+  name: 'woman-in-manual-wheelchair-facing-right-medium-light-skin-tone'
+}
+export const twWomanInManualWheelchairFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FD-200D-1F9BD-200D-27A1',
+  emoji: '👩🏽‍🦽‍➡',
+  name: 'woman-in-manual-wheelchair-facing-right-medium-skin-tone'
+}
+export const twWomanInManualWheelchairFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FE-200D-1F9BD-200D-27A1',
+  emoji: '👩🏾‍🦽‍➡',
+  name: 'woman-in-manual-wheelchair-facing-right-medium-dark-skin-tone'
+}
+export const twWomanInManualWheelchairFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FF-200D-1F9BD-200D-27A1',
+  emoji: '👩🏿‍🦽‍➡',
+  name: 'woman-in-manual-wheelchair-facing-right-dark-skin-tone'
 }
 export const twPersonRunning: EmojiDefinition = {
   code: '1F3C3',
@@ -8253,6 +8713,96 @@ export const twWomanRunningDarkSkinTone: EmojiDefinition = {
   code: '1F3C3-1F3FF-200D-2640',
   emoji: '🏃🏿‍♀',
   name: 'woman-running-dark-skin-tone'
+}
+export const twPersonRunningFacingRight: EmojiDefinition = {
+  code: '1F3C3-200D-27A1',
+  emoji: '🏃‍➡',
+  name: 'person-running-facing-right'
+}
+export const twPersonRunningFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FB-200D-27A1',
+  emoji: '🏃🏻‍➡',
+  name: 'person-running-facing-right-light-skin-tone'
+}
+export const twPersonRunningFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FC-200D-27A1',
+  emoji: '🏃🏼‍➡',
+  name: 'person-running-facing-right-medium-light-skin-tone'
+}
+export const twPersonRunningFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FD-200D-27A1',
+  emoji: '🏃🏽‍➡',
+  name: 'person-running-facing-right-medium-skin-tone'
+}
+export const twPersonRunningFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FE-200D-27A1',
+  emoji: '🏃🏾‍➡',
+  name: 'person-running-facing-right-medium-dark-skin-tone'
+}
+export const twPersonRunningFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FF-200D-27A1',
+  emoji: '🏃🏿‍➡',
+  name: 'person-running-facing-right-dark-skin-tone'
+}
+export const twWomanRunningFacingRight: EmojiDefinition = {
+  code: '1F3C3-200D-2640-200D-27A1',
+  emoji: '🏃‍♀‍➡',
+  name: 'woman-running-facing-right'
+}
+export const twWomanRunningFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FB-200D-2640-200D-27A1',
+  emoji: '🏃🏻‍♀‍➡',
+  name: 'woman-running-facing-right-light-skin-tone'
+}
+export const twWomanRunningFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FC-200D-2640-200D-27A1',
+  emoji: '🏃🏼‍♀‍➡',
+  name: 'woman-running-facing-right-medium-light-skin-tone'
+}
+export const twWomanRunningFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FD-200D-2640-200D-27A1',
+  emoji: '🏃🏽‍♀‍➡',
+  name: 'woman-running-facing-right-medium-skin-tone'
+}
+export const twWomanRunningFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FE-200D-2640-200D-27A1',
+  emoji: '🏃🏾‍♀‍➡',
+  name: 'woman-running-facing-right-medium-dark-skin-tone'
+}
+export const twWomanRunningFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FF-200D-2640-200D-27A1',
+  emoji: '🏃🏿‍♀‍➡',
+  name: 'woman-running-facing-right-dark-skin-tone'
+}
+export const twManRunningFacingRight: EmojiDefinition = {
+  code: '1F3C3-200D-2642-200D-27A1',
+  emoji: '🏃‍♂‍➡',
+  name: 'man-running-facing-right'
+}
+export const twManRunningFacingRightLightSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FB-200D-2642-200D-27A1',
+  emoji: '🏃🏻‍♂‍➡',
+  name: 'man-running-facing-right-light-skin-tone'
+}
+export const twManRunningFacingRightMediumLightSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FC-200D-2642-200D-27A1',
+  emoji: '🏃🏼‍♂‍➡',
+  name: 'man-running-facing-right-medium-light-skin-tone'
+}
+export const twManRunningFacingRightMediumSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FD-200D-2642-200D-27A1',
+  emoji: '🏃🏽‍♂‍➡',
+  name: 'man-running-facing-right-medium-skin-tone'
+}
+export const twManRunningFacingRightMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FE-200D-2642-200D-27A1',
+  emoji: '🏃🏾‍♂‍➡',
+  name: 'man-running-facing-right-medium-dark-skin-tone'
+}
+export const twManRunningFacingRightDarkSkinTone: EmojiDefinition = {
+  code: '1F3C3-1F3FF-200D-2642-200D-27A1',
+  emoji: '🏃🏿‍♂‍➡',
+  name: 'man-running-facing-right-dark-skin-tone'
 }
 export const twWomanDancing: EmojiDefinition = {
   code: '1F483',
@@ -11414,11 +11964,6 @@ export const twCoupleWithHeartWomanWomanDarkSkinTone: EmojiDefinition = {
   emoji: '👩🏿‍❤‍👩🏿',
   name: 'couple-with-heart-woman-woman-dark-skin-tone'
 }
-export const twFamily: EmojiDefinition = {
-  code: '1F46A',
-  emoji: '👪',
-  name: 'family'
-}
 export const twFamilyManWomanBoy: EmojiDefinition = {
   code: '1F468-200D-1F469-200D-1F466',
   emoji: '👨‍👩‍👦',
@@ -11563,6 +12108,31 @@ export const twPeopleHugging: EmojiDefinition = {
   code: '1FAC2',
   emoji: '🫂',
   name: 'people-hugging'
+}
+export const twFamily: EmojiDefinition = {
+  code: '1F46A',
+  emoji: '👪',
+  name: 'family'
+}
+export const twFamilyAdultAdultChild: EmojiDefinition = {
+  code: '1F9D1-200D-1F9D1-200D-1F9D2',
+  emoji: '🧑‍🧑‍🧒',
+  name: 'family-adult-adult-child'
+}
+export const twFamilyAdultAdultChildChild: EmojiDefinition = {
+  code: '1F9D1-200D-1F9D1-200D-1F9D2-200D-1F9D2',
+  emoji: '🧑‍🧑‍🧒‍🧒',
+  name: 'family-adult-adult-child-child'
+}
+export const twFamilyAdultChild: EmojiDefinition = {
+  code: '1F9D1-200D-1F9D2',
+  emoji: '🧑‍🧒',
+  name: 'family-adult-child'
+}
+export const twFamilyAdultChildChild: EmojiDefinition = {
+  code: '1F9D1-200D-1F9D2-200D-1F9D2',
+  emoji: '🧑‍🧒‍🧒',
+  name: 'family-adult-child-child'
 }
 export const twFootprints: EmojiDefinition = {
   code: '1F463',
@@ -12049,6 +12619,11 @@ export const twGoose: EmojiDefinition = {
   emoji: '🪿',
   name: 'goose'
 }
+export const twPhoenix: EmojiDefinition = {
+  code: '1F426-200D-1F525',
+  emoji: '🐦‍🔥',
+  name: 'phoenix'
+}
 export const twFrog: EmojiDefinition = {
   code: '1F438',
   emoji: '🐸',
@@ -12399,6 +12974,11 @@ export const twLemon: EmojiDefinition = {
   emoji: '🍋',
   name: 'lemon'
 }
+export const twLime: EmojiDefinition = {
+  code: '1F34B-200D-1F7E9',
+  emoji: '🍋‍🟩',
+  name: 'lime'
+}
 export const twBanana: EmojiDefinition = {
   code: '1F34C',
   emoji: '🍌',
@@ -12553,6 +13133,11 @@ export const twPeaPod: EmojiDefinition = {
   code: '1FADB',
   emoji: '🫛',
   name: 'pea-pod'
+}
+export const twBrownMushroom: EmojiDefinition = {
+  code: '1F344-200D-1F7EB',
+  emoji: '🍄‍🟫',
+  name: 'brown-mushroom'
 }
 export const twBread: EmojiDefinition = {
   code: '1F35E',
@@ -15594,6 +16179,11 @@ export const twLink: EmojiDefinition = {
   emoji: '🔗',
   name: 'link'
 }
+export const twBrokenChain: EmojiDefinition = {
+  code: '26D3-200D-1F4A5',
+  emoji: '⛓‍💥',
+  name: 'broken-chain'
+}
 export const twChains: EmojiDefinition = {
   code: '26D3',
   emoji: '⛓',
@@ -18169,10 +18759,10 @@ export const twFlagTonga: EmojiDefinition = {
   emoji: '🇹🇴',
   name: 'flag-tonga'
 }
-export const twFlagTurkey: EmojiDefinition = {
+export const twFlagTrkiye: EmojiDefinition = {
   code: '1F1F9-1F1F7',
   emoji: '🇹🇷',
-  name: 'flag-turkey'
+  name: 'flag-trkiye'
 }
 export const twFlagTrinidadTobago: EmojiDefinition = {
   code: '1F1F9-1F1F9',

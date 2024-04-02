@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs'
 
-const res = await fetch('https://unicode.org/Public/emoji/15.0/emoji-test.txt')
+const res = await fetch('https://unicode.org/Public/emoji/15.1/emoji-test.txt')
 const text = await res.text()
 const emojis = {}
 
