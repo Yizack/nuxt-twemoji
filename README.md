@@ -52,14 +52,7 @@ Twemoji module for Nuxt. Render emojis as SVG elements or PNG images
 1. Add `nuxt-twemoji` dependency to your project
 
 ```bash
-# Using pnpm
-pnpm add -D nuxt-twemoji
-
-# Using yarn
-yarn add --dev nuxt-twemoji
-
-# Using npm
-npm install --save-dev nuxt-twemoji
+npx nuxi@latest module add twemoji
 ```
 
 2. Add `nuxt-twemoji` to the `modules` section of `nuxt.config.ts`
