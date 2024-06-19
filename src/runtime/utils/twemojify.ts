@@ -7,7 +7,7 @@ type EmojiEntity = {
   type: string
   text: string
   url: string
-  indices: Array<number>
+  indices: number[]
 }
 
 type ParsingOptions = {
@@ -16,7 +16,7 @@ type ParsingOptions = {
 
 export const TypeName = 'emoji'
 
-export function parse(text: string, options?: ParsingOptions): Array<EmojiEntity> {
+export function parse(text: string, options?: ParsingOptions): EmojiEntity[] {
   const assetType = options && options.assetType ? options.assetType : 'svg'
   const getTwemojiUrl = (codepoints: string, assetType: ParsingOptions['assetType']) =>
     assetType === 'png'
@@ -52,7 +52,7 @@ const zeroWidthJoiner = String.fromCharCode(0x200D)
 
 const removeVS16s = (rawEmoji: string) => (!rawEmoji.includes(zeroWidthJoiner) ? rawEmoji.replace(vs16RegExp, '') : rawEmoji)
 
-export function toCodePoints(unicodeSurrogates: string): Array<string> {
+export function toCodePoints(unicodeSurrogates: string): string[] {
   const points = []
   let char = 0
   let previous = 0
