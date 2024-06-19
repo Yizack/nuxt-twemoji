@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v3.5.1
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.5.0...v3.5.1)
+
+### 📖 Documentation
+
+- Use new `nuxi module add` command in installation ([#3](https://github.com/Yizack/nuxt-twemoji/pull/3))
+
+### 🏡 Chore
+
+- Indicate compatibility with new v4 major ([#4](https://github.com/Yizack/nuxt-twemoji/pull/4))
+- Migrate eslint ([2d5c560](https://github.com/Yizack/nuxt-twemoji/commit/2d5c560))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+- Daniel Roe ([@danielroe](http://github.com/danielroe))
+
 ## v3.5.0
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.4.5...v3.5.0)
