@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v3.5.2
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.5.1...v3.5.2)
+
+### 🏡 Chore
+
+- Lint ([700a263](https://github.com/Yizack/nuxt-twemoji/commit/700a263))
+- Fix types ([e835cc7](https://github.com/Yizack/nuxt-twemoji/commit/e835cc7))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.5.1
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.5.0...v3.5.1)
