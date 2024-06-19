@@ -7,25 +7,25 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'nuxt-twemoji',
     configKey: 'nuxtTwemoji',
     compatibility: {
-      nuxt: '>=3.0.0'
-    }
+      nuxt: '>=3.0.0',
+    },
   },
-  setup () {
+  setup() {
     const { resolve } = createResolver(import.meta.url)
     addComponent({
       name: 'Twemoji',
       global: true,
-      filePath: resolve('./runtime/components/Twemoji.vue')
+      filePath: resolve('./runtime/components/Twemoji.vue'),
     })
     addComponent({
       name: 'Twemojify',
       global: true,
-      filePath: resolve('./runtime/components/Twemojify.vue')
+      filePath: resolve('./runtime/components/Twemojify.vue'),
     })
     addComponent({
       name: 'TwemojiParse',
       global: true,
-      filePath: resolve('./runtime/components/TwemojiParse.vue')
+      filePath: resolve('./runtime/components/TwemojiParse.vue'),
     })
-  }
+  },
 })

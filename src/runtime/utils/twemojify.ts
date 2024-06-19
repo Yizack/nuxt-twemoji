@@ -4,9 +4,9 @@
 import emojiRegex from './regex'
 
 type EmojiEntity = {
-  type: string,
-  text: string,
-  url: string,
+  type: string
+  text: string
+  url: string
   indices: Array<number>
 }
 
@@ -18,15 +18,15 @@ export const TypeName = 'emoji'
 
 export function parse(text: string, options?: ParsingOptions): Array<EmojiEntity> {
   const assetType = options && options.assetType ? options.assetType : 'svg'
-  const getTwemojiUrl = (codepoints: string, assetType: ParsingOptions["assetType"]) =>
-  assetType === 'png'
-  ? `https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/${codepoints}.png`
-  : `https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/svg/${codepoints}.svg`
+  const getTwemojiUrl = (codepoints: string, assetType: ParsingOptions['assetType']) =>
+    assetType === 'png'
+      ? `https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/${codepoints}.png`
+      : `https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/svg/${codepoints}.svg`
 
   const entities = []
 
   emojiRegex.lastIndex = 0
-  // eslint-disable-next-line no-constant-condition
+
   while (true) {
     const result = emojiRegex.exec(text)
     if (!result) {
@@ -40,7 +40,7 @@ export function parse(text: string, options?: ParsingOptions): Array<EmojiEntity
       url: codepoints ? getTwemojiUrl(codepoints, assetType) : '',
       indices: [result.index, emojiRegex.lastIndex],
       text: emojiText,
-      type: TypeName
+      type: TypeName,
     })
   }
   return entities
@@ -48,9 +48,9 @@ export function parse(text: string, options?: ParsingOptions): Array<EmojiEntity
 
 const vs16RegExp = /\uFE0F/g
 // avoid using a string literal like '\u200D' here because minifiers expand it inline
-const zeroWidthJoiner = String.fromCharCode(0x200d)
+const zeroWidthJoiner = String.fromCharCode(0x200D)
 
-const removeVS16s = (rawEmoji: string) => (rawEmoji.indexOf(zeroWidthJoiner) < 0 ? rawEmoji.replace(vs16RegExp, '') : rawEmoji)
+const removeVS16s = (rawEmoji: string) => (!rawEmoji.includes(zeroWidthJoiner) ? rawEmoji.replace(vs16RegExp, '') : rawEmoji)
 
 export function toCodePoints(unicodeSurrogates: string): Array<string> {
   const points = []
@@ -60,11 +60,13 @@ export function toCodePoints(unicodeSurrogates: string): Array<string> {
   while (i < unicodeSurrogates.length) {
     char = unicodeSurrogates.charCodeAt(i++)
     if (previous) {
-      points.push((0x10000 + ((previous - 0xd800) << 10) + (char - 0xdc00)).toString(16))
+      points.push((0x10000 + ((previous - 0xD800) << 10) + (char - 0xDC00)).toString(16))
       previous = 0
-    } else if (char > 0xd800 && char <= 0xdbff) {
+    }
+    else if (char > 0xD800 && char <= 0xDBFF) {
       previous = char
-    } else {
+    }
+    else {
       points.push(char.toString(16))
     }
   }

@@ -1,12 +1,12 @@
-import { writeFileSync } from 'fs'
+import { writeFileSync } from 'node:fs'
 
 const res = await fetch('https://unicode.org/Public/emoji/15.1/emoji-test.txt')
 const text = await res.text()
 const emojis = {}
 
-text.split('\n').forEach(line => {
+text.split('\n').forEach((line) => {
   if (line.startsWith('#')) return
-  const map1 = line.split(';').map((s)=> {
+  const map1 = line.split(';').map((s) => {
     if (s.slice(0) !== '') {
       return s.slice(0).trim()
     }
@@ -16,8 +16,8 @@ text.split('\n').forEach(line => {
   const l2 = map1[1].split('# ')[1]
   const code = map1[0].split(' ').join('-')
   const emoji = l2.split(' ')[0].trim()
-  const name = l2.split(' ').slice(2).join('-').trim().replace(/[^a-zA-Z0-9-*#]/g, '').toLowerCase().replace(/[*]/g, 'asterisk').replace(/[#]/g, 'number')
-  const property = 'tw' + name.split('-').map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join('')
+  const name = l2.split(' ').slice(2).join('-').trim().replace(/[^a-z0-9-*#]/gi, '').toLowerCase().replace(/\*/g, 'asterisk').replace(/#/g, 'number')
+  const property = 'tw' + name.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join('')
   emojis[property] = { code, emoji, name }
 })
 
@@ -26,6 +26,6 @@ const exports = Object.keys(emojis).map((key) => {
   return `export const ${key}: EmojiDefinition = ${JSON.stringify(emojis[key], null, 2).replace(/"([^"]+)":/g, '$1:').replace(/"/g, '\'')}`
 }).join('\n')
 
-writeFileSync(path,  `export type EmojiDefinition = { code: string, emoji: string, name: string }\n${exports}`)
+writeFileSync(path, `export type EmojiDefinition = { code: string, emoji: string, name: string }\n${exports}`)
 const length = Object.keys(emojis).length
 console.info(`[${length} emojis] generated file: ${path}`)

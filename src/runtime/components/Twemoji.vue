@@ -1,22 +1,22 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import { ref, computed, defineComponent, h, watchEffect } from 'vue'
-import { useState } from '#imports'
 import type { EmojiDefinition } from './../assets/emojis'
+import { useState } from '#imports'
 
 const props = defineProps({
   emoji: {
     type: [String, Object as () => EmojiDefinition],
-    required: true
+    required: true,
   },
   size: {
     type: String,
-    default: '1em'
+    default: '1em',
   },
   png: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 })
 
 const toCodePoint = (unicodeSurrogates: string) => {
@@ -27,10 +27,10 @@ const toCodePoint = (unicodeSurrogates: string) => {
   while (i < unicodeSurrogates.length) {
     char = unicodeSurrogates.charCodeAt(i++)
     if (previous) {
-      points.push((0x10000 + (previous - 0xd800 << 10) + (char - 0xdc00)).toString(16))
+      points.push((0x10000 + (previous - 0xD800 << 10) + (char - 0xDC00)).toString(16))
       previous = 0
     }
-    else if (char > 0xd800 && char <= 0xdbff) {
+    else if (char > 0xD800 && char <= 0xDBFF) {
       previous = char
     }
     else {
@@ -40,7 +40,7 @@ const toCodePoint = (unicodeSurrogates: string) => {
   return points.join('-')
 }
 
-const isString = typeof props.emoji === 'string' 
+const isString = typeof props.emoji === 'string'
 const isDefinition = typeof props.emoji === 'object' && props.emoji.code !== undefined && props.emoji.emoji !== undefined && props.emoji.name !== undefined
 
 const isValid = computed(() => isString || isDefinition)
@@ -51,7 +51,7 @@ if (!isValid.value) {
 
 const twemoji = computed(() => {
   if (isDefinition) return props.emoji.code.toLowerCase()
-  else if (isString) return props.emoji.replace(/u\+/ig, '').toLowerCase()
+  else if (isString) return props.emoji.replace(/u\+/gi, '').toLowerCase()
   return ''
 })
 
@@ -61,7 +61,7 @@ const alt = computed(() => {
   return JSON.stringify(props.emoji)
 })
 
-const isHex = computed(() => (/^[0-9A-Fa-f]{1,6}(-[0-9A-Fa-f]{1,6})*?$/i).test(twemoji.value))
+const isHex = computed(() => (/^[0-9A-F]{1,6}(?:-[0-9A-F]{1,6})*$/i).test(twemoji.value))
 
 const codePoint = ref<{ [key: string]: string }>({})
 const isFetching = ref(false)
@@ -77,7 +77,7 @@ const cdn = 'https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets'
 const emojiLinkPNG = computed(() => `${cdn}/72x72/${codePoint.value[parsed.value]}.png`)
 const emojiLinkSVG = computed(() => `${cdn}/svg/${codePoint.value[parsed.value]}.svg`)
 
-const fetchSVG = () => $fetch(emojiLinkSVG.value).then(async (res: any) => await res.text()).catch(() => undefined)
+const fetchSVG = () => $fetch(emojiLinkSVG.value, { responseType: 'text' }).then(res => res as string).catch(() => undefined)
 const svgTwemojis = useState('twemojis', () => ({}) as { [key: string]: { body: string } })
 
 const component = computed (() => {
@@ -86,13 +86,13 @@ const component = computed (() => {
     render() {
       return h('svg', {
         class: 'twemoji',
-        xmlns: "http://www.w3.org/2000/svg",
+        xmlns: 'http://www.w3.org/2000/svg',
         viewBox: '0 0 36 36',
         width: props.size,
         height: props.size,
-        innerHTML: svgTwemojis.value[parsed.value]?.body
+        innerHTML: svgTwemojis.value[parsed.value]?.body,
       })
-    }
+    },
   })
 })
 
@@ -110,7 +110,7 @@ const loadSVG = async () => {
   }
   if (!svgFetch) return
   svgTwemojis.value[parsed.value] = {
-    body: svgFetch.replace(/<\/*svg[^>]*>/g, '')
+    body: svgFetch.replace(/<\/*svg[^>]*>/g, ''),
   }
 }
 watchEffect(async () => {

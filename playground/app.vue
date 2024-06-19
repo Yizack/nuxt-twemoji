@@ -6,7 +6,7 @@ import {
   twBoy,
   twGirl,
   twStar,
-  twPoliceCarLight
+  twPoliceCarLight,
 } from './../src/runtime/assets/emojis'
 </script>
 
@@ -17,7 +17,9 @@ import {
     <table v-for="(demo, key) in twemojiDemos" :key="key">
       <thead>
         <tr>
-          <th style="width: 200px">{{ demo.name }}</th>
+          <th style="width: 200px">
+            {{ demo.name }}
+          </th>
           <th>Twemoji (SVG)</th>
           <th>Twemoji (PNG)</th>
         </tr>
@@ -76,24 +78,24 @@ export default {
     return {
       twemojiDemos: [
         {
-          name: "Emoji",
+          name: 'Emoji',
           emojis: ['💙', '😍', '👍', '😂', '💀', '🚀', '😵‍💫', '🌟', '👨‍✈️'],
         },
         {
-          name: "Code Point",
+          name: 'Code Point',
           emojis: [
             '2764',
             '1f618',
-            'U+231B', 
+            'U+231B',
             'u+1f60e',
             '1F44D-1F3FF',
             '1F9D1-200D-1F4BB',
             '1F9D1-1F3FB-200D-1F393',
-            '1F408-200D-2B1B'
-          ]
+            '1F408-200D-2B1B',
+          ],
         },
         {
-          name: "EmojiDefinition",
+          name: 'EmojiDefinition',
           emojis: [
             twOrangeHeart,
             twFuelPump,
@@ -101,29 +103,29 @@ export default {
             twBoy,
             twGirl,
             twStar,
-            twPoliceCarLight
-          ]
+            twPoliceCarLight,
+          ],
         },
         {
-          name: "Not Rendered",
+          name: 'Not Rendered',
           emojis: [
             '1234',
-            { code: '1F46E', emoji: '👮' }
-          ]
-        }
+            { code: '1F46E', emoji: '👮' },
+          ],
+        },
       ],
       twemojifyDemos: [
-        "I ❤️ Nuxt 🚀",
-        "Excited to start my Nuxt 🌟 project today! 💫",
-        "Debugging 🔧 my Nuxt 🔍 app like a pro! 💻",
-        "🌟 Cherishing every moment and making 📸 memories that last a lifetime! ❤️",
-        "🌺 Finding joy in the simple things and appreciating the present 🌼 moment! 😊",
-        "Exploring new places and embracing different cultures enriches my 🌱 life. ✈️",
-        "Making a positive impact in the world 🌍 and leaving a legacy of 🌟 goodness. 🌟🤝",
-        "Exploring the Nuxt community 👥 has been a source of inspiration and knowledge! 🌟"
-      ]
+        'I ❤️ Nuxt 🚀',
+        'Excited to start my Nuxt 🌟 project today! 💫',
+        'Debugging 🔧 my Nuxt 🔍 app like a pro! 💻',
+        '🌟 Cherishing every moment and making 📸 memories that last a lifetime! ❤️',
+        '🌺 Finding joy in the simple things and appreciating the present 🌼 moment! 😊',
+        'Exploring new places and embracing different cultures enriches my 🌱 life. ✈️',
+        'Making a positive impact in the world 🌍 and leaving a legacy of 🌟 goodness. 🌟🤝',
+        'Exploring the Nuxt community 👥 has been a source of inspiration and knowledge! 🌟',
+      ],
     }
-  }
+  },
 }
 </script>
 
