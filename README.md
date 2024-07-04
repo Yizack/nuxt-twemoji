@@ -291,20 +291,20 @@ npm run release
 ```
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-twemoji/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-src]: https://img.shields.io/npm/v/nuxt-twemoji/latest.svg?style=flat&colorA=020420&colorB=00DC82
 [npm-version-href]: https://npmjs.com/package/nuxt-twemoji
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-twemoji.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-twemoji.svg?style=flat&colorA=020420&colorB=00DC82
 [npm-downloads-href]: https://npmjs.com/package/nuxt-twemoji
 
-[license-src]: https://img.shields.io/npm/l/nuxt-twemoji.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-src]: https://img.shields.io/npm/l/nuxt-twemoji.svg?style=flat&colorA=020420&colorB=00DC82
 [license-href]: LICENSE
 
-[tests-src]: https://img.shields.io/github/actions/workflow/status/Yizack/nuxt-twemoji/ci.yml?style=flat&colorA=18181B&colorB=28CF8D&label=tests
+[tests-src]: https://img.shields.io/github/actions/workflow/status/Yizack/nuxt-twemoji/ci.yml?style=flat&colorA=020420&colorB=00DC82&label=tests
 [tests-href]: https://github.com/Yizack/nuxt-twemoji/actions/workflows/ci.yml
 
-[nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
+[nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
 
-[modules-src]: https://img.shields.io/badge/Modules-18181B?logo=nuxt.js
+[modules-src]: https://img.shields.io/badge/Modules-020420?logo=nuxt.js
 [modules-href]: https://nuxt.com/modules/twemoji
