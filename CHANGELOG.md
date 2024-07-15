@@ -1,6 +1,37 @@
 # Changelog
 
 
+## v3.6.0
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.5.2...v3.6.0)
+
+### 🚀 Enhancements
+
+- Add `expiresIn` app config for local storage caching ([a252ac0](https://github.com/Yizack/nuxt-twemoji/commit/a252ac0))
+- Enable `Twemojify` caching for svg duplicates ([f950ad4](https://github.com/Yizack/nuxt-twemoji/commit/f950ad4))
+
+### 🩹 Fixes
+
+- Watch `Twemoji` props to avoid double fetching ([671a19f](https://github.com/Yizack/nuxt-twemoji/commit/671a19f))
+
+### 📖 Documentation
+
+- Fix tests badge ([883598a](https://github.com/Yizack/nuxt-twemoji/commit/883598a))
+- Update nuxt badge colors ([953200d](https://github.com/Yizack/nuxt-twemoji/commit/953200d))
+- Update info ([de5df42](https://github.com/Yizack/nuxt-twemoji/commit/de5df42))
+- Update readme info ([f2017e2](https://github.com/Yizack/nuxt-twemoji/commit/f2017e2))
+
+### 🏡 Chore
+
+- Update ci ([40d6d33](https://github.com/Yizack/nuxt-twemoji/commit/40d6d33))
+- Update ci code ([d7d9582](https://github.com/Yizack/nuxt-twemoji/commit/d7d9582))
+- Update dependencies ([b32e20e](https://github.com/Yizack/nuxt-twemoji/commit/b32e20e))
+- Set svg body vas string ([210959b](https://github.com/Yizack/nuxt-twemoji/commit/210959b))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.5.2
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.5.1...v3.5.2)
