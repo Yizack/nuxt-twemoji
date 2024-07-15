@@ -1,16 +1,21 @@
 import { defineNuxtModule, createResolver, addComponent } from '@nuxt/kit'
+import { schema } from './schema'
+import type { ModuleOptions } from './types'
 
-export interface ModuleOptions {}
+export type { ModuleOptions }
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: 'nuxt-twemoji',
-    configKey: 'nuxtTwemoji',
+    configKey: 'twemoji',
     compatibility: {
       nuxt: '>=3.0.0',
     },
   },
-  setup() {
+  defaults: {
+    expiresIn: schema['expiresIn'].$default,
+  },
+  setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
     addComponent({
       name: 'Twemoji',
@@ -26,6 +31,24 @@ export default defineNuxtModule<ModuleOptions>({
       name: 'TwemojiParse',
       global: true,
       filePath: resolve('./runtime/components/TwemojiParse.vue'),
+    })
+
+    // Merge options to app.config
+    const runtimeOptions = Object.fromEntries(
+      Object.entries(options)
+        .filter(([key]) => key in schema),
+    )
+    nuxt.options.appConfig.twemoji = Object.assign(
+      nuxt.options.appConfig.twemoji || {},
+      runtimeOptions,
+    )
+    // Define types
+    nuxt.hook('schema:extend', (schemas) => {
+      schemas.push({
+        appConfig: {
+          twemoji: schema,
+        },
+      })
     })
   },
 })

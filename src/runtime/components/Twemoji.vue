@@ -1,8 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import { ref, computed, defineComponent, h, watch } from 'vue'
+import type { NuxtTwemojiRuntimeOptions } from '../../types'
 import type { EmojiDefinition } from './../assets/emojis'
-import { useState } from '#imports'
+import { useState, useAppConfig } from '#imports'
 
 const props = defineProps({
   emoji: {
@@ -98,6 +99,23 @@ const component = computed (() => {
 
 const loadSVG = async () => {
   if (svgTwemojis.value[parsed.value] || !isValid.value) return
+
+  if (import.meta.client) {
+    const { expiresIn } = useAppConfig().twemoji as NuxtTwemojiRuntimeOptions
+    const expiry = localStorage.getItem(`twemoji-expiry`)
+    if (!expiresIn || Date.now() > Number(expiry)) {
+      console.log(expiresIn)
+      localStorage.removeItem(`twemoji-${parsed.value}`)
+      localStorage.setItem(`twemoji-expiry`, String(Date.now() + expiresIn * 1000)) // expires after 1 year
+    }
+
+    const cached = localStorage.getItem(`twemoji-${parsed.value}`)
+    if (cached) {
+      svgTwemojis.value[parsed.value] = { body: cached }
+      return
+    }
+  }
+
   isFetching.value = true
   let svgFetch = await fetchSVG()
   isFetching.value = false
@@ -113,6 +131,10 @@ const loadSVG = async () => {
 
   const svgBody = svgFetch.replace(/<\/*svg[^>]*>/g, '')
   svgTwemojis.value[parsed.value] = { body: svgBody }
+
+  if (import.meta.client) {
+    localStorage.setItem(`twemoji-${parsed.value}`, svgBody)
+  }
 }
 
 watch(() => props, async () => {
