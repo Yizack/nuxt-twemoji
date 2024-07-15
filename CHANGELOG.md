@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v3.6.1
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.6.0...v3.6.1)
+
+### 🌊 Types
+
+- Fix runtime options and possibly undefined ([be86891](https://github.com/Yizack/nuxt-twemoji/commit/be86891))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.6.0
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.5.2...v3.6.0)
