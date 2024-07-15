@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-import { ref, computed, defineComponent, h, watchEffect } from 'vue'
+import { ref, computed, defineComponent, h, watch } from 'vue'
 import type { EmojiDefinition } from './../assets/emojis'
 import { useState } from '#imports'
 
@@ -77,8 +77,8 @@ const cdn = 'https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets'
 const emojiLinkPNG = computed(() => `${cdn}/72x72/${codePoint.value[parsed.value]}.png`)
 const emojiLinkSVG = computed(() => `${cdn}/svg/${codePoint.value[parsed.value]}.svg`)
 
-const fetchSVG = () => $fetch(emojiLinkSVG.value, { responseType: 'text' }).then(res => res as string).catch(() => undefined)
-const svgTwemojis = useState('twemojis', () => ({}) as { [key: string]: { body: string } })
+const fetchSVG = () => $fetch(emojiLinkSVG.value, { responseType: 'text' }).then(res => res as string).catch(() => null)
+const svgTwemojis = useState('twemojis', () => ({}) as Record<string, { body: string }>)
 
 const component = computed (() => {
   if (!svgTwemojis.value[parsed.value]) return
@@ -108,15 +108,17 @@ const loadSVG = async () => {
     codePoint.value[parsed.value] = split.join('-')
     svgFetch = await fetchSVG()
   }
+
   if (!svgFetch) return
-  svgTwemojis.value[parsed.value] = {
-    body: svgFetch.replace(/<\/*svg[^>]*>/g, ''),
-  }
+
+  const svgBody = svgFetch.replace(/<\/*svg[^>]*>/g, '')
+  svgTwemojis.value[parsed.value] = { body: svgBody }
 }
-watchEffect(async () => {
+
+watch(() => props, async () => {
   codePoint.value[parsed.value] = parsed.value
   !props.png && await loadSVG()
-})
+}, { deep: true })
 
 !props.png && await loadSVG()
 </script>
