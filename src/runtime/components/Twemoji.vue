@@ -79,7 +79,7 @@ const emojiLinkPNG = computed(() => `${cdn}/72x72/${codePoint.value[parsed.value
 const emojiLinkSVG = computed(() => `${cdn}/svg/${codePoint.value[parsed.value]}.svg`)
 
 const fetchSVG = () => $fetch(emojiLinkSVG.value, { responseType: 'text' }).then(res => res as string).catch(() => null)
-const svgTwemojis = useState('twemojis', () => ({}) as Record<string, { body: string }>)
+const svgTwemojis = useState('twemojis', () => ({}) as Record<string, string>)
 
 const component = computed (() => {
   if (!svgTwemojis.value[parsed.value]) return
@@ -91,7 +91,7 @@ const component = computed (() => {
         viewBox: '0 0 36 36',
         width: props.size,
         height: props.size,
-        innerHTML: svgTwemojis.value[parsed.value]?.body,
+        innerHTML: svgTwemojis.value[parsed.value],
       })
     },
   })
@@ -104,14 +104,13 @@ const loadSVG = async () => {
     const { expiresIn } = useAppConfig().twemoji as NuxtTwemojiRuntimeOptions
     const expiry = localStorage.getItem(`twemoji-expiry`)
     if (!expiresIn || Date.now() > Number(expiry)) {
-      console.log(expiresIn)
       localStorage.removeItem(`twemoji-${parsed.value}`)
       localStorage.setItem(`twemoji-expiry`, String(Date.now() + expiresIn * 1000)) // expires after 1 year
     }
 
     const cached = localStorage.getItem(`twemoji-${parsed.value}`)
     if (cached) {
-      svgTwemojis.value[parsed.value] = { body: cached }
+      svgTwemojis.value[parsed.value] = cached
       return
     }
   }
@@ -130,7 +129,7 @@ const loadSVG = async () => {
   if (!svgFetch) return
 
   const svgBody = svgFetch.replace(/<\/*svg[^>]*>/g, '')
-  svgTwemojis.value[parsed.value] = { body: svgBody }
+  svgTwemojis.value[parsed.value] = svgBody
 
   if (import.meta.client) {
     localStorage.setItem(`twemoji-${parsed.value}`, svgBody)
