@@ -42,6 +42,7 @@ Twemoji module for Nuxt. Render emojis as SVG elements or PNG images
 - Render emoji by codepoint
 - Render emoji by definition object
 - SVG rendering by default
+- SVG caching with localStorage
 - PNG image render option
 - Twitter Emoji assets from the original ex-Twitter authors ([jdecked/twemoji](https://github.com/jdecked/twemoji)) fork repository
 - Assets from the [jsDelivr](https://www.jsdelivr.com/) CDN
@@ -66,6 +67,19 @@ export default defineNuxtConfig({
 ```
 
 That's it! You can now use `nuxt-twemoji` in your Nuxt app ✨
+
+## Module configs
+
+You can configure the module by adding the `twemoji` property to the `nuxt.config.ts` file. The following are the default configurations:
+
+```js
+export default defineNuxtConfig({
+  twemoji: {
+    expiresIn: 3.154e+7 // SVG cache expiration time in seconds (1 year)
+  }
+})
+
+```
 
 ## Components
 
@@ -268,26 +282,29 @@ img.twemojiParse {
 
 ```bash
 # Install dependencies
-npm install
+pnpm install
 
 # Generate type stubs
-npm run dev:prepare
+pnpm dev:prepare
 
 # Develop with the playground
-npm run dev
+pnpm dev
 
 # Build the playground
-npm run dev:build
+pnpm dev:build
 
 # Run ESLint
-npm run lint
+pnpm lint
 
 # Run Vitest
-npm run test
-npm run test:watch
+pnpm test
+pnpm test:watch
+
+# Run typecheck
+pnpm test:types
 
 # Release new version
-npm run release
+pnpm release
 ```
 
 <!-- Badges -->
