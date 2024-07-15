@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import { ref, computed, defineComponent, h, watch } from 'vue'
-import type { NuxtTwemojiRuntimeOptions } from '../../types'
+import type { NuxtTwemojiRuntimeOptions } from './../types/schema'
 import type { EmojiDefinition } from './../assets/emojis'
 import { useState, useAppConfig } from '#imports'
 

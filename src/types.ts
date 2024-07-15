@@ -1,15 +1,5 @@
-export interface NuxtTwemojiRuntimeOptions {
-  /**
-   * Default SVG cache expiration time
-   *
-   * Time in seconds for the SVG local storage cache to expire, defaults to 1 year
-   *
-   * @default 3.154e+7
-   *
-   */
-  expiresIn: number
-}
+import type { NuxtTwemojiRuntimeOptions } from './runtime/types/schema'
 
-export interface ModuleOptions extends Partial<NuxtTwemojiRuntimeOptions> {
-  mode?: 'client' | 'server' | 'universal'
-}
+export type { NuxtTwemojiRuntimeOptions }
+
+export interface ModuleOptions extends Partial<NuxtTwemojiRuntimeOptions> {}

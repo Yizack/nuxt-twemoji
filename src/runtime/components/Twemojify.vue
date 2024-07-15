@@ -1,8 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import type { NuxtTwemojiRuntimeOptions } from '../../types'
 import { parse } from '../utils/twemojify'
+import type { NuxtTwemojiRuntimeOptions } from './../types/schema'
 import { useState, useAppConfig } from '#imports'
 
 const props = defineProps({
@@ -16,10 +16,11 @@ const props = defineProps({
   },
 })
 
-const twemojify = useState(`twemojify:${props.png ? 'png' : 'svg'}`, () => ({}) as { [key: string]: string })
+const twemojify = useState(`twemojify:${props.png ? 'png' : 'svg'}`, () => ({}) as Record<string, string>)
 const parsedText = ref(props.text)
 
 const replaceEmojis = (emoji: string, indices: number[]) => {
+  if (!twemojify.value[emoji]) return parsedText.value
   return parsedText.value.replace(props.text.slice(...indices), twemojify.value[emoji])
 }
 
