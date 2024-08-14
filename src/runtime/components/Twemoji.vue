@@ -138,10 +138,10 @@ const loadSVG = async () => {
 
 watch(() => props, async () => {
   codePoint.value[parsed.value] = parsed.value
-  !props.png && await loadSVG()
+  if (!props.png) await loadSVG()
 }, { deep: true })
 
-!props.png && await loadSVG()
+if (!props.png) await loadSVG()
 </script>
 
 <template>

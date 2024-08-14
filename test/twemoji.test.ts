@@ -50,8 +50,8 @@ describe('Twemoji component tests', () => {
     expect(html).toContain(expected.img(alts.name))
   })
 
-  it('fails to render, shows original string'), async () => {
+  it('fails to render, shows original string', async () => {
     const html = await $fetch('/Twemoji/error')
     expect(html).toContain(expected.error)
-  }
+  })
 })
