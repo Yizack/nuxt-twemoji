@@ -10,7 +10,10 @@
     "nuxt3",
     "twitter-emoji"
   ],
-  "repository": "Yizack/nuxt-twemoji",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yizack/nuxt-twemoji.git"
+  },
   "homepage": "https://github.com/Yizack/nuxt-twemoji",
   "author": {
     "name": "Yizack Rangel",
