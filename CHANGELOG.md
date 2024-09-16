@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v3.6.2
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.6.1...v3.6.2)
+
+### 🏡 Chore
+
+- Update deps ([76a5529](https://github.com/Yizack/nuxt-twemoji/commit/76a5529))
+- Updates ([5b9049a](https://github.com/Yizack/nuxt-twemoji/commit/5b9049a))
+- Lint fixes ([08540b8](https://github.com/Yizack/nuxt-twemoji/commit/08540b8))
+- Fix npm repo property ([bd7eff6](https://github.com/Yizack/nuxt-twemoji/commit/bd7eff6))
+- Update nuxt and dependencies ([d32b7c0](https://github.com/Yizack/nuxt-twemoji/commit/d32b7c0))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v3.6.1
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.6.0...v3.6.1)
