@@ -7,7 +7,7 @@ import {
   twGirl,
   twStar,
   twPoliceCarLight,
-} from './../src/runtime/assets/emojis'
+} from 'nuxt-twemoji/emojis'
 </script>
 
 <template>
