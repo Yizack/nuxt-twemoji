@@ -1,8 +1,8 @@
-import { writeFileSync } from 'node:fs'
+import { writeFile } from 'node:fs/promises'
+import { $fetch } from 'ofetch'
 
-const res = await fetch('https://unicode.org/Public/emoji/15.1/emoji-test.txt')
-const text = await res.text()
-const emojis = {}
+const text = await $fetch<string>('https://unicode.org/Public/emoji/15.1/emoji-test.txt')
+const emojis: Record<string, { code: string, emoji: string, name: string }> = {}
 
 text.split('\n').forEach((line) => {
   if (line.startsWith('#')) return
@@ -13,7 +13,7 @@ text.split('\n').forEach((line) => {
   })
   if (map1[0] === undefined) return
 
-  const l2 = map1[1].split('# ')[1]
+  const l2 = map1[1]!.split('# ')[1]
   const code = map1[0].split(' ').join('-')
   const emoji = l2.split(' ')[0].trim()
   const name = l2.split(' ').slice(2).join('-').trim().replace(/[^a-z0-9-*#]/gi, '').toLowerCase().replace(/\*/g, 'asterisk').replace(/#/g, 'number')
@@ -26,6 +26,6 @@ const exports = Object.keys(emojis).map((key) => {
   return `export const ${key}: EmojiDefinition = ${JSON.stringify(emojis[key], null, 2).replace(/"([^"]+)":/g, '$1:').replace(/"/g, '\'')}`
 }).join('\n')
 
-writeFileSync(path, `export type EmojiDefinition = { code: string, emoji: string, name: string }\n${exports}`)
+await writeFile(path, `export type EmojiDefinition = { code: string, emoji: string, name: string }\n${exports}`)
 const length = Object.keys(emojis).length
 console.info(`[${length} emojis] generated file: ${path}`)
