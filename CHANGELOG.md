@@ -1,6 +1,21 @@
 # Changelog
 
 
+## v3.6.3
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.6.2...v3.6.3)
+
+### 🏡 Chore
+
+- Update dependencies ([ff7c785](https://github.com/Yizack/nuxt-twemoji/commit/ff7c785))
+- **playground:** Import emojis from nuxt-twemoji ([986810f](https://github.com/Yizack/nuxt-twemoji/commit/986810f))
+- Generate emojis script typescript extension ([c860029](https://github.com/Yizack/nuxt-twemoji/commit/c860029))
+- Update all deps ([64e716e](https://github.com/Yizack/nuxt-twemoji/commit/64e716e))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v3.6.2
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.6.1...v3.6.2)
