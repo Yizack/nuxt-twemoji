@@ -2,7 +2,7 @@
 <script setup lang="ts">
 import { ref, computed, defineComponent, h, watch } from 'vue'
 import { toCodePoints } from '@twemoji/parser'
-import type { NuxtTwemojiRuntimeOptions } from './../types/schema'
+import type { NuxtTwemojiRuntimeOptions } from './../../schema-types'
 import type { EmojiDefinition } from './../assets/emojis'
 import { useState, useAppConfig } from '#imports'
 

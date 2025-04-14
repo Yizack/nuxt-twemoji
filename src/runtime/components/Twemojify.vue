@@ -2,7 +2,7 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
 import { parse } from '@twemoji/parser'
-import type { NuxtTwemojiRuntimeOptions } from './../types/schema'
+import type { NuxtTwemojiRuntimeOptions } from './../../schema-types'
 import { useState, useAppConfig } from '#imports'
 
 const props = defineProps({

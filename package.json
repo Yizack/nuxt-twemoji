@@ -27,7 +27,10 @@
       "types": "./dist/types.d.mts",
       "import": "./dist/module.mjs"
     },
-    "./emojis": "./dist/runtime/assets/emojis.mjs"
+    "./emojis": {
+      "types": "./dist/runtime/assets/emojis.d.ts",
+      "import": "./dist/runtime/assets/emojis.js"
+    }
   },
   "main": "./dist/module.mjs",
   "typesVersions": {
@@ -36,7 +39,7 @@
         "./dist/types.d.mts"
       ],
       "emojis": [
-        "./dist/runtime/assets/emojis.d.mts"
+        "./dist/runtime/assets/emojis.d.ts"
       ]
     }
   },

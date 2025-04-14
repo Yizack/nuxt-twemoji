@@ -1,4 +1,4 @@
-import type { NuxtTwemojiRuntimeOptions } from './runtime/types/schema'
+import type { NuxtTwemojiRuntimeOptions } from './schema-types'
 
 export type { NuxtTwemojiRuntimeOptions }
 
