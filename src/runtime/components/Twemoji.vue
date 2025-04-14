@@ -102,16 +102,18 @@ const loadSVG = async () => {
 
   if (import.meta.client) {
     const { expiresIn } = useAppConfig().twemoji as NuxtTwemojiRuntimeOptions
-    const expiry = localStorage.getItem(`twemoji-expiry`)
-    if (!expiresIn || Date.now() > Number(expiry)) {
-      localStorage.removeItem(`twemoji-${parsed.value}`)
-      localStorage.setItem(`twemoji-expiry`, String(Date.now() + expiresIn * 1000)) // expires after 1 year
-    }
+    if (expiresIn > 0) {
+      const expiry = localStorage.getItem(`twemoji-expiry`)
+      if (Date.now() > Number(expiry)) {
+        localStorage.removeItem(`twemoji-${parsed.value}`)
+        localStorage.setItem(`twemoji-expiry`, String(Date.now() + expiresIn * 1000)) // expires after 1 year
+      }
 
-    const cached = localStorage.getItem(`twemoji-${parsed.value}`)
-    if (cached) {
-      svgTwemojis.value[parsed.value] = cached
-      return
+      const cached = localStorage.getItem(`twemoji-${parsed.value}`)
+      if (cached) {
+        svgTwemojis.value[parsed.value] = cached
+        return
+      }
     }
   }
 
@@ -132,7 +134,10 @@ const loadSVG = async () => {
   svgTwemojis.value[parsed.value] = svgBody
 
   if (import.meta.client) {
-    localStorage.setItem(`twemoji-${parsed.value}`, svgBody)
+    const { expiresIn } = useAppConfig().twemoji as NuxtTwemojiRuntimeOptions
+    if (expiresIn > 0) {
+      localStorage.setItem(`twemoji-${parsed.value}`, svgBody)
+    }
   }
 }
 
