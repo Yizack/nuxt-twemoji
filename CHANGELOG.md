@@ -1,6 +1,35 @@
 # Changelog
 
 
+## v3.7.0
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.6.3...v3.7.0)
+
+### 🚀 Enhancements
+
+- Update to emoji 16.0 ([2e3601c](https://github.com/Yizack/nuxt-twemoji/commit/2e3601c))
+
+### 🩹 Fixes
+
+- Do not create local storage items if cache is disabled ([ee12086](https://github.com/Yizack/nuxt-twemoji/commit/ee12086))
+- **types:** Fix options and emojis types ([e9e1c72](https://github.com/Yizack/nuxt-twemoji/commit/e9e1c72))
+
+### 💅 Refactors
+
+- Add `@twemoji/parser` dependency includes types ([120652b](https://github.com/Yizack/nuxt-twemoji/commit/120652b))
+
+### 📖 Documentation
+
+- Fix nuxt logo ([18b7e11](https://github.com/Yizack/nuxt-twemoji/commit/18b7e11))
+
+### 📦 Build
+
+- Upgrade module builder and update deps ([ea23237](https://github.com/Yizack/nuxt-twemoji/commit/ea23237))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v3.6.3
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.6.2...v3.6.3)
