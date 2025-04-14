@@ -1,6 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import { ref, computed, defineComponent, h, watch } from 'vue'
+import { toCodePoints } from '@twemoji/parser'
 import type { NuxtTwemojiRuntimeOptions } from './../types/schema'
 import type { EmojiDefinition } from './../assets/emojis'
 import { useState, useAppConfig } from '#imports'
@@ -19,27 +20,6 @@ const props = defineProps({
     default: false,
   },
 })
-
-const toCodePoint = (unicodeSurrogates: string) => {
-  const points: string[] = []
-  let char = 0
-  let previous = 0
-  let i = 0
-  while (i < unicodeSurrogates.length) {
-    char = unicodeSurrogates.charCodeAt(i++)
-    if (previous) {
-      points.push((0x10000 + (previous - 0xD800 << 10) + (char - 0xDC00)).toString(16))
-      previous = 0
-    }
-    else if (char > 0xD800 && char <= 0xDBFF) {
-      previous = char
-    }
-    else {
-      points.push(char.toString(16))
-    }
-  }
-  return points.join('-')
-}
 
 const isString = typeof props.emoji === 'string'
 const isDefinition = typeof props.emoji === 'object' && props.emoji.code !== undefined && props.emoji.emoji !== undefined && props.emoji.name !== undefined
@@ -69,7 +49,7 @@ const isFetching = ref(false)
 
 const parsed = computed(() => {
   if (isHex.value) return twemoji.value
-  return toCodePoint(twemoji.value)
+  return toCodePoints(twemoji.value).join('-')
 })
 
 codePoint.value[parsed.value] = parsed.value

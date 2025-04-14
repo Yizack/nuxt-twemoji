@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { parse } from '../utils/twemojify'
+import { parse } from '@twemoji/parser'
 import type { NuxtTwemojiRuntimeOptions } from './../types/schema'
 import { useState, useAppConfig } from '#imports'
 
