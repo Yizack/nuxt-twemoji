@@ -1,7 +1,7 @@
 import { writeFile } from 'node:fs/promises'
 import { $fetch } from 'ofetch'
 
-const text = await $fetch<string>('https://unicode.org/Public/emoji/15.1/emoji-test.txt')
+const text = await $fetch<string>('https://unicode.org/Public/emoji/16.0/emoji-test.txt')
 const emojis: Record<string, { code: string, emoji: string, name: string }> = {}
 
 text.split('\n').forEach((line) => {

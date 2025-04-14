@@ -284,6 +284,11 @@ export const twSleepingFace: EmojiDefinition = {
   emoji: '😴',
   name: 'sleeping-face',
 }
+export const twFaceWithBagsUnderEyes: EmojiDefinition = {
+  code: '1FAE9',
+  emoji: '🫩',
+  name: 'face-with-bags-under-eyes',
+}
 export const twFaceWithMedicalMask: EmojiDefinition = {
   code: '1F637',
   emoji: '😷',
@@ -12139,6 +12144,11 @@ export const twFootprints: EmojiDefinition = {
   emoji: '👣',
   name: 'footprints',
 }
+export const twFingerprint: EmojiDefinition = {
+  code: '1FAC6',
+  emoji: '🫆',
+  name: 'fingerprint',
+}
 export const twLightSkinTone: EmojiDefinition = {
   code: '1F3FB',
   emoji: '🏻',
@@ -12729,6 +12739,31 @@ export const twJellyfish: EmojiDefinition = {
   emoji: '🪼',
   name: 'jellyfish',
 }
+export const twCrab: EmojiDefinition = {
+  code: '1F980',
+  emoji: '🦀',
+  name: 'crab',
+}
+export const twLobster: EmojiDefinition = {
+  code: '1F99E',
+  emoji: '🦞',
+  name: 'lobster',
+}
+export const twShrimp: EmojiDefinition = {
+  code: '1F990',
+  emoji: '🦐',
+  name: 'shrimp',
+}
+export const twSquid: EmojiDefinition = {
+  code: '1F991',
+  emoji: '🦑',
+  name: 'squid',
+}
+export const twOyster: EmojiDefinition = {
+  code: '1F9AA',
+  emoji: '🦪',
+  name: 'oyster',
+}
 export const twSnail: EmojiDefinition = {
   code: '1F40C',
   emoji: '🐌',
@@ -12949,6 +12984,11 @@ export const twMushroom: EmojiDefinition = {
   emoji: '🍄',
   name: 'mushroom',
 }
+export const twLeaflessTree: EmojiDefinition = {
+  code: '1FABE',
+  emoji: '🪾',
+  name: 'leafless-tree',
+}
 export const twGrapes: EmojiDefinition = {
   code: '1F347',
   emoji: '🍇',
@@ -13138,6 +13178,11 @@ export const twBrownMushroom: EmojiDefinition = {
   code: '1F344-200D-1F7EB',
   emoji: '🍄‍🟫',
   name: 'brown-mushroom',
+}
+export const twRootVegetable: EmojiDefinition = {
+  code: '1FADC',
+  emoji: '🫜',
+  name: 'root-vegetable',
 }
 export const twBread: EmojiDefinition = {
   code: '1F35E',
@@ -13393,31 +13438,6 @@ export const twTakeoutBox: EmojiDefinition = {
   code: '1F961',
   emoji: '🥡',
   name: 'takeout-box',
-}
-export const twCrab: EmojiDefinition = {
-  code: '1F980',
-  emoji: '🦀',
-  name: 'crab',
-}
-export const twLobster: EmojiDefinition = {
-  code: '1F99E',
-  emoji: '🦞',
-  name: 'lobster',
-}
-export const twShrimp: EmojiDefinition = {
-  code: '1F990',
-  emoji: '🦐',
-  name: 'shrimp',
-}
-export const twSquid: EmojiDefinition = {
-  code: '1F991',
-  emoji: '🦑',
-  name: 'squid',
-}
-export const twOyster: EmojiDefinition = {
-  code: '1F9AA',
-  emoji: '🦪',
-  name: 'oyster',
 }
 export const twSoftIceCream: EmojiDefinition = {
   code: '1F366',
@@ -15519,6 +15539,11 @@ export const twFlute: EmojiDefinition = {
   emoji: '🪈',
   name: 'flute',
 }
+export const twHarp: EmojiDefinition = {
+  code: '1FA89',
+  emoji: '🪉',
+  name: 'harp',
+}
 export const twMobilePhone: EmojiDefinition = {
   code: '1F4F1',
   emoji: '📱',
@@ -16208,6 +16233,11 @@ export const twLadder: EmojiDefinition = {
   code: '1FA9C',
   emoji: '🪜',
   name: 'ladder',
+}
+export const twShovel: EmojiDefinition = {
+  code: '1FA8F',
+  emoji: '🪏',
+  name: 'shovel',
 }
 export const twAlembic: EmojiDefinition = {
   code: '2697',
@@ -17134,6 +17164,11 @@ export const twTradeMark: EmojiDefinition = {
   emoji: '™',
   name: 'trade-mark',
 }
+export const twSplatter: EmojiDefinition = {
+  code: '1FADF',
+  emoji: '🫟',
+  name: 'splatter',
+}
 export const twKeycapNumber: EmojiDefinition = {
   code: '0023-20E3',
   emoji: '#⃣',
@@ -17858,6 +17893,11 @@ export const twFlagClippertonIsland: EmojiDefinition = {
   code: '1F1E8-1F1F5',
   emoji: '🇨🇵',
   name: 'flag-clipperton-island',
+}
+export const twFlagSark: EmojiDefinition = {
+  code: '1F1E8-1F1F6',
+  emoji: '🇨🇶',
+  name: 'flag-sark',
 }
 export const twFlagCostaRica: EmojiDefinition = {
   code: '1F1E8-1F1F7',
