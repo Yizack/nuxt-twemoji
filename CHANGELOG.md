@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v3.7.1
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.7.0...v3.7.1)
+
+### 🩹 Fixes
+
+- Extend `@twemoji/parser` optimization in dev ([b5b848b](https://github.com/Yizack/nuxt-twemoji/commit/b5b848b))
+
+### 🤖 CI
+
+- Enable corepack instead of pnpm action ([7253532](https://github.com/Yizack/nuxt-twemoji/commit/7253532))
+- **auto-fix:** Update auto-fix action version hash ([1cadd9c](https://github.com/Yizack/nuxt-twemoji/commit/1cadd9c))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v3.7.0
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.6.3...v3.7.0)
