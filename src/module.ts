@@ -1,4 +1,4 @@
-import { defineNuxtModule, createResolver, addComponent } from '@nuxt/kit'
+import { defineNuxtModule, createResolver, addComponent, extendViteConfig } from '@nuxt/kit'
 import { schema } from './schema'
 import type { ModuleOptions } from './types'
 
@@ -32,6 +32,13 @@ export default defineNuxtModule<ModuleOptions>({
       global: true,
       filePath: resolve('./runtime/components/TwemojiParse.vue'),
     })
+
+    extendViteConfig((config) => {
+      config.optimizeDeps = {
+        include: ['@twemoji/parser', ...(config.optimizeDeps?.include || [])],
+        ...config.optimizeDeps,
+      }
+    }, { dev: true })
 
     // Merge options to app.config
     const runtimeOptions = Object.fromEntries(
