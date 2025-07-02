@@ -5,16 +5,10 @@ import { parse } from '@twemoji/parser'
 import type { NuxtTwemojiRuntimeOptions } from './../../schema-types'
 import { useState, useAppConfig } from '#imports'
 
-const props = defineProps({
-  text: {
-    type: String,
-    required: true,
-  },
-  png: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = defineProps<{
+  text: string
+  png?: boolean
+}>()
 
 const twemojify = useState(`twemojify:${props.png ? 'png' : 'svg'}`, () => ({}) as Record<string, string>)
 const parsedText = ref(props.text)

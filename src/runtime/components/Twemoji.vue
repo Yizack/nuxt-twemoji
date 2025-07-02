@@ -6,19 +6,12 @@ import type { NuxtTwemojiRuntimeOptions } from './../../schema-types'
 import type { EmojiDefinition } from './../assets/emojis'
 import { useState, useAppConfig } from '#imports'
 
-const props = defineProps({
-  emoji: {
-    type: [String, Object as () => EmojiDefinition],
-    required: true,
-  },
-  size: {
-    type: String,
-    default: '1em',
-  },
-  png: {
-    type: Boolean,
-    default: false,
-  },
+const props = withDefaults(defineProps<{
+  emoji: string | EmojiDefinition
+  size?: string
+  png?: boolean
+}>(), {
+  size: '1em',
 })
 
 const isString = typeof props.emoji === 'string'

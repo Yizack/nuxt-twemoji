@@ -1,18 +1,14 @@
 <script setup lang="ts">
-import twemojiapi, { type Twemoji } from '@twemoji/api'
-import { onMounted, ref } from 'vue'
+import twemoji from '@twemoji/api'
+import { onMounted, useTemplateRef } from 'vue'
 
-const twemoji = twemojiapi as Twemoji
+const props = defineProps<{
+  png?: boolean
+}>()
 
-const props = defineProps({
-  png: {
-    type: Boolean,
-    default: false,
-  },
-})
-
-const twemojiParse = ref({} as HTMLElement)
+const twemojiParse = useTemplateRef('twemojiParse')
 onMounted(() => {
+  if (!twemojiParse.value) return
   twemoji.parse(twemojiParse.value, {
     ext: props.png ? '.png' : '.svg',
     folder: props.png ? undefined : 'svg',
