@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v3.7.2
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.7.1...v3.7.2)
+
+### 💅 Refactors
+
+- **types:** Use type-based props ([2ed808f](https://github.com/Yizack/nuxt-twemoji/commit/2ed808f))
+
+### 🏡 Chore
+
+- Update nuxt and deps ([2d4b40f](https://github.com/Yizack/nuxt-twemoji/commit/2d4b40f))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v3.7.1
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.7.0...v3.7.1)
