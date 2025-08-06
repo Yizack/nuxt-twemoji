@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v3.7.3
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.7.2...v3.7.3)
+
+### 🏡 Chore
+
+- Update to nuxt v4 ([76d3fe4](https://github.com/Yizack/nuxt-twemoji/commit/76d3fe4))
+
+### 🤖 CI
+
+- Update autofix-ci ([9091781](https://github.com/Yizack/nuxt-twemoji/commit/9091781))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v3.7.2
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.7.1...v3.7.2)
