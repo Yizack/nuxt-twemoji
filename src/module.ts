@@ -49,7 +49,7 @@ export default defineNuxtModule<ModuleOptions>({
       nuxt.options.appConfig.twemoji || {},
       runtimeOptions,
     )
-    // Define types
+    // Define app config types
     nuxt.hook('schema:extend', (schemas) => {
       schemas.push({
         appConfig: {

@@ -1,2 +1,10 @@
+shamefullyHoist: true
+strictPeerDependencies: false
+
 packages:
-  - "playground"
+  - playground
+
+ignoredBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
+  - unrs-resolver

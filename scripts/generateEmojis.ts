@@ -13,9 +13,9 @@ text.split('\n').forEach((line) => {
   })
   if (map1[0] === undefined) return
 
-  const l2 = map1[1]!.split('# ')[1]
+  const l2 = map1[1]!.split('# ')[1]!
   const code = map1[0].split(' ').join('-')
-  const emoji = l2.split(' ')[0].trim()
+  const emoji = l2.split(' ')[0]!.trim()
   const name = l2.split(' ').slice(2).join('-').trim().replace(/[^a-z0-9-*#]/gi, '').toLowerCase().replace(/\*/g, 'asterisk').replace(/#/g, 'number')
   const property = 'tw' + name.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join('')
   emojis[property] = { code, emoji, name }

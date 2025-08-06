@@ -14,15 +14,12 @@ export default createConfigForNuxt({
       './playground',
     ],
   },
+}).append({
+  rules: {
+    'vue/multi-word-component-names': 'off',
+    'vue/max-attributes-per-line': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
+    'unicorn/escape-case': 'off',
+    'no-misleading-character-class': 'off',
+  },
 })
-  .append(
-    {
-      rules: {
-        'vue/multi-word-component-names': 'off',
-        'vue/max-attributes-per-line': 'off',
-        'vue/singleline-html-element-content-newline': 'off',
-        'unicorn/escape-case': 'off',
-        'no-misleading-character-class': 'off',
-      },
-    },
-  )

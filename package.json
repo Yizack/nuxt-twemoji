@@ -48,35 +48,35 @@
   ],
   "scripts": {
     "prepack": "nuxt-module-build build",
-    "dev": "nuxi dev playground",
-    "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "dev": "nuxt dev playground",
+    "dev:build": "nuxt build playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxt prepare playground",
     "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest run --reporter=verbose",
     "test:watch": "vitest watch",
-    "test:types": "vue-tsc --noEmit",
+    "test:types": "vue-tsc --noEmit && cd playground && vue-tsc -b --noEmit",
     "emojis": "jiti ./scripts/generateEmojis && npm run lint:fix"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.17.6",
+    "@nuxt/kit": "^4.0.3",
     "@twemoji/api": "^16.0.1",
     "@twemoji/parser": "^16.0.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.6.2",
-    "@nuxt/eslint-config": "^1.5.0",
-    "@nuxt/module-builder": "^1.0.1",
-    "@nuxt/schema": "^3.17.6",
+    "@nuxt/eslint-config": "^1.8.0",
+    "@nuxt/module-builder": "^1.0.2",
+    "@nuxt/schema": "^4.0.3",
     "@nuxt/test-utils": "^3.19.2",
-    "@types/node": "^24.0.10",
-    "changelogen": "^0.6.1",
-    "eslint": "^9.30.1",
-    "nuxt": "^3.17.6",
-    "typescript": "^5.8.3",
+    "@types/node": "^24.2.0",
+    "changelogen": "^0.6.2",
+    "eslint": "^9.32.0",
+    "nuxt": "^4.0.3",
+    "typescript": "^5.9.2",
     "vitest": "^3.2.4",
-    "vue-tsc": "^3.0.0"
+    "vue-tsc": "^3.0.5"
   },
-  "packageManager": "pnpm@10.12.4"
+  "packageManager": "pnpm@10.14.0"
 }

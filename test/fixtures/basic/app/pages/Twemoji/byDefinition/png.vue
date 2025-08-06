@@ -1,5 +1,5 @@
 <script setup>
-import { twRocket } from './../../../../../../src/runtime/assets/emojis'
+import { twRocket } from '../../../../../../../src/runtime/assets/emojis'
 </script>
 
 <template>
