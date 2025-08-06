@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import {
   twOrangeHeart,
   twFuelPump,
@@ -7,7 +7,7 @@ import {
   twGirl,
   twStar,
   twPoliceCarLight,
-} from '../src/runtime/assets/emojis'
+} from '../../src/runtime/assets/emojis'
 </script>
 
 <template>
@@ -110,7 +110,7 @@ export default {
           name: 'Not Rendered',
           emojis: [
             '1234',
-            { code: '1F46E', emoji: '👮' },
+            { code: '1F46E', emoji: '👮', name: '' },
           ],
         },
       ],
