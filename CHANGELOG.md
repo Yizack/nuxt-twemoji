@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v3.7.4
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.7.3...v3.7.4)
+
+### 🏡 Chore
+
+- Update deps ([f571695](https://github.com/Yizack/nuxt-twemoji/commit/f571695))
+
+### 🤖 CI
+
+- Use npm trusted publishing ([6538cda](https://github.com/Yizack/nuxt-twemoji/commit/6538cda))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v3.7.3
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.7.2...v3.7.3)
