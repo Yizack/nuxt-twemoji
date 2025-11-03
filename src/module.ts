@@ -34,11 +34,10 @@ export default defineNuxtModule<ModuleOptions>({
     })
 
     extendViteConfig((config) => {
-      config.optimizeDeps = {
-        include: ['@twemoji/parser', ...(config.optimizeDeps?.include || [])],
-        ...config.optimizeDeps,
-      }
-    }, { dev: true })
+      config.optimizeDeps ||= {}
+      config.optimizeDeps.include ||= []
+      config.optimizeDeps.include.push('@twemoji/parser')
+    })
 
     // Merge options to app.config
     const runtimeOptions = Object.fromEntries(
