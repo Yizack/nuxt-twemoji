@@ -424,6 +424,11 @@ export const twFlushedFace: EmojiDefinition = {
   emoji: '😳',
   name: 'flushed-face',
 }
+export const twDistortedFace: EmojiDefinition = {
+  code: '1FAEA',
+  emoji: '🫪',
+  name: 'distorted-face',
+}
 export const twPleadingFace: EmojiDefinition = {
   code: '1F97A',
   emoji: '🥺',
@@ -788,6 +793,11 @@ export const twAngerSymbol: EmojiDefinition = {
   code: '1F4A2',
   emoji: '💢',
   name: 'anger-symbol',
+}
+export const twFightCloud: EmojiDefinition = {
+  code: '1FAEF',
+  emoji: '🫯',
+  name: 'fight-cloud',
 }
 export const twCollision: EmojiDefinition = {
   code: '1F4A5',
@@ -7459,6 +7469,11 @@ export const twTroll: EmojiDefinition = {
   emoji: '🧌',
   name: 'troll',
 }
+export const twHairyCreature: EmojiDefinition = {
+  code: '1FAC8',
+  emoji: '🫈',
+  name: 'hairy-creature',
+}
 export const twPersonGettingMassage: EmojiDefinition = {
   code: '1F486',
   emoji: '💆',
@@ -8809,6 +8824,36 @@ export const twManRunningFacingRightDarkSkinTone: EmojiDefinition = {
   emoji: '🏃🏿‍♂‍➡',
   name: 'man-running-facing-right-dark-skin-tone',
 }
+export const twBalletDancer: EmojiDefinition = {
+  code: '1F9D1-200D-1FA70',
+  emoji: '🧑‍🩰',
+  name: 'ballet-dancer',
+}
+export const twBalletDancerLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FB-200D-1FA70',
+  emoji: '🧑🏻‍🩰',
+  name: 'ballet-dancer-light-skin-tone',
+}
+export const twBalletDancerMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FC-200D-1FA70',
+  emoji: '🧑🏼‍🩰',
+  name: 'ballet-dancer-medium-light-skin-tone',
+}
+export const twBalletDancerMediumSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FD-200D-1FA70',
+  emoji: '🧑🏽‍🩰',
+  name: 'ballet-dancer-medium-skin-tone',
+}
+export const twBalletDancerMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FE-200D-1FA70',
+  emoji: '🧑🏾‍🩰',
+  name: 'ballet-dancer-medium-dark-skin-tone',
+}
+export const twBalletDancerDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FF-200D-1FA70',
+  emoji: '🧑🏿‍🩰',
+  name: 'ballet-dancer-dark-skin-tone',
+}
 export const twWomanDancing: EmojiDefinition = {
   code: '1F483',
   emoji: '💃',
@@ -8904,15 +8949,390 @@ export const twPeopleWithBunnyEars: EmojiDefinition = {
   emoji: '👯',
   name: 'people-with-bunny-ears',
 }
+export const twPeopleWithBunnyEarsLightSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FB',
+  emoji: '👯🏻',
+  name: 'people-with-bunny-ears-light-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumLightSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FC',
+  emoji: '👯🏼',
+  name: 'people-with-bunny-ears-medium-light-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FD',
+  emoji: '👯🏽',
+  name: 'people-with-bunny-ears-medium-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FE',
+  emoji: '👯🏾',
+  name: 'people-with-bunny-ears-medium-dark-skin-tone',
+}
+export const twPeopleWithBunnyEarsDarkSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FF',
+  emoji: '👯🏿',
+  name: 'people-with-bunny-ears-dark-skin-tone',
+}
 export const twMenWithBunnyEars: EmojiDefinition = {
   code: '1F46F-200D-2642',
   emoji: '👯‍♂',
   name: 'men-with-bunny-ears',
 }
+export const twMenWithBunnyEarsLightSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FB-200D-2642',
+  emoji: '👯🏻‍♂',
+  name: 'men-with-bunny-ears-light-skin-tone',
+}
+export const twMenWithBunnyEarsMediumLightSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FC-200D-2642',
+  emoji: '👯🏼‍♂',
+  name: 'men-with-bunny-ears-medium-light-skin-tone',
+}
+export const twMenWithBunnyEarsMediumSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FD-200D-2642',
+  emoji: '👯🏽‍♂',
+  name: 'men-with-bunny-ears-medium-skin-tone',
+}
+export const twMenWithBunnyEarsMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FE-200D-2642',
+  emoji: '👯🏾‍♂',
+  name: 'men-with-bunny-ears-medium-dark-skin-tone',
+}
+export const twMenWithBunnyEarsDarkSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FF-200D-2642',
+  emoji: '👯🏿‍♂',
+  name: 'men-with-bunny-ears-dark-skin-tone',
+}
 export const twWomenWithBunnyEars: EmojiDefinition = {
   code: '1F46F-200D-2640',
   emoji: '👯‍♀',
   name: 'women-with-bunny-ears',
+}
+export const twWomenWithBunnyEarsLightSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FB-200D-2640',
+  emoji: '👯🏻‍♀',
+  name: 'women-with-bunny-ears-light-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumLightSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FC-200D-2640',
+  emoji: '👯🏼‍♀',
+  name: 'women-with-bunny-ears-medium-light-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FD-200D-2640',
+  emoji: '👯🏽‍♀',
+  name: 'women-with-bunny-ears-medium-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FE-200D-2640',
+  emoji: '👯🏾‍♀',
+  name: 'women-with-bunny-ears-medium-dark-skin-tone',
+}
+export const twWomenWithBunnyEarsDarkSkinTone: EmojiDefinition = {
+  code: '1F46F-1F3FF-200D-2640',
+  emoji: '👯🏿‍♀',
+  name: 'women-with-bunny-ears-dark-skin-tone',
+}
+export const twPeopleWithBunnyEarsLightSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FB-200D-1F430-200D-1F9D1-1F3FC',
+  emoji: '🧑🏻‍🐰‍🧑🏼',
+  name: 'people-with-bunny-ears-light-skin-tone-medium-light-skin-tone',
+}
+export const twPeopleWithBunnyEarsLightSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FB-200D-1F430-200D-1F9D1-1F3FD',
+  emoji: '🧑🏻‍🐰‍🧑🏽',
+  name: 'people-with-bunny-ears-light-skin-tone-medium-skin-tone',
+}
+export const twPeopleWithBunnyEarsLightSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FB-200D-1F430-200D-1F9D1-1F3FE',
+  emoji: '🧑🏻‍🐰‍🧑🏾',
+  name: 'people-with-bunny-ears-light-skin-tone-medium-dark-skin-tone',
+}
+export const twPeopleWithBunnyEarsLightSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FB-200D-1F430-200D-1F9D1-1F3FF',
+  emoji: '🧑🏻‍🐰‍🧑🏿',
+  name: 'people-with-bunny-ears-light-skin-tone-dark-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumLightSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FC-200D-1F430-200D-1F9D1-1F3FB',
+  emoji: '🧑🏼‍🐰‍🧑🏻',
+  name: 'people-with-bunny-ears-medium-light-skin-tone-light-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumLightSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FC-200D-1F430-200D-1F9D1-1F3FD',
+  emoji: '🧑🏼‍🐰‍🧑🏽',
+  name: 'people-with-bunny-ears-medium-light-skin-tone-medium-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumLightSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FC-200D-1F430-200D-1F9D1-1F3FE',
+  emoji: '🧑🏼‍🐰‍🧑🏾',
+  name: 'people-with-bunny-ears-medium-light-skin-tone-medium-dark-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumLightSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FC-200D-1F430-200D-1F9D1-1F3FF',
+  emoji: '🧑🏼‍🐰‍🧑🏿',
+  name: 'people-with-bunny-ears-medium-light-skin-tone-dark-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FD-200D-1F430-200D-1F9D1-1F3FB',
+  emoji: '🧑🏽‍🐰‍🧑🏻',
+  name: 'people-with-bunny-ears-medium-skin-tone-light-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FD-200D-1F430-200D-1F9D1-1F3FC',
+  emoji: '🧑🏽‍🐰‍🧑🏼',
+  name: 'people-with-bunny-ears-medium-skin-tone-medium-light-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FD-200D-1F430-200D-1F9D1-1F3FE',
+  emoji: '🧑🏽‍🐰‍🧑🏾',
+  name: 'people-with-bunny-ears-medium-skin-tone-medium-dark-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FD-200D-1F430-200D-1F9D1-1F3FF',
+  emoji: '🧑🏽‍🐰‍🧑🏿',
+  name: 'people-with-bunny-ears-medium-skin-tone-dark-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumDarkSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FE-200D-1F430-200D-1F9D1-1F3FB',
+  emoji: '🧑🏾‍🐰‍🧑🏻',
+  name: 'people-with-bunny-ears-medium-dark-skin-tone-light-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumDarkSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FE-200D-1F430-200D-1F9D1-1F3FC',
+  emoji: '🧑🏾‍🐰‍🧑🏼',
+  name: 'people-with-bunny-ears-medium-dark-skin-tone-medium-light-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumDarkSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FE-200D-1F430-200D-1F9D1-1F3FD',
+  emoji: '🧑🏾‍🐰‍🧑🏽',
+  name: 'people-with-bunny-ears-medium-dark-skin-tone-medium-skin-tone',
+}
+export const twPeopleWithBunnyEarsMediumDarkSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FE-200D-1F430-200D-1F9D1-1F3FF',
+  emoji: '🧑🏾‍🐰‍🧑🏿',
+  name: 'people-with-bunny-ears-medium-dark-skin-tone-dark-skin-tone',
+}
+export const twPeopleWithBunnyEarsDarkSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FF-200D-1F430-200D-1F9D1-1F3FB',
+  emoji: '🧑🏿‍🐰‍🧑🏻',
+  name: 'people-with-bunny-ears-dark-skin-tone-light-skin-tone',
+}
+export const twPeopleWithBunnyEarsDarkSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FF-200D-1F430-200D-1F9D1-1F3FC',
+  emoji: '🧑🏿‍🐰‍🧑🏼',
+  name: 'people-with-bunny-ears-dark-skin-tone-medium-light-skin-tone',
+}
+export const twPeopleWithBunnyEarsDarkSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FF-200D-1F430-200D-1F9D1-1F3FD',
+  emoji: '🧑🏿‍🐰‍🧑🏽',
+  name: 'people-with-bunny-ears-dark-skin-tone-medium-skin-tone',
+}
+export const twPeopleWithBunnyEarsDarkSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FF-200D-1F430-200D-1F9D1-1F3FE',
+  emoji: '🧑🏿‍🐰‍🧑🏾',
+  name: 'people-with-bunny-ears-dark-skin-tone-medium-dark-skin-tone',
+}
+export const twMenWithBunnyEarsLightSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FB-200D-1F430-200D-1F468-1F3FC',
+  emoji: '👨🏻‍🐰‍👨🏼',
+  name: 'men-with-bunny-ears-light-skin-tone-medium-light-skin-tone',
+}
+export const twMenWithBunnyEarsLightSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FB-200D-1F430-200D-1F468-1F3FD',
+  emoji: '👨🏻‍🐰‍👨🏽',
+  name: 'men-with-bunny-ears-light-skin-tone-medium-skin-tone',
+}
+export const twMenWithBunnyEarsLightSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FB-200D-1F430-200D-1F468-1F3FE',
+  emoji: '👨🏻‍🐰‍👨🏾',
+  name: 'men-with-bunny-ears-light-skin-tone-medium-dark-skin-tone',
+}
+export const twMenWithBunnyEarsLightSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FB-200D-1F430-200D-1F468-1F3FF',
+  emoji: '👨🏻‍🐰‍👨🏿',
+  name: 'men-with-bunny-ears-light-skin-tone-dark-skin-tone',
+}
+export const twMenWithBunnyEarsMediumLightSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FC-200D-1F430-200D-1F468-1F3FB',
+  emoji: '👨🏼‍🐰‍👨🏻',
+  name: 'men-with-bunny-ears-medium-light-skin-tone-light-skin-tone',
+}
+export const twMenWithBunnyEarsMediumLightSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FC-200D-1F430-200D-1F468-1F3FD',
+  emoji: '👨🏼‍🐰‍👨🏽',
+  name: 'men-with-bunny-ears-medium-light-skin-tone-medium-skin-tone',
+}
+export const twMenWithBunnyEarsMediumLightSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FC-200D-1F430-200D-1F468-1F3FE',
+  emoji: '👨🏼‍🐰‍👨🏾',
+  name: 'men-with-bunny-ears-medium-light-skin-tone-medium-dark-skin-tone',
+}
+export const twMenWithBunnyEarsMediumLightSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FC-200D-1F430-200D-1F468-1F3FF',
+  emoji: '👨🏼‍🐰‍👨🏿',
+  name: 'men-with-bunny-ears-medium-light-skin-tone-dark-skin-tone',
+}
+export const twMenWithBunnyEarsMediumSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FD-200D-1F430-200D-1F468-1F3FB',
+  emoji: '👨🏽‍🐰‍👨🏻',
+  name: 'men-with-bunny-ears-medium-skin-tone-light-skin-tone',
+}
+export const twMenWithBunnyEarsMediumSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FD-200D-1F430-200D-1F468-1F3FC',
+  emoji: '👨🏽‍🐰‍👨🏼',
+  name: 'men-with-bunny-ears-medium-skin-tone-medium-light-skin-tone',
+}
+export const twMenWithBunnyEarsMediumSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FD-200D-1F430-200D-1F468-1F3FE',
+  emoji: '👨🏽‍🐰‍👨🏾',
+  name: 'men-with-bunny-ears-medium-skin-tone-medium-dark-skin-tone',
+}
+export const twMenWithBunnyEarsMediumSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FD-200D-1F430-200D-1F468-1F3FF',
+  emoji: '👨🏽‍🐰‍👨🏿',
+  name: 'men-with-bunny-ears-medium-skin-tone-dark-skin-tone',
+}
+export const twMenWithBunnyEarsMediumDarkSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FE-200D-1F430-200D-1F468-1F3FB',
+  emoji: '👨🏾‍🐰‍👨🏻',
+  name: 'men-with-bunny-ears-medium-dark-skin-tone-light-skin-tone',
+}
+export const twMenWithBunnyEarsMediumDarkSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FE-200D-1F430-200D-1F468-1F3FC',
+  emoji: '👨🏾‍🐰‍👨🏼',
+  name: 'men-with-bunny-ears-medium-dark-skin-tone-medium-light-skin-tone',
+}
+export const twMenWithBunnyEarsMediumDarkSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FE-200D-1F430-200D-1F468-1F3FD',
+  emoji: '👨🏾‍🐰‍👨🏽',
+  name: 'men-with-bunny-ears-medium-dark-skin-tone-medium-skin-tone',
+}
+export const twMenWithBunnyEarsMediumDarkSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FE-200D-1F430-200D-1F468-1F3FF',
+  emoji: '👨🏾‍🐰‍👨🏿',
+  name: 'men-with-bunny-ears-medium-dark-skin-tone-dark-skin-tone',
+}
+export const twMenWithBunnyEarsDarkSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FF-200D-1F430-200D-1F468-1F3FB',
+  emoji: '👨🏿‍🐰‍👨🏻',
+  name: 'men-with-bunny-ears-dark-skin-tone-light-skin-tone',
+}
+export const twMenWithBunnyEarsDarkSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FF-200D-1F430-200D-1F468-1F3FC',
+  emoji: '👨🏿‍🐰‍👨🏼',
+  name: 'men-with-bunny-ears-dark-skin-tone-medium-light-skin-tone',
+}
+export const twMenWithBunnyEarsDarkSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FF-200D-1F430-200D-1F468-1F3FD',
+  emoji: '👨🏿‍🐰‍👨🏽',
+  name: 'men-with-bunny-ears-dark-skin-tone-medium-skin-tone',
+}
+export const twMenWithBunnyEarsDarkSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FF-200D-1F430-200D-1F468-1F3FE',
+  emoji: '👨🏿‍🐰‍👨🏾',
+  name: 'men-with-bunny-ears-dark-skin-tone-medium-dark-skin-tone',
+}
+export const twWomenWithBunnyEarsLightSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FB-200D-1F430-200D-1F469-1F3FC',
+  emoji: '👩🏻‍🐰‍👩🏼',
+  name: 'women-with-bunny-ears-light-skin-tone-medium-light-skin-tone',
+}
+export const twWomenWithBunnyEarsLightSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FB-200D-1F430-200D-1F469-1F3FD',
+  emoji: '👩🏻‍🐰‍👩🏽',
+  name: 'women-with-bunny-ears-light-skin-tone-medium-skin-tone',
+}
+export const twWomenWithBunnyEarsLightSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FB-200D-1F430-200D-1F469-1F3FE',
+  emoji: '👩🏻‍🐰‍👩🏾',
+  name: 'women-with-bunny-ears-light-skin-tone-medium-dark-skin-tone',
+}
+export const twWomenWithBunnyEarsLightSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FB-200D-1F430-200D-1F469-1F3FF',
+  emoji: '👩🏻‍🐰‍👩🏿',
+  name: 'women-with-bunny-ears-light-skin-tone-dark-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumLightSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FC-200D-1F430-200D-1F469-1F3FB',
+  emoji: '👩🏼‍🐰‍👩🏻',
+  name: 'women-with-bunny-ears-medium-light-skin-tone-light-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumLightSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FC-200D-1F430-200D-1F469-1F3FD',
+  emoji: '👩🏼‍🐰‍👩🏽',
+  name: 'women-with-bunny-ears-medium-light-skin-tone-medium-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumLightSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FC-200D-1F430-200D-1F469-1F3FE',
+  emoji: '👩🏼‍🐰‍👩🏾',
+  name: 'women-with-bunny-ears-medium-light-skin-tone-medium-dark-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumLightSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FC-200D-1F430-200D-1F469-1F3FF',
+  emoji: '👩🏼‍🐰‍👩🏿',
+  name: 'women-with-bunny-ears-medium-light-skin-tone-dark-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FD-200D-1F430-200D-1F469-1F3FB',
+  emoji: '👩🏽‍🐰‍👩🏻',
+  name: 'women-with-bunny-ears-medium-skin-tone-light-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FD-200D-1F430-200D-1F469-1F3FC',
+  emoji: '👩🏽‍🐰‍👩🏼',
+  name: 'women-with-bunny-ears-medium-skin-tone-medium-light-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FD-200D-1F430-200D-1F469-1F3FE',
+  emoji: '👩🏽‍🐰‍👩🏾',
+  name: 'women-with-bunny-ears-medium-skin-tone-medium-dark-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FD-200D-1F430-200D-1F469-1F3FF',
+  emoji: '👩🏽‍🐰‍👩🏿',
+  name: 'women-with-bunny-ears-medium-skin-tone-dark-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumDarkSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FE-200D-1F430-200D-1F469-1F3FB',
+  emoji: '👩🏾‍🐰‍👩🏻',
+  name: 'women-with-bunny-ears-medium-dark-skin-tone-light-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumDarkSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FE-200D-1F430-200D-1F469-1F3FC',
+  emoji: '👩🏾‍🐰‍👩🏼',
+  name: 'women-with-bunny-ears-medium-dark-skin-tone-medium-light-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumDarkSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FE-200D-1F430-200D-1F469-1F3FD',
+  emoji: '👩🏾‍🐰‍👩🏽',
+  name: 'women-with-bunny-ears-medium-dark-skin-tone-medium-skin-tone',
+}
+export const twWomenWithBunnyEarsMediumDarkSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FE-200D-1F430-200D-1F469-1F3FF',
+  emoji: '👩🏾‍🐰‍👩🏿',
+  name: 'women-with-bunny-ears-medium-dark-skin-tone-dark-skin-tone',
+}
+export const twWomenWithBunnyEarsDarkSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FF-200D-1F430-200D-1F469-1F3FB',
+  emoji: '👩🏿‍🐰‍👩🏻',
+  name: 'women-with-bunny-ears-dark-skin-tone-light-skin-tone',
+}
+export const twWomenWithBunnyEarsDarkSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FF-200D-1F430-200D-1F469-1F3FC',
+  emoji: '👩🏿‍🐰‍👩🏼',
+  name: 'women-with-bunny-ears-dark-skin-tone-medium-light-skin-tone',
+}
+export const twWomenWithBunnyEarsDarkSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FF-200D-1F430-200D-1F469-1F3FD',
+  emoji: '👩🏿‍🐰‍👩🏽',
+  name: 'women-with-bunny-ears-dark-skin-tone-medium-skin-tone',
+}
+export const twWomenWithBunnyEarsDarkSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FF-200D-1F430-200D-1F469-1F3FE',
+  emoji: '👩🏿‍🐰‍👩🏾',
+  name: 'women-with-bunny-ears-dark-skin-tone-medium-dark-skin-tone',
 }
 export const twPersonInSteamyRoom: EmojiDefinition = {
   code: '1F9D6',
@@ -9979,15 +10399,390 @@ export const twPeopleWrestling: EmojiDefinition = {
   emoji: '🤼',
   name: 'people-wrestling',
 }
+export const twPeopleWrestlingLightSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FB',
+  emoji: '🤼🏻',
+  name: 'people-wrestling-light-skin-tone',
+}
+export const twPeopleWrestlingMediumLightSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FC',
+  emoji: '🤼🏼',
+  name: 'people-wrestling-medium-light-skin-tone',
+}
+export const twPeopleWrestlingMediumSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FD',
+  emoji: '🤼🏽',
+  name: 'people-wrestling-medium-skin-tone',
+}
+export const twPeopleWrestlingMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FE',
+  emoji: '🤼🏾',
+  name: 'people-wrestling-medium-dark-skin-tone',
+}
+export const twPeopleWrestlingDarkSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FF',
+  emoji: '🤼🏿',
+  name: 'people-wrestling-dark-skin-tone',
+}
 export const twMenWrestling: EmojiDefinition = {
   code: '1F93C-200D-2642',
   emoji: '🤼‍♂',
   name: 'men-wrestling',
 }
+export const twMenWrestlingLightSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FB-200D-2642',
+  emoji: '🤼🏻‍♂',
+  name: 'men-wrestling-light-skin-tone',
+}
+export const twMenWrestlingMediumLightSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FC-200D-2642',
+  emoji: '🤼🏼‍♂',
+  name: 'men-wrestling-medium-light-skin-tone',
+}
+export const twMenWrestlingMediumSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FD-200D-2642',
+  emoji: '🤼🏽‍♂',
+  name: 'men-wrestling-medium-skin-tone',
+}
+export const twMenWrestlingMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FE-200D-2642',
+  emoji: '🤼🏾‍♂',
+  name: 'men-wrestling-medium-dark-skin-tone',
+}
+export const twMenWrestlingDarkSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FF-200D-2642',
+  emoji: '🤼🏿‍♂',
+  name: 'men-wrestling-dark-skin-tone',
+}
 export const twWomenWrestling: EmojiDefinition = {
   code: '1F93C-200D-2640',
   emoji: '🤼‍♀',
   name: 'women-wrestling',
+}
+export const twWomenWrestlingLightSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FB-200D-2640',
+  emoji: '🤼🏻‍♀',
+  name: 'women-wrestling-light-skin-tone',
+}
+export const twWomenWrestlingMediumLightSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FC-200D-2640',
+  emoji: '🤼🏼‍♀',
+  name: 'women-wrestling-medium-light-skin-tone',
+}
+export const twWomenWrestlingMediumSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FD-200D-2640',
+  emoji: '🤼🏽‍♀',
+  name: 'women-wrestling-medium-skin-tone',
+}
+export const twWomenWrestlingMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FE-200D-2640',
+  emoji: '🤼🏾‍♀',
+  name: 'women-wrestling-medium-dark-skin-tone',
+}
+export const twWomenWrestlingDarkSkinTone: EmojiDefinition = {
+  code: '1F93C-1F3FF-200D-2640',
+  emoji: '🤼🏿‍♀',
+  name: 'women-wrestling-dark-skin-tone',
+}
+export const twPeopleWrestlingLightSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FB-200D-1FAEF-200D-1F9D1-1F3FC',
+  emoji: '🧑🏻‍🫯‍🧑🏼',
+  name: 'people-wrestling-light-skin-tone-medium-light-skin-tone',
+}
+export const twPeopleWrestlingLightSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FB-200D-1FAEF-200D-1F9D1-1F3FD',
+  emoji: '🧑🏻‍🫯‍🧑🏽',
+  name: 'people-wrestling-light-skin-tone-medium-skin-tone',
+}
+export const twPeopleWrestlingLightSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FB-200D-1FAEF-200D-1F9D1-1F3FE',
+  emoji: '🧑🏻‍🫯‍🧑🏾',
+  name: 'people-wrestling-light-skin-tone-medium-dark-skin-tone',
+}
+export const twPeopleWrestlingLightSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FB-200D-1FAEF-200D-1F9D1-1F3FF',
+  emoji: '🧑🏻‍🫯‍🧑🏿',
+  name: 'people-wrestling-light-skin-tone-dark-skin-tone',
+}
+export const twPeopleWrestlingMediumLightSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FC-200D-1FAEF-200D-1F9D1-1F3FB',
+  emoji: '🧑🏼‍🫯‍🧑🏻',
+  name: 'people-wrestling-medium-light-skin-tone-light-skin-tone',
+}
+export const twPeopleWrestlingMediumLightSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FC-200D-1FAEF-200D-1F9D1-1F3FD',
+  emoji: '🧑🏼‍🫯‍🧑🏽',
+  name: 'people-wrestling-medium-light-skin-tone-medium-skin-tone',
+}
+export const twPeopleWrestlingMediumLightSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FC-200D-1FAEF-200D-1F9D1-1F3FE',
+  emoji: '🧑🏼‍🫯‍🧑🏾',
+  name: 'people-wrestling-medium-light-skin-tone-medium-dark-skin-tone',
+}
+export const twPeopleWrestlingMediumLightSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FC-200D-1FAEF-200D-1F9D1-1F3FF',
+  emoji: '🧑🏼‍🫯‍🧑🏿',
+  name: 'people-wrestling-medium-light-skin-tone-dark-skin-tone',
+}
+export const twPeopleWrestlingMediumSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FD-200D-1FAEF-200D-1F9D1-1F3FB',
+  emoji: '🧑🏽‍🫯‍🧑🏻',
+  name: 'people-wrestling-medium-skin-tone-light-skin-tone',
+}
+export const twPeopleWrestlingMediumSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FD-200D-1FAEF-200D-1F9D1-1F3FC',
+  emoji: '🧑🏽‍🫯‍🧑🏼',
+  name: 'people-wrestling-medium-skin-tone-medium-light-skin-tone',
+}
+export const twPeopleWrestlingMediumSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FD-200D-1FAEF-200D-1F9D1-1F3FE',
+  emoji: '🧑🏽‍🫯‍🧑🏾',
+  name: 'people-wrestling-medium-skin-tone-medium-dark-skin-tone',
+}
+export const twPeopleWrestlingMediumSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FD-200D-1FAEF-200D-1F9D1-1F3FF',
+  emoji: '🧑🏽‍🫯‍🧑🏿',
+  name: 'people-wrestling-medium-skin-tone-dark-skin-tone',
+}
+export const twPeopleWrestlingMediumDarkSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FE-200D-1FAEF-200D-1F9D1-1F3FB',
+  emoji: '🧑🏾‍🫯‍🧑🏻',
+  name: 'people-wrestling-medium-dark-skin-tone-light-skin-tone',
+}
+export const twPeopleWrestlingMediumDarkSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FE-200D-1FAEF-200D-1F9D1-1F3FC',
+  emoji: '🧑🏾‍🫯‍🧑🏼',
+  name: 'people-wrestling-medium-dark-skin-tone-medium-light-skin-tone',
+}
+export const twPeopleWrestlingMediumDarkSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FE-200D-1FAEF-200D-1F9D1-1F3FD',
+  emoji: '🧑🏾‍🫯‍🧑🏽',
+  name: 'people-wrestling-medium-dark-skin-tone-medium-skin-tone',
+}
+export const twPeopleWrestlingMediumDarkSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FE-200D-1FAEF-200D-1F9D1-1F3FF',
+  emoji: '🧑🏾‍🫯‍🧑🏿',
+  name: 'people-wrestling-medium-dark-skin-tone-dark-skin-tone',
+}
+export const twPeopleWrestlingDarkSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FF-200D-1FAEF-200D-1F9D1-1F3FB',
+  emoji: '🧑🏿‍🫯‍🧑🏻',
+  name: 'people-wrestling-dark-skin-tone-light-skin-tone',
+}
+export const twPeopleWrestlingDarkSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FF-200D-1FAEF-200D-1F9D1-1F3FC',
+  emoji: '🧑🏿‍🫯‍🧑🏼',
+  name: 'people-wrestling-dark-skin-tone-medium-light-skin-tone',
+}
+export const twPeopleWrestlingDarkSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FF-200D-1FAEF-200D-1F9D1-1F3FD',
+  emoji: '🧑🏿‍🫯‍🧑🏽',
+  name: 'people-wrestling-dark-skin-tone-medium-skin-tone',
+}
+export const twPeopleWrestlingDarkSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F9D1-1F3FF-200D-1FAEF-200D-1F9D1-1F3FE',
+  emoji: '🧑🏿‍🫯‍🧑🏾',
+  name: 'people-wrestling-dark-skin-tone-medium-dark-skin-tone',
+}
+export const twMenWrestlingLightSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FB-200D-1FAEF-200D-1F468-1F3FC',
+  emoji: '👨🏻‍🫯‍👨🏼',
+  name: 'men-wrestling-light-skin-tone-medium-light-skin-tone',
+}
+export const twMenWrestlingLightSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FB-200D-1FAEF-200D-1F468-1F3FD',
+  emoji: '👨🏻‍🫯‍👨🏽',
+  name: 'men-wrestling-light-skin-tone-medium-skin-tone',
+}
+export const twMenWrestlingLightSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FB-200D-1FAEF-200D-1F468-1F3FE',
+  emoji: '👨🏻‍🫯‍👨🏾',
+  name: 'men-wrestling-light-skin-tone-medium-dark-skin-tone',
+}
+export const twMenWrestlingLightSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FB-200D-1FAEF-200D-1F468-1F3FF',
+  emoji: '👨🏻‍🫯‍👨🏿',
+  name: 'men-wrestling-light-skin-tone-dark-skin-tone',
+}
+export const twMenWrestlingMediumLightSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FC-200D-1FAEF-200D-1F468-1F3FB',
+  emoji: '👨🏼‍🫯‍👨🏻',
+  name: 'men-wrestling-medium-light-skin-tone-light-skin-tone',
+}
+export const twMenWrestlingMediumLightSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FC-200D-1FAEF-200D-1F468-1F3FD',
+  emoji: '👨🏼‍🫯‍👨🏽',
+  name: 'men-wrestling-medium-light-skin-tone-medium-skin-tone',
+}
+export const twMenWrestlingMediumLightSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FC-200D-1FAEF-200D-1F468-1F3FE',
+  emoji: '👨🏼‍🫯‍👨🏾',
+  name: 'men-wrestling-medium-light-skin-tone-medium-dark-skin-tone',
+}
+export const twMenWrestlingMediumLightSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FC-200D-1FAEF-200D-1F468-1F3FF',
+  emoji: '👨🏼‍🫯‍👨🏿',
+  name: 'men-wrestling-medium-light-skin-tone-dark-skin-tone',
+}
+export const twMenWrestlingMediumSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FD-200D-1FAEF-200D-1F468-1F3FB',
+  emoji: '👨🏽‍🫯‍👨🏻',
+  name: 'men-wrestling-medium-skin-tone-light-skin-tone',
+}
+export const twMenWrestlingMediumSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FD-200D-1FAEF-200D-1F468-1F3FC',
+  emoji: '👨🏽‍🫯‍👨🏼',
+  name: 'men-wrestling-medium-skin-tone-medium-light-skin-tone',
+}
+export const twMenWrestlingMediumSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FD-200D-1FAEF-200D-1F468-1F3FE',
+  emoji: '👨🏽‍🫯‍👨🏾',
+  name: 'men-wrestling-medium-skin-tone-medium-dark-skin-tone',
+}
+export const twMenWrestlingMediumSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FD-200D-1FAEF-200D-1F468-1F3FF',
+  emoji: '👨🏽‍🫯‍👨🏿',
+  name: 'men-wrestling-medium-skin-tone-dark-skin-tone',
+}
+export const twMenWrestlingMediumDarkSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FE-200D-1FAEF-200D-1F468-1F3FB',
+  emoji: '👨🏾‍🫯‍👨🏻',
+  name: 'men-wrestling-medium-dark-skin-tone-light-skin-tone',
+}
+export const twMenWrestlingMediumDarkSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FE-200D-1FAEF-200D-1F468-1F3FC',
+  emoji: '👨🏾‍🫯‍👨🏼',
+  name: 'men-wrestling-medium-dark-skin-tone-medium-light-skin-tone',
+}
+export const twMenWrestlingMediumDarkSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FE-200D-1FAEF-200D-1F468-1F3FD',
+  emoji: '👨🏾‍🫯‍👨🏽',
+  name: 'men-wrestling-medium-dark-skin-tone-medium-skin-tone',
+}
+export const twMenWrestlingMediumDarkSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FE-200D-1FAEF-200D-1F468-1F3FF',
+  emoji: '👨🏾‍🫯‍👨🏿',
+  name: 'men-wrestling-medium-dark-skin-tone-dark-skin-tone',
+}
+export const twMenWrestlingDarkSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FF-200D-1FAEF-200D-1F468-1F3FB',
+  emoji: '👨🏿‍🫯‍👨🏻',
+  name: 'men-wrestling-dark-skin-tone-light-skin-tone',
+}
+export const twMenWrestlingDarkSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FF-200D-1FAEF-200D-1F468-1F3FC',
+  emoji: '👨🏿‍🫯‍👨🏼',
+  name: 'men-wrestling-dark-skin-tone-medium-light-skin-tone',
+}
+export const twMenWrestlingDarkSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FF-200D-1FAEF-200D-1F468-1F3FD',
+  emoji: '👨🏿‍🫯‍👨🏽',
+  name: 'men-wrestling-dark-skin-tone-medium-skin-tone',
+}
+export const twMenWrestlingDarkSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F468-1F3FF-200D-1FAEF-200D-1F468-1F3FE',
+  emoji: '👨🏿‍🫯‍👨🏾',
+  name: 'men-wrestling-dark-skin-tone-medium-dark-skin-tone',
+}
+export const twWomenWrestlingLightSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FB-200D-1FAEF-200D-1F469-1F3FC',
+  emoji: '👩🏻‍🫯‍👩🏼',
+  name: 'women-wrestling-light-skin-tone-medium-light-skin-tone',
+}
+export const twWomenWrestlingLightSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FB-200D-1FAEF-200D-1F469-1F3FD',
+  emoji: '👩🏻‍🫯‍👩🏽',
+  name: 'women-wrestling-light-skin-tone-medium-skin-tone',
+}
+export const twWomenWrestlingLightSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FB-200D-1FAEF-200D-1F469-1F3FE',
+  emoji: '👩🏻‍🫯‍👩🏾',
+  name: 'women-wrestling-light-skin-tone-medium-dark-skin-tone',
+}
+export const twWomenWrestlingLightSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FB-200D-1FAEF-200D-1F469-1F3FF',
+  emoji: '👩🏻‍🫯‍👩🏿',
+  name: 'women-wrestling-light-skin-tone-dark-skin-tone',
+}
+export const twWomenWrestlingMediumLightSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FC-200D-1FAEF-200D-1F469-1F3FB',
+  emoji: '👩🏼‍🫯‍👩🏻',
+  name: 'women-wrestling-medium-light-skin-tone-light-skin-tone',
+}
+export const twWomenWrestlingMediumLightSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FC-200D-1FAEF-200D-1F469-1F3FD',
+  emoji: '👩🏼‍🫯‍👩🏽',
+  name: 'women-wrestling-medium-light-skin-tone-medium-skin-tone',
+}
+export const twWomenWrestlingMediumLightSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FC-200D-1FAEF-200D-1F469-1F3FE',
+  emoji: '👩🏼‍🫯‍👩🏾',
+  name: 'women-wrestling-medium-light-skin-tone-medium-dark-skin-tone',
+}
+export const twWomenWrestlingMediumLightSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FC-200D-1FAEF-200D-1F469-1F3FF',
+  emoji: '👩🏼‍🫯‍👩🏿',
+  name: 'women-wrestling-medium-light-skin-tone-dark-skin-tone',
+}
+export const twWomenWrestlingMediumSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FD-200D-1FAEF-200D-1F469-1F3FB',
+  emoji: '👩🏽‍🫯‍👩🏻',
+  name: 'women-wrestling-medium-skin-tone-light-skin-tone',
+}
+export const twWomenWrestlingMediumSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FD-200D-1FAEF-200D-1F469-1F3FC',
+  emoji: '👩🏽‍🫯‍👩🏼',
+  name: 'women-wrestling-medium-skin-tone-medium-light-skin-tone',
+}
+export const twWomenWrestlingMediumSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FD-200D-1FAEF-200D-1F469-1F3FE',
+  emoji: '👩🏽‍🫯‍👩🏾',
+  name: 'women-wrestling-medium-skin-tone-medium-dark-skin-tone',
+}
+export const twWomenWrestlingMediumSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FD-200D-1FAEF-200D-1F469-1F3FF',
+  emoji: '👩🏽‍🫯‍👩🏿',
+  name: 'women-wrestling-medium-skin-tone-dark-skin-tone',
+}
+export const twWomenWrestlingMediumDarkSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FE-200D-1FAEF-200D-1F469-1F3FB',
+  emoji: '👩🏾‍🫯‍👩🏻',
+  name: 'women-wrestling-medium-dark-skin-tone-light-skin-tone',
+}
+export const twWomenWrestlingMediumDarkSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FE-200D-1FAEF-200D-1F469-1F3FC',
+  emoji: '👩🏾‍🫯‍👩🏼',
+  name: 'women-wrestling-medium-dark-skin-tone-medium-light-skin-tone',
+}
+export const twWomenWrestlingMediumDarkSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FE-200D-1FAEF-200D-1F469-1F3FD',
+  emoji: '👩🏾‍🫯‍👩🏽',
+  name: 'women-wrestling-medium-dark-skin-tone-medium-skin-tone',
+}
+export const twWomenWrestlingMediumDarkSkinToneDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FE-200D-1FAEF-200D-1F469-1F3FF',
+  emoji: '👩🏾‍🫯‍👩🏿',
+  name: 'women-wrestling-medium-dark-skin-tone-dark-skin-tone',
+}
+export const twWomenWrestlingDarkSkinToneLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FF-200D-1FAEF-200D-1F469-1F3FB',
+  emoji: '👩🏿‍🫯‍👩🏻',
+  name: 'women-wrestling-dark-skin-tone-light-skin-tone',
+}
+export const twWomenWrestlingDarkSkinToneMediumLightSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FF-200D-1FAEF-200D-1F469-1F3FC',
+  emoji: '👩🏿‍🫯‍👩🏼',
+  name: 'women-wrestling-dark-skin-tone-medium-light-skin-tone',
+}
+export const twWomenWrestlingDarkSkinToneMediumSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FF-200D-1FAEF-200D-1F469-1F3FD',
+  emoji: '👩🏿‍🫯‍👩🏽',
+  name: 'women-wrestling-dark-skin-tone-medium-skin-tone',
+}
+export const twWomenWrestlingDarkSkinToneMediumDarkSkinTone: EmojiDefinition = {
+  code: '1F469-1F3FF-200D-1FAEF-200D-1F469-1F3FE',
+  emoji: '👩🏿‍🫯‍👩🏾',
+  name: 'women-wrestling-dark-skin-tone-medium-dark-skin-tone',
 }
 export const twPersonPlayingWaterPolo: EmojiDefinition = {
   code: '1F93D',
@@ -12694,6 +13489,11 @@ export const twDolphin: EmojiDefinition = {
   emoji: '🐬',
   name: 'dolphin',
 }
+export const twOrca: EmojiDefinition = {
+  code: '1FACD',
+  emoji: '🫍',
+  name: 'orca',
+}
 export const twSeal: EmojiDefinition = {
   code: '1F9AD',
   emoji: '🦭',
@@ -13688,6 +14488,11 @@ export const twMountain: EmojiDefinition = {
   code: '26F0',
   emoji: '⛰',
   name: 'mountain',
+}
+export const twLandslide: EmojiDefinition = {
+  code: '1F6D8',
+  emoji: '🛘',
+  name: 'landslide',
 }
 export const twVolcano: EmojiDefinition = {
   code: '1F30B',
@@ -15489,6 +16294,16 @@ export const twSaxophone: EmojiDefinition = {
   emoji: '🎷',
   name: 'saxophone',
 }
+export const twTrumpet: EmojiDefinition = {
+  code: '1F3BA',
+  emoji: '🎺',
+  name: 'trumpet',
+}
+export const twTrombone: EmojiDefinition = {
+  code: '1FA8A',
+  emoji: '🪊',
+  name: 'trombone',
+}
 export const twAccordion: EmojiDefinition = {
   code: '1FA97',
   emoji: '🪗',
@@ -15503,11 +16318,6 @@ export const twMusicalKeyboard: EmojiDefinition = {
   code: '1F3B9',
   emoji: '🎹',
   name: 'musical-keyboard',
-}
-export const twTrumpet: EmojiDefinition = {
-  code: '1F3BA',
-  emoji: '🎺',
-  name: 'trumpet',
 }
 export const twViolin: EmojiDefinition = {
   code: '1F3BB',
@@ -15809,15 +16619,20 @@ export const twLabel: EmojiDefinition = {
   emoji: '🏷',
   name: 'label',
 }
+export const twCoin: EmojiDefinition = {
+  code: '1FA99',
+  emoji: '🪙',
+  name: 'coin',
+}
 export const twMoneyBag: EmojiDefinition = {
   code: '1F4B0',
   emoji: '💰',
   name: 'money-bag',
 }
-export const twCoin: EmojiDefinition = {
-  code: '1FA99',
-  emoji: '🪙',
-  name: 'coin',
+export const twTreasureChest: EmojiDefinition = {
+  code: '1FA8E',
+  emoji: '🪎',
+  name: 'treasure-chest',
 }
 export const twYenBanknote: EmojiDefinition = {
   code: '1F4B4',

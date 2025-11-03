@@ -37,8 +37,8 @@ Twemoji module for Nuxt. Render emojis as SVG elements or PNG images
 - [Development](#development)
 
 ## Features
-- Nuxt 3 ready
-- Emoji 16.0 support
+- Nuxt 4 ready
+- Emoji 17.0 support
 - Render emoji by character
 - Render emoji by codepoint
 - Render emoji by definition object
@@ -94,9 +94,8 @@ You can make use of any of these available components according to your Nuxt app
 
 ## Usage (`Twemoji`)
 
-1. Find emojis from the recommended unicode emoji list: https://unicode.org/emoji/charts-16.0/full-emoji-list.html
-
-2. In the project, use the component `<Twemoji emoji="" />`, where `emoji` is the emoji character or codepoint.
+1. Find emojis from [emojipedia](https://emojipedia.org/), [getemoji](https://getemoji.com/) or [unicode emoji list](https://unicode.org/emoji/charts-17.0/full-emoji-list.html)
+2. In your project, use the component `<Twemoji emoji="" />`, where `emoji` is the emoji character or codepoint.
 3. If you employ SSR (Server Side Rendering) in your Nuxt application, this module will inject the emoji `<svg>` or `<img>` element into the output code during your project's build/generate process. Alternatively, if SSR is not used, the emojis will dynamically render during client runtime.
 
 ### `Twemoji` properties
@@ -144,7 +143,7 @@ import { twSmilingFaceWithSmilingEyes } from 'nuxt-twemoji/emojis'
 </template>
 ```
 
-The emojis file has been generated using the self made [`generateEmojis.js`](https://github.com/Yizack/nuxt-twemoji/blob/main/scripts/generateEmojis.js) script, which fetches emojis data from the [Unicode](https://home.unicode.org/) public Emoji 16.0 file available at https://unicode.org/Public/emoji/16.0/emoji-test.txt
+The emojis file has been generated using the self made [`generateEmojis.js`](https://github.com/Yizack/nuxt-twemoji/blob/main/scripts/generateEmojis.js) script, which fetches emojis data from the [Unicode](https://home.unicode.org/) public Emoji 17.0 file available at https://unicode.org/Public/17.0.0/emoji/emoji-test.txt
 
 ### Definitions
 The `EmojiDefinition` type represents objects that have these specific three string properties:
@@ -276,7 +275,7 @@ img.twemojiParse {
 
 - Twitter Emoji assets from [jdecked/twemoji](https://github.com/jdecked/twemoji)
 - Default CDN [jsDelivr](https://www.jsdelivr.com/)
-- [Unicode](https://home.unicode.org/) public [Emoji 16.0](https://unicode.org/Public/emoji/16.0/) file
+- [Unicode](https://home.unicode.org/) public [Emoji 17.0](https://unicode.org/Public/17.0.0/emoji) files
 - [Nuxt](https://github.com/nuxt/nuxt), the JavaScript framework for creating SSR Vue applications and its [Module Author Guide](https://nuxt.com/docs/guide/going-further/modules)
 
 ## Development
