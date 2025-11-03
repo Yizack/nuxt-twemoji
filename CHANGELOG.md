@@ -1,6 +1,30 @@
 # Changelog
 
 
+## v3.8.0
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.7.4...v3.8.0)
+
+### 🚀 Enhancements
+
+- Update to emoji 17.0 ([4862efc](https://github.com/Yizack/nuxt-twemoji/commit/4862efc))
+
+### 🩹 Fixes
+
+- **playground:** Sfc script language ([c9b10f1](https://github.com/Yizack/nuxt-twemoji/commit/c9b10f1))
+
+### 💅 Refactors
+
+- Simplify vite optimizeDeps include logic ([e7854db](https://github.com/Yizack/nuxt-twemoji/commit/e7854db))
+
+### 🏡 Chore
+
+- Improve generate emojis file script ([e519f71](https://github.com/Yizack/nuxt-twemoji/commit/e519f71))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v3.7.4
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.7.3...v3.7.4)
