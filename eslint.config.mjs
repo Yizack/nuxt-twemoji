@@ -21,6 +21,5 @@ export default createConfigForNuxt({
     'vue/singleline-html-element-content-newline': 'off',
     'unicorn/escape-case': 'off',
     'no-misleading-character-class': 'off',
-    '@typescript-eslint/unified-signatures': 'off', // temporary disable due to eslint bug
   },
 })
