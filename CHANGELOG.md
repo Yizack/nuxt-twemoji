@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v3.8.1
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.8.0...v3.8.1)
+
+### 🏡 Chore
+
+- Upgrade eslint to 9.39.1 and clean up config ([c4f0f22](https://github.com/Yizack/nuxt-twemoji/commit/c4f0f22))
+- Update `@twemoji/api` ([e1256e3](https://github.com/Yizack/nuxt-twemoji/commit/e1256e3))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v3.8.0
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.7.4...v3.8.0)
