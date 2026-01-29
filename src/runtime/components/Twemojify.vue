@@ -13,7 +13,7 @@ const props = defineProps<{
   /**
    * Rendering mode
    */
-  mode?: NuxtTwemojiRuntimeOptions['mode']
+  mode?: 'svg' | 'png'
 }>()
 
 const config = useRuntimeConfig().public.twemoji as NuxtTwemojiRuntimeOptions

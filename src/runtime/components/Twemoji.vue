@@ -19,7 +19,7 @@ const props = withDefaults(defineProps<{
   /**
    * Rendering mode
    */
-  mode?: NuxtTwemojiRuntimeOptions['mode']
+  mode?: 'svg' | 'png'
 }>(), {
   size: '1em',
 })
