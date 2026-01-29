@@ -12,7 +12,7 @@
 Twemoji module for Nuxt. Render emojis as SVG elements or PNG images
 
 - [✨ Release Notes](https://github.com/Yizack/nuxt-twemoji/blob/main/CHANGELOG.md)
-- [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp.vue)
+- [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp%2Fpages%2Findex.vue)
 
 ## Table of Contents
 - [Features](#features)
@@ -164,7 +164,7 @@ type EmojiDefinition = {
 ```
 
 ### More examples
-Check out the [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp.vue) for more examples.
+Check out the [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp%2Fpages%2Findex.vue) for more examples.
 
 ### `Twemoji` Default CSS
 
