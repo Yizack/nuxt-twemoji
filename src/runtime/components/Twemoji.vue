@@ -15,7 +15,7 @@ const props = withDefaults(defineProps<{
 })
 
 const isString = typeof props.emoji === 'string'
-const isDefinition = typeof props.emoji === 'object' && props.emoji.code !== undefined && props.emoji.emoji !== undefined && props.emoji.name !== undefined
+const isDefinition = typeof props.emoji === 'object' && (props.emoji.code && props.emoji.emoji && props.emoji.name)
 
 const isValid = computed(() => isString || isDefinition)
 
