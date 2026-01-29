@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v3.8.2
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.8.1...v3.8.2)
+
+### 🩹 Fixes
+
+- Improve `Twemoji` parsing for fully-qualified emojis ([7c287bf](https://github.com/Yizack/nuxt-twemoji/commit/7c287bf))
+
+### 💅 Refactors
+
+- Config handling and remove schema files ([4479b85](https://github.com/Yizack/nuxt-twemoji/commit/4479b85))
+- **playground:** Use Nuxt pages routing ([e8fe619](https://github.com/Yizack/nuxt-twemoji/commit/e8fe619))
+
+### 🏡 Chore
+
+- Update all deps ([e02d6fa](https://github.com/Yizack/nuxt-twemoji/commit/e02d6fa))
+- Add defu dependency to project ([a4485c5](https://github.com/Yizack/nuxt-twemoji/commit/a4485c5))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v3.8.1
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.8.0...v3.8.1)
