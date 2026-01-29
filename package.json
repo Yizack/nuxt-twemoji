@@ -49,7 +49,7 @@
   "scripts": {
     "build": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxt-module-build build",
     "prepack": "pnpm build",
-    "dev": "nuxt dev playground",
+    "dev": "pnpm dev:prepare && nuxt dev playground",
     "dev:build": "nuxt build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxt prepare playground",
     "release": "pnpm lint && pnpm build && pnpm test && changelogen --release && git push --follow-tags",
@@ -58,7 +58,7 @@
     "test": "vitest run --reporter=verbose",
     "test:watch": "vitest watch",
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc -b --noEmit",
-    "emojis": "jiti ./scripts/generateEmojis && npm run lint:fix"
+    "emojis": "jiti ./scripts/generateEmojis && pnpm lint:fix"
   },
   "dependencies": {
     "@nuxt/kit": "^4.3.0",
