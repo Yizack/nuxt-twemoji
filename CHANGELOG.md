@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v4.0.1
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v4.0.0...v4.0.1)
+
+### 🩹 Fixes
+
+- **type:** Mode prop type to 'svg' ([ 'png' in components](https://github.com/Yizack/nuxt-twemoji/commit/ 'png' in components))
+
+### ❤️ Contributors
+
+- 5d0550e <Yizack Rangel>
+
 ## v4.0.0
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.8.2...v4.0.0)
