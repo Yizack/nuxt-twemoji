@@ -17,6 +17,9 @@ importers:
       '@twemoji/parser':
         specifier: ^17.0.1
         version: 17.0.1
+      defu:
+        specifier: ^6.1.4
+        version: 6.1.4
     devDependencies:
       '@nuxt/devtools':
         specifier: ^3.1.1
