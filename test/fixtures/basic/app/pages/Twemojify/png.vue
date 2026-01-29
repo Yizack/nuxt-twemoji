@@ -1,3 +1,3 @@
 <template>
-  <Twemojify text="I ❤️ Nuxt 🚀" png />
+  <Twemojify text="I ❤️ Nuxt 🚀" mode="png" />
 </template>

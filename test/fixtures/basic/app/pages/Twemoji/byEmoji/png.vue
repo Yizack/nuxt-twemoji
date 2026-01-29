@@ -1,3 +1,3 @@
 <template>
-  <Twemoji emoji="🚀" png />
+  <Twemoji emoji="🚀" mode="png" />
 </template>
