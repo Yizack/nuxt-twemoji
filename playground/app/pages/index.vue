@@ -79,7 +79,7 @@ const twemojifyDemos = [
           <tr v-for="(emoji, i) in demo.emojis" :key="i">
             <td><code>{{ emoji }}</code></td>
             <td><Twemoji :emoji="emoji" /></td>
-            <td><Twemoji :emoji="emoji" png /></td>
+            <td><Twemoji :emoji="emoji" mode="png" /></td>
           </tr>
         </tbody>
       </table>
@@ -100,7 +100,7 @@ const twemojifyDemos = [
           <tr v-for="(text, i) of twemojifyDemos" :key="i">
             <td><code>{{ text }}</code></td>
             <td><Twemojify :text="text" /></td>
-            <td><Twemojify :text="text" png /></td>
+            <td><Twemojify :text="text" mode="png" /></td>
           </tr>
         </tbody>
       </table>
@@ -117,7 +117,7 @@ const twemojifyDemos = [
 <b>&lt;/TwemojiParse&gt;</b><br></pre>
       </code>
       <p>Will be parsed to:</p>
-      <TwemojiParse png>
+      <TwemojiParse mode="png">
         <h4>Nuxt Twemoji 🚀</h4>
       </TwemojiParse>
     </div>

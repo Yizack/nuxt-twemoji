@@ -13,7 +13,8 @@ export default defineNuxtModule<ModuleOptions>({
     },
   },
   defaults: {
-    expiresIn: 3.154e+7,
+    cache: { maxAge: 3.154e+7 },
+    mode: 'svg',
   },
   setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
@@ -43,8 +44,10 @@ export default defineNuxtModule<ModuleOptions>({
     })
 
     const runtimeConfig = nuxt.options.runtimeConfig
+    // @ts-expect-error twemoji config typing
     runtimeConfig.public.twemoji = defu(runtimeConfig.public.twemoji, {
-      expiresIn: options.expiresIn,
+      cache: options.cache,
+      mode: options.mode,
     })
   },
 })

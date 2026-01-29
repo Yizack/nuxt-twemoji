@@ -1,17 +1,26 @@
 <script setup lang="ts">
 import twemoji from '@twemoji/api'
-import { onMounted, useTemplateRef } from 'vue'
+import { onMounted, computed, useTemplateRef } from 'vue'
+import type { NuxtTwemojiRuntimeOptions } from '../../types'
+import { useRuntimeConfig } from '#imports'
 
 const props = defineProps<{
-  png?: boolean
+  /**
+   * Rendering mode
+   */
+  mode?: NuxtTwemojiRuntimeOptions['mode']
 }>()
 
+const config = useRuntimeConfig().public.twemoji as NuxtTwemojiRuntimeOptions
+
+const renderMode = computed(() => props.mode !== undefined ? props.mode : config.mode)
 const twemojiParse = useTemplateRef('twemojiParse')
+
 onMounted(() => {
   if (!twemojiParse.value) return
   twemoji.parse(twemojiParse.value, {
-    ext: props.png ? '.png' : '.svg',
-    folder: props.png ? undefined : 'svg',
+    ext: renderMode.value === 'png' ? '.png' : '.svg',
+    folder: renderMode.value === 'png' ? undefined : 'svg',
     className: 'twemojiParse',
   })
 })

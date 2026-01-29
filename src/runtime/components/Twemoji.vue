@@ -7,13 +7,26 @@ import type { EmojiDefinition } from '../assets/emojis'
 import { useState, useRuntimeConfig } from '#imports'
 
 const props = withDefaults(defineProps<{
+  /**
+   * The emoji to render. Can be a string (emoji character or code point) or an EmojiDefinition object.
+   */
   emoji: string | EmojiDefinition
+  /**
+   * Size of the emoji (e.g., '1em', '24px')
+   * @default '1em'
+   */
   size?: string
-  png?: boolean
+  /**
+   * Rendering mode
+   */
+  mode?: NuxtTwemojiRuntimeOptions['mode']
 }>(), {
   size: '1em',
 })
 
+const config = useRuntimeConfig().public.twemoji as NuxtTwemojiRuntimeOptions
+
+const renderMode = computed(() => props.mode !== undefined ? props.mode : config.mode)
 const isString = typeof props.emoji === 'string'
 const isDefinition = typeof props.emoji === 'object' && (props.emoji.code && props.emoji.emoji && props.emoji.name)
 
@@ -80,12 +93,11 @@ const loadSVG = async () => {
   if (svgTwemojis.value[parsed.value] || !isValid.value) return
 
   if (import.meta.client) {
-    const { expiresIn } = useRuntimeConfig().public.twemoji as NuxtTwemojiRuntimeOptions
-    if (expiresIn !== false && expiresIn > 0) {
+    if (config.cache && config.cache.maxAge > 0) {
       const expiry = localStorage.getItem(`twemoji-expiry`)
       if (Date.now() > Number(expiry)) {
         localStorage.removeItem(`twemoji-${parsed.value}`)
-        localStorage.setItem(`twemoji-expiry`, String(Date.now() + expiresIn * 1000))
+        localStorage.setItem(`twemoji-expiry`, String(Date.now() + config.cache.maxAge * 1000))
       }
 
       const cached = localStorage.getItem(`twemoji-${parsed.value}`)
@@ -104,8 +116,7 @@ const loadSVG = async () => {
   const svgBody = svgFetch.replace(/<\/*svg[^>]*>/g, '')
   svgTwemojis.value[parsed.value] = svgBody
   if (import.meta.client) {
-    const { expiresIn } = useRuntimeConfig().public.twemoji as NuxtTwemojiRuntimeOptions
-    if (expiresIn !== false && expiresIn > 0) {
+    if (config.cache && config.cache.maxAge > 0) {
       localStorage.setItem(`twemoji-${parsed.value}`, svgBody)
     }
   }
@@ -113,15 +124,15 @@ const loadSVG = async () => {
 
 watch(() => props, async () => {
   codePoint.value[parsed.value] = parsed.value
-  if (!props.png) await loadSVG()
+  if (renderMode.value === 'svg') await loadSVG()
 }, { deep: true })
 
-if (!props.png) await loadSVG()
+if (renderMode.value === 'svg') await loadSVG()
 </script>
 
 <template>
   <span v-if="isFetching" />
-  <img v-else-if="png" class="twemoji" :src="emojiLinkPNG" :alt="alt" :style="{ width: size, height: size }">
+  <img v-else-if="renderMode === 'png'" class="twemoji" :src="emojiLinkPNG" :alt="alt" :style="{ width: size, height: size }">
   <Component :is="component" v-else-if="component" />
   <span v-else>{{ twemoji }}</span>
 </template>

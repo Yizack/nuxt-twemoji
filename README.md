@@ -76,7 +76,10 @@ You can configure the module by adding the `twemoji` property to the `nuxt.confi
 ```js
 export default defineNuxtConfig({
   twemoji: {
-    expiresIn: 3.154e+7 // SVG cache expiration time in seconds (1 year)
+    cache: {
+      maxAge: 3.154e+7 // SVG cache expiration time in seconds (1 year)
+    },
+    mode: 'svg' // Default rendering mode. 'svg' or 'png'
   }
 })
 
@@ -103,7 +106,7 @@ You can make use of any of these available components according to your Nuxt app
 |----------|----------|---------|-------------------------------|
 | `emoji`  | Yes      |         | `string` or `EmojiDefinition` |
 | `size`   | No       | `1em`   | `string`                      |
-| `png`    | No       | `false` | `boolean`                     |
+| `mode`   | No       |         | `svg` \| `png`                |
 
 ### Rendering
 
@@ -117,7 +120,7 @@ Use the emoji property to render an emoji by character.
 <Twemoji emoji="🚀" size="2em" />
 
 <!-- Render PNG <img> element -->
-<Twemoji emoji="🚀" png />
+<Twemoji emoji="🚀" mode="png" />
 ```
 
 Use the emoji property to render an emoji by codepoint.
@@ -183,10 +186,10 @@ This component parses a string text and replaces all emoji characters with Twemo
 
 ### `Twemojify` properties
 
-| Property | Required | Default | Type      |
-|----------|----------|---------|-----------|
-| `text`   | Yes      |         | `string`  |
-| `png`    | No       | `false` | `boolean` |
+| Property | Required | Type            |
+|----------|----------|-----------------|
+| `text`   | Yes      | `string`        |
+| `mode`   | No       | `svg` \| `png`  |
 
 ### Parser
 
@@ -199,7 +202,7 @@ Use the text property to parse all the emoji characters inside a string
 <Twemojify text="I ❤️ Nuxt 🚀" />
 
 <!-- Replaces ❤️ and 🚀 with PNG images -->
-<Twemojify text="I ❤️ Nuxt 🚀" png />
+<Twemojify text="I ❤️ Nuxt 🚀" mode="png" />
 ```
 
 ### `Twemojify` Default CSS
@@ -222,15 +225,15 @@ These style rules make sure that parsed emojis will have the same size as the wr
 This component will parse all emoji characters found.
 
 1. Wrap elements inside the `<TwemojiParse> </TwemojiParse>` component
-2. If you want to parse emojis with png images, use the `png` property with the component, otherwise it will parse svg images by default.
+2. If you want to parse emojis with png images, use the `mode` configuration or property with the component, otherwise it will parse svg images by default.
 
 Note: This component has a drawback as it does not support SSR (Server-Side Rendering) because it is executed during the mounted Vue lifecycle, functioning solely on the client-side.
 
 ### `TwemojiParse` properties
 
-| Property | Required | Default | Type      |
-|----------|----------|---------|-----------|
-| `png`    | No       | `false` | `boolean` |
+| Property | Required | Type            |
+|----------|----------|-----------------|
+| `mode`   | No       | `svg` \| `png`  |
 
 ### DOM parser
 
@@ -243,7 +246,7 @@ This component uses the `@twemoji/api` package by [jdecked](https://github.com/j
 </TwemojiParse>
 
 <!-- Replaces 🚀 with PNG image -->
-<TwemojiParse png>
+<TwemojiParse mode="png">
   <p>Nuxt Twemoji 🚀</p>
 </TwemojiParse>
 

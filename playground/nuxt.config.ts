@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: '2025-08-06',
   twemoji: {
-    expiresIn: 1,
+    cache: { maxAge: 1 },
+    mode: 'svg',
   },
 })

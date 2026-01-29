@@ -1,16 +1,25 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { parse } from '@twemoji/parser'
 import type { NuxtTwemojiRuntimeOptions } from '../../types'
 import { useState, useRuntimeConfig } from '#imports'
 
 const props = defineProps<{
+  /**
+   * The text containing emojis to parse
+   */
   text: string
-  png?: boolean
+  /**
+   * Rendering mode
+   */
+  mode?: NuxtTwemojiRuntimeOptions['mode']
 }>()
 
-const twemojify = useState(`twemojify:${props.png ? 'png' : 'svg'}`, () => ({}) as Record<string, string>)
+const config = useRuntimeConfig().public.twemoji as NuxtTwemojiRuntimeOptions
+
+const renderMode = computed(() => props.mode !== undefined ? props.mode : config.mode)
+const twemojify = useState(`twemojify:${renderMode.value}`, () => ({}) as Record<string, string>)
 const parsedText = ref(props.text)
 
 const replaceEmojis = (emoji: string, indices: number[]) => {
@@ -19,24 +28,23 @@ const replaceEmojis = (emoji: string, indices: number[]) => {
 }
 
 const loadTwemojify = async () => {
-  const emojis = parse(props.text, { assetType: props.png ? 'png' : 'svg' })
+  const emojis = parse(props.text, { assetType: renderMode.value })
   for (const { url, indices, text: emoji } of emojis) {
     if (twemojify.value[emoji]) {
       parsedText.value = replaceEmojis(emoji, indices)
       continue
     }
 
-    if (props.png) {
+    if (renderMode.value === 'png') {
       twemojify.value[emoji] = `<img src="${url}" class="twemojify" />`
     }
     else {
       if (import.meta.client) {
-        const { expiresIn } = useRuntimeConfig().public.twemoji as NuxtTwemojiRuntimeOptions
         const expiry = localStorage.getItem(`twemoji-expiry`)
-        if (expiresIn !== false && expiresIn > 0) {
+        if (config.cache && config.cache.maxAge > 0) {
           if (Date.now() > Number(expiry)) {
             localStorage.removeItem(`twemojify-${emoji}`)
-            localStorage.setItem(`twemoji-expiry`, String(Date.now() + expiresIn * 1000))
+            localStorage.setItem(`twemoji-expiry`, String(Date.now() + config.cache.maxAge * 1000))
           }
 
           const cached = localStorage.getItem(`twemojify-${emoji}`)
@@ -53,8 +61,7 @@ const loadTwemojify = async () => {
       twemojify.value[emoji] = svg
 
       if (import.meta.client) {
-        const { expiresIn } = useRuntimeConfig().public.twemoji as NuxtTwemojiRuntimeOptions
-        if (expiresIn !== false && expiresIn > 0) {
+        if (config.cache && config.cache.maxAge > 0) {
           localStorage.setItem(`twemojify-${emoji}`, svg)
         }
       }
