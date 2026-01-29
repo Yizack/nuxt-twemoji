@@ -1,6 +1,38 @@
 # Changelog
 
 
+## v4.0.0
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.8.2...v4.0.0)
+
+### 🩹 Fixes
+
+- Emoji definition type check ([61284e1](https://github.com/Yizack/nuxt-twemoji/commit/61284e1))
+
+### 💅 Refactors
+
+- ⚠️  Emoji components to use 'mode' prop and cache config ([957f6ec](https://github.com/Yizack/nuxt-twemoji/commit/957f6ec))
+
+### 📖 Documentation
+
+- Update playground link ([63f3db3](https://github.com/Yizack/nuxt-twemoji/commit/63f3db3))
+
+### 🏡 Chore
+
+- Update dev script ([1b7707e](https://github.com/Yizack/nuxt-twemoji/commit/1b7707e))
+
+### ✅ Tests
+
+- Fix mode prop ([e939ca9](https://github.com/Yizack/nuxt-twemoji/commit/e939ca9))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Emoji components to use 'mode' prop and cache config ([957f6ec](https://github.com/Yizack/nuxt-twemoji/commit/957f6ec))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v3.8.2
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v3.8.1...v3.8.2)
