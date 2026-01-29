@@ -7,11 +7,11 @@
 
 ### 🩹 Fixes
 
-- **type:** Mode prop type to 'svg' ([ 'png' in components](https://github.com/Yizack/nuxt-twemoji/commit/ 'png' in components))
+- **type:** Mode prop type to `'svg' | 'png'` in components ([5d0550e](https://github.com/Yizack/nuxt-twemoji/commit/5d0550e))
 
 ### ❤️ Contributors
 
-- 5d0550e <Yizack Rangel>
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
 
 ## v4.0.0
 
