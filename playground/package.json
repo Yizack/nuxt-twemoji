@@ -1,13 +1,13 @@
 {
   "private": true,
-  "name": "my-module-playground",
+  "name": "nuxt-twemoji-playground",
   "type": "module",
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "generate": "nuxi generate"
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^4.1.3"
+    "nuxt": "^4.3.0"
   }
 }
