@@ -2,8 +2,8 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
 import { parse } from '@twemoji/parser'
-import type { NuxtTwemojiRuntimeOptions } from '../../schema-types'
-import { useState, useAppConfig } from '#imports'
+import type { NuxtTwemojiRuntimeOptions } from '../../types'
+import { useState, useRuntimeConfig } from '#imports'
 
 const props = defineProps<{
   text: string
@@ -31,12 +31,12 @@ const loadTwemojify = async () => {
     }
     else {
       if (import.meta.client) {
-        const { expiresIn } = useAppConfig().twemoji as NuxtTwemojiRuntimeOptions
+        const { expiresIn } = useRuntimeConfig().public.twemoji as NuxtTwemojiRuntimeOptions
         const expiry = localStorage.getItem(`twemoji-expiry`)
-        if (expiresIn > 0) {
+        if (expiresIn !== false && expiresIn > 0) {
           if (Date.now() > Number(expiry)) {
             localStorage.removeItem(`twemojify-${emoji}`)
-            localStorage.setItem(`twemoji-expiry`, String(Date.now() + expiresIn * 1000)) // expires after 1 year
+            localStorage.setItem(`twemoji-expiry`, String(Date.now() + expiresIn * 1000))
           }
 
           const cached = localStorage.getItem(`twemojify-${emoji}`)
@@ -53,8 +53,8 @@ const loadTwemojify = async () => {
       twemojify.value[emoji] = svg
 
       if (import.meta.client) {
-        const { expiresIn } = useAppConfig().twemoji as NuxtTwemojiRuntimeOptions
-        if (expiresIn > 0) {
+        const { expiresIn } = useRuntimeConfig().public.twemoji as NuxtTwemojiRuntimeOptions
+        if (expiresIn !== false && expiresIn > 0) {
           localStorage.setItem(`twemojify-${emoji}`, svg)
         }
       }

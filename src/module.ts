@@ -1,6 +1,6 @@
 import { defineNuxtModule, createResolver, addComponent, extendViteConfig } from '@nuxt/kit'
-import { schema } from './schema'
 import type { ModuleOptions } from './types'
+import { defu } from 'defu'
 
 export type { ModuleOptions }
 
@@ -13,20 +13,23 @@ export default defineNuxtModule<ModuleOptions>({
     },
   },
   defaults: {
-    expiresIn: schema['expiresIn'].$default,
+    expiresIn: 3.154e+7,
   },
   setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
+
     addComponent({
       name: 'Twemoji',
       global: true,
       filePath: resolve('./runtime/components/Twemoji.vue'),
     })
+
     addComponent({
       name: 'Twemojify',
       global: true,
       filePath: resolve('./runtime/components/Twemojify.vue'),
     })
+
     addComponent({
       name: 'TwemojiParse',
       global: true,
@@ -39,22 +42,9 @@ export default defineNuxtModule<ModuleOptions>({
       config.optimizeDeps.include.push('@twemoji/parser')
     })
 
-    // Merge options to app.config
-    const runtimeOptions = Object.fromEntries(
-      Object.entries(options)
-        .filter(([key]) => key in schema),
-    )
-    nuxt.options.appConfig.twemoji = Object.assign(
-      nuxt.options.appConfig.twemoji || {},
-      runtimeOptions,
-    )
-    // Define app config types
-    nuxt.hook('schema:extend', (schemas) => {
-      schemas.push({
-        appConfig: {
-          twemoji: schema,
-        },
-      })
+    const runtimeConfig = nuxt.options.runtimeConfig
+    runtimeConfig.public.twemoji = defu(runtimeConfig.public.twemoji, {
+      expiresIn: options.expiresIn,
     })
   },
 })
