@@ -37,6 +37,9 @@ export default defineNuxtModule<ModuleOptions>({
       filePath: resolve('./runtime/components/TwemojiParse.vue'),
     })
 
+    nuxt.options.css ||= []
+    nuxt.options.css.push(resolve('./runtime/assets/css/twemoji.css'))
+
     extendViteConfig((config) => {
       config.optimizeDeps ||= {}
       config.optimizeDeps.include ||= []

@@ -21,7 +21,7 @@ onMounted(() => {
   twemoji.parse(twemojiParse.value, {
     ext: renderMode.value === 'png' ? '.png' : '.svg',
     folder: renderMode.value === 'png' ? undefined : 'svg',
-    className: 'twemojiParse',
+    className: 'twemoji-parse',
   })
 })
 </script>
@@ -31,12 +31,3 @@ onMounted(() => {
     <slot />
   </span>
 </template>
-
-<style>
-img.twemojiParse {
-  height: 1em;
-  width: 1em;
-  margin: 0 .05em 0 .1em;
-  vertical-align: -0.1em;
-}
-</style>

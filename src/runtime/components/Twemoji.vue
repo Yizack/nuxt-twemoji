@@ -136,10 +136,3 @@ if (renderMode.value === 'svg') await loadSVG()
   <Component :is="component" v-else-if="component" />
   <span v-else>{{ twemoji }}</span>
 </template>
-
-<style>
-.twemoji {
-  display: inline-block;
-  vertical-align: middle;
-}
-</style>
