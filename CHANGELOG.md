@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v4.0.2
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v4.0.1...v4.0.2)
+
+### 🩹 Fixes
+
+- Add missing comma ([4b90620](https://github.com/Yizack/nuxt-twemoji/commit/4b90620))
+
+### 💅 Refactors
+
+- Extract styles to shared CSS and register ([33af9a3](https://github.com/Yizack/nuxt-twemoji/commit/33af9a3))
+
+### 🏡 Chore
+
+- Update all deps ([8111f7e](https://github.com/Yizack/nuxt-twemoji/commit/8111f7e))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v4.0.1
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v4.0.0...v4.0.1)
