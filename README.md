@@ -261,12 +261,12 @@ This component uses the `@twemoji/api` package by [jdecked](https://github.com/j
 
 ### `TwemojiParse` Default CSS
 
-The `<img>` tags will have the `.twemojiParse` class assigned to them. These are the default styles, but you can add your own styles by using the class name.
+The `<img>` tags will have the `.twemoji-parse` class assigned to them. These are the default styles, but you can add your own styles by using the class name.
 
 These style rules make sure that parsed emojis will have the same size as the wrapper element.
 
 ```css
-img.twemojiParse {
+img.twemoji-parse {
   height: 1em;
   width: 1em;
   margin: 0 .05em 0 .1em;
