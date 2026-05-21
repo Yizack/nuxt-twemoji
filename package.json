@@ -61,24 +61,24 @@
     "emojis": "jiti ./scripts/generateEmojis && pnpm lint:fix"
   },
   "dependencies": {
-    "@nuxt/kit": "^4.4.2",
+    "@nuxt/kit": "^4.4.6",
     "@twemoji/api": "^17.0.2",
     "@twemoji/parser": "^17.0.1",
-    "defu": "^6.1.4"
+    "defu": "^6.1.7"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^3.2.3",
+    "@nuxt/devtools": "^3.2.4",
     "@nuxt/eslint-config": "^1.15.2",
     "@nuxt/module-builder": "^1.0.2",
-    "@nuxt/schema": "^4.4.2",
-    "@nuxt/test-utils": "^4.0.0",
-    "@types/node": "^25.5.0",
+    "@nuxt/schema": "^4.4.6",
+    "@nuxt/test-utils": "^4.0.3",
+    "@types/node": "^25.9.1",
     "changelogen": "^0.6.2",
-    "eslint": "^10.0.3",
-    "nuxt": "^4.4.2",
-    "typescript": "^5.9.3",
-    "vitest": "^4.1.0",
-    "vue-tsc": "^3.2.5"
+    "eslint": "^10.4.0",
+    "nuxt": "^4.4.6",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.7",
+    "vue-tsc": "^3.3.1"
   },
-  "packageManager": "pnpm@10.32.1"
+  "packageManager": "pnpm@11.2.2"
 }
