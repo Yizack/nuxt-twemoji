@@ -30,14 +30,11 @@ const replaceEmojis = (emoji: string, indices: number[], source: string) => {
 
 const loadTwemojify = async () => {
   const trimmed = removeVS16s(props.text)
-  console.log('props.text: ', props.text)
   parsedText.value = trimmed
 
   const emojis = parse(props.text, { assetType: renderMode.value })
-  console.log('emojis: ', emojis)
 
   for (const { url, indices, text: emoji } of emojis) {
-    console.log('url: ', url)
     if (!url) continue
 
     if (twemojify.value[emoji]) {
