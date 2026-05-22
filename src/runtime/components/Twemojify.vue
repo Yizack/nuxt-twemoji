@@ -4,6 +4,7 @@ import { ref, computed, watch } from 'vue'
 import { parse } from '@twemoji/parser'
 import type { NuxtTwemojiRuntimeOptions } from '../../types'
 import { useState, useRuntimeConfig } from '#imports'
+import { removeVS16s } from '../utils/parsing'
 
 const props = defineProps<{
   /**
@@ -22,16 +23,25 @@ const renderMode = computed(() => props.mode !== undefined ? props.mode : config
 const twemojify = useState(`twemojify:${renderMode.value}`, () => ({}) as Record<string, string>)
 const parsedText = ref(props.text)
 
-const replaceEmojis = (emoji: string, indices: number[]) => {
+const replaceEmojis = (emoji: string, indices: number[], source: string) => {
   if (!twemojify.value[emoji]) return parsedText.value
-  return parsedText.value.replace(props.text.slice(...indices), twemojify.value[emoji])
+  return parsedText.value.replace(source.slice(...indices), twemojify.value[emoji])
 }
 
 const loadTwemojify = async () => {
+  const trimmed = removeVS16s(props.text)
+  console.log('props.text: ', props.text)
+  parsedText.value = trimmed
+
   const emojis = parse(props.text, { assetType: renderMode.value })
+  console.log('emojis: ', emojis)
+
   for (const { url, indices, text: emoji } of emojis) {
+    console.log('url: ', url)
+    if (!url) continue
+
     if (twemojify.value[emoji]) {
-      parsedText.value = replaceEmojis(emoji, indices)
+      parsedText.value = replaceEmojis(emoji, indices, trimmed)
       continue
     }
 
@@ -50,7 +60,7 @@ const loadTwemojify = async () => {
           const cached = localStorage.getItem(`twemojify-${emoji}`)
           if (cached) {
             twemojify.value[emoji] = cached
-            parsedText.value = replaceEmojis(emoji, indices)
+            parsedText.value = replaceEmojis(emoji, indices, trimmed)
             continue
           }
         }
@@ -66,12 +76,11 @@ const loadTwemojify = async () => {
         }
       }
     }
-    parsedText.value = replaceEmojis(emoji, indices)
+    parsedText.value = replaceEmojis(emoji, indices, trimmed)
   }
 }
 
 watch(() => props, async () => {
-  parsedText.value = props.text
   await loadTwemojify()
 }, { deep: true })
 
