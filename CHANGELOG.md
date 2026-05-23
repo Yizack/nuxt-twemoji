@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v4.0.3
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v4.0.2...v4.0.3)
+
+### 🩹 Fixes
+
+- **docs:** Correct TwemojiParse class ([#5](https://github.com/Yizack/nuxt-twemoji/pull/5))
+- **twemojify:** Strip `VS16` modifiers from emojis in `Twemojify` ([#7](https://github.com/Yizack/nuxt-twemoji/pull/7))
+
+### 🏡 Chore
+
+- Update all deps ([732fc69](https://github.com/Yizack/nuxt-twemoji/commit/732fc69))
+
+### ❤️ Contributors
+
+- Jamie <hi@jamie.to>
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v4.0.2
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v4.0.1...v4.0.2)
