@@ -52,7 +52,6 @@ const isHex = computed(() => (/^[0-9A-F]{1,6}(?:-[0-9A-F]{1,6})*$/i).test(twemoj
 
 const codePoint = ref<{ [key: string]: string }>({})
 const isFetching = ref(false)
-
 const vs16RegExp = /\uFE0F/g
 const zeroWidthJoiner = String.fromCharCode(0x200D)
 const removeVS16s = (rawEmoji: string) => {
