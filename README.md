@@ -15,6 +15,7 @@ Twemoji module for Nuxt. Render emojis as SVG elements or PNG images
 - [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp%2Fpages%2Findex.vue)
 
 ## Table of Contents
+
 - [Features](#features)
 - [Quick Setup](#quick-setup)
 - [Module configs](#module-configs)
@@ -37,6 +38,7 @@ Twemoji module for Nuxt. Render emojis as SVG elements or PNG images
 - [Development](#development)
 
 ## Features
+
 - Nuxt 4 ready
 - Emoji 17.0 support
 - Render emoji by character
@@ -102,6 +104,7 @@ You can make use of any of these available components according to your Nuxt app
 3. If you employ SSR (Server Side Rendering) in your Nuxt application, this module will inject the emoji `<svg>` or `<img>` element into the output code during your project's build/generate process. Alternatively, if SSR is not used, the emojis will dynamically render during client runtime.
 
 ### `Twemoji` properties
+
 | Property | Required | Default | Type                          |
 |----------|----------|---------|-------------------------------|
 | `emoji`  | Yes      |         | `string` or `EmojiDefinition` |
@@ -146,9 +149,10 @@ import { twSmilingFaceWithSmilingEyes } from 'nuxt-twemoji/emojis'
 </template>
 ```
 
-The emojis file has been generated using the self made [`generateEmojis.js`](https://github.com/Yizack/nuxt-twemoji/blob/main/scripts/generateEmojis.js) script, which fetches emojis data from the [Unicode](https://home.unicode.org/) public Emoji 17.0 file available at https://unicode.org/Public/17.0.0/emoji/emoji-test.txt
+The emojis file has been generated using the self made [`generateEmojis.js`](https://github.com/Yizack/nuxt-twemoji/blob/main/scripts/generateEmojis.js) script, which fetches emojis data from the [Unicode](https://home.unicode.org/) public Emoji 17.0 file available at <https://unicode.org/Public/17.0.0/emoji/emoji-test.txt>
 
 ### Definitions
+
 The `EmojiDefinition` type represents objects that have these specific three string properties:
 
 - `code` represents the code associated with the emoji.
@@ -164,6 +168,7 @@ type EmojiDefinition = {
 ```
 
 ### More examples
+
 Check out the [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-twemoji?file=playground%2Fapp%2Fpages%2Findex.vue) for more examples.
 
 ### `Twemoji` Default CSS
