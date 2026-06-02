@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v4.0.4
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v4.0.3...v4.0.4)
+
+### 🩹 Fixes
+
+- VS16 handling and emoji replacement logic ([9e1f6ba](https://github.com/Yizack/nuxt-twemoji/commit/9e1f6ba))
+
+### 📖 Documentation
+
+- **readme:** Format readme ([438dc51](https://github.com/Yizack/nuxt-twemoji/commit/438dc51))
+
+### 🏡 Chore
+
+- Update twemoji packages ([0496455](https://github.com/Yizack/nuxt-twemoji/commit/0496455))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v4.0.3
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v4.0.2...v4.0.3)
