@@ -22,25 +22,27 @@ const renderMode = computed(() => props.mode !== undefined ? props.mode : config
 const twemojify = useState(`twemojify:${renderMode.value}`, () => ({}) as Record<string, string>)
 const parsedText = ref(props.text)
 
-const vs16RegExp = /️/gu
+const vs16RegExp = /\uFE0F/g
 const removeVS16s = (text: string) => text.replace(vs16RegExp, '')
 
-const replaceEmojis = (emoji: string, indices: number[], source: string) => {
+const replaceEmojis = (emoji: string, indices: number[]) => {
   if (!twemojify.value[emoji]) return parsedText.value
-  return parsedText.value.replace(source.slice(...indices), twemojify.value[emoji])
+  return parsedText.value.replace(props.text.slice(...indices), twemojify.value[emoji])
 }
 
 const loadTwemojify = async () => {
-  const trimmed = removeVS16s(props.text)
-  parsedText.value = trimmed
-
-  const emojis = parse(trimmed, { assetType: renderMode.value })
+  const emojis = parse(props.text, { assetType: renderMode.value })
 
   for (const { url, indices, text: emoji } of emojis) {
-    if (!url) continue
+    if (!url) {
+      if (vs16RegExp.test(emoji)) {
+        parsedText.value = removeVS16s(parsedText.value)
+      }
+      continue
+    }
 
     if (twemojify.value[emoji]) {
-      parsedText.value = replaceEmojis(emoji, indices, trimmed)
+      parsedText.value = replaceEmojis(emoji, indices)
       continue
     }
 
@@ -59,7 +61,7 @@ const loadTwemojify = async () => {
           const cached = localStorage.getItem(`twemojify-${emoji}`)
           if (cached) {
             twemojify.value[emoji] = cached
-            parsedText.value = replaceEmojis(emoji, indices, trimmed)
+            parsedText.value = replaceEmojis(emoji, indices)
             continue
           }
         }
@@ -75,7 +77,7 @@ const loadTwemojify = async () => {
         }
       }
     }
-    parsedText.value = replaceEmojis(emoji, indices, trimmed)
+    parsedText.value = replaceEmojis(emoji, indices)
   }
 }
 
