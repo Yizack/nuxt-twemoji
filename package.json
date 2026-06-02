@@ -62,8 +62,8 @@
   },
   "dependencies": {
     "@nuxt/kit": "^4.4.6",
-    "@twemoji/api": "^17.0.2",
-    "@twemoji/parser": "^17.0.1",
+    "@twemoji/api": "^17.0.3",
+    "@twemoji/parser": "^17.0.2",
     "defu": "^6.1.7"
   },
   "devDependencies": {
