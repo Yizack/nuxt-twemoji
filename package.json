@@ -1,6 +1,6 @@
 {
   "name": "nuxt-twemoji",
-  "version": "4.0.5",
+  "version": "4.0.6",
   "description": "Twemoji module for Nuxt. Render emojis as SVG elements or PNG images",
   "keywords": [
     "nuxt",

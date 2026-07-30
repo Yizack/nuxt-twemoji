@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v4.0.6
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v4.0.5...v4.0.6)
+
+### 📦 Build
+
+- Fix npm publish ([06adff5](https://github.com/Yizack/nuxt-twemoji/commit/06adff5))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v4.0.5
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v4.0.4...v4.0.5)
