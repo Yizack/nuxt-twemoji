@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v4.0.5
+
+[compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v4.0.4...v4.0.5)
+
+### 🏡 Chore
+
+- Update all deps ([28d3fb6](https://github.com/Yizack/nuxt-twemoji/commit/28d3fb6))
+
+### 🤖 CI
+
+- **release:** Automate github release ([32c84d5](https://github.com/Yizack/nuxt-twemoji/commit/32c84d5))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v4.0.4
 
 [compare changes](https://github.com/Yizack/nuxt-twemoji/compare/v4.0.3...v4.0.4)
